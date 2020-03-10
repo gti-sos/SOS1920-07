@@ -1,0 +1,22 @@
+{
+  "name": "sos1920",
+  "version": "0.0.0",
+  "description": "Trabajo de SOS Grupo 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gti-sos/SOS1920-07.git"
+  },
+  "author": "Grupo 7 SOS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gti-sos/SOS1920-07/issues"
+  },
+  "homepage": "https://github.com/gti-sos/SOS1920-07#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
