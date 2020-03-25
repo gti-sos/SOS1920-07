@@ -115,7 +115,7 @@ app.get(BASE_API_URL+"/imports/:country/:year", (req,res)=>{
 
 // POST IMPORTS
 
-app.put(BASE_API_URL+"/imports/:country/:year",(req,res) =>{
+app.post(BASE_API_URL+"/imports/:country/:year",(req,res) =>{
 		res.sendStatus(405,"Method Not Allowed");
 });
 
