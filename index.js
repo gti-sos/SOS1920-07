@@ -77,7 +77,14 @@ app.post(BASE_API_URL+"/imports",(req,res) =>{
 
 
 
-// DELETE CONTACTS
+// PU IMPORTS
+
+app.put(BASE_API_URL+"/imports",(req,res) =>{
+		res.sendStatus(405,"Method Not Allowed");
+});
+
+
+// DELETE IMPORTS
 
 app.delete(BASE_API_URL+"/imports", (req,res) =>{
 	imports = [];
@@ -86,7 +93,7 @@ app.delete(BASE_API_URL+"/imports", (req,res) =>{
 
 
 
-// GET CONTACT/XXX
+// GET IMPORTS/XXX
 
 app.get(BASE_API_URL+"/imports/:country/:year", (req,res)=>{
 	
@@ -106,9 +113,15 @@ app.get(BASE_API_URL+"/imports/:country/:year", (req,res)=>{
 	}
 });
 
+// POST IMPORTS
+
+app.put(BASE_API_URL+"/imports/:country/:year",(req,res) =>{
+		res.sendStatus(405,"Method Not Allowed");
+});
 
 
-// PUT CONTACT/XXX
+
+// PUT IMPORTS/XXX
 
 app.put(BASE_API_URL+"/imports/:country/:year",(req,res) =>{
 	
@@ -134,7 +147,7 @@ app.put(BASE_API_URL+"/imports/:country/:year",(req,res) =>{
 
 
 
-// DELETE CONTACT/XXX
+// DELETE IMPORTS/XXX
 
 app.delete(BASE_API_URL+"/imports/:country/:year", (req,res)=>{
 	
