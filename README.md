@@ -1,5 +1,12 @@
 # SOS1920-07
 
-Trabajo SOS
+Trabajo de 
 
-Prueba
+Jorge Vilchez Acosta
+
+URL Postman : https://documenter.getpostman.com/view/10852742/SzYUXztb
+
+Juan Antonio Moral Martinez
+
+
+Pablo Paz Rubio
