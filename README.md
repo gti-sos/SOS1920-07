@@ -1,14 +1,18 @@
 # SOS1920-07
 
-Trabajo de 
+Trabajo SOS orientado a analizar algunas importaciones/exportaciones de EEUU.
+
 
 Jorge Vilchez Acosta
 
-URL Postman : https://documenter.getpostman.com/view/10852742/SzYUXztb
+URL Postman: https://documenter.getpostman.com/view/10852742/SzYUXztb
+
 
 Juan Antonio Moral Martinez
 
-URL Postman : https://documenter.getpostman.com/view/10681039/SzYUZLtj?version=latest
+URL Postman: https://documenter.getpostman.com/view/10681039/SzYUZLtj?version=latest
 
 
 Pablo Paz Rubio
+
+URL Postman: https://documenter.getpostman.com/view/10850972/SzYUXzfM?version=latest
