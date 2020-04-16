@@ -1,24 +1,16 @@
 {
-  "name": "sos1920",
+  "name": "f01",
   "version": "0.0.0",
-  "description": "Trabajo de SOS Grupo 7",
+  "description": "Tarea 13 F01",
   "main": "index.js",
   "scripts": {
     "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gti-sos/SOS1920-07.git"
-  },
-  "author": "Grupo 7 SOS",
+  "author": "Jorge Vilchez Acosta",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gti-sos/SOS1920-07/issues"
-  },
-  "homepage": "https://github.com/gti-sos/SOS1920-07#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nedb": "^1.8.0"
   }
 }
