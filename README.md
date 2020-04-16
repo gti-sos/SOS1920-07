@@ -15,4 +15,4 @@ URL Postman: https://documenter.getpostman.com/view/10681039/SzYUZLtj?version=la
 
 Pablo Paz Rubio
 
-URL Postman: https://documenter.getpostman.com/view/10850972/SzYUXzfM?version=latest
+URL Postman: https://documenter.getpostman.com/view/10850972/Szf3bWAh?version=latest
