@@ -1,16 +1,7 @@
 module.exports = function (app) {
     console.log("Registering imports API...");
 
-     //CONSTANTES
-
-        const path = require("path");
-        const dataStore = require("nedb");
-        const BASE_API_URL = "/api/v1";
-        const dbFileName = path.join(__dirname,"imports.db");
-        const db = new dataStore({
-            filename: dbFileName,
-            autoload:true
-        });
+     
 
     const BASE_API_URL = "/api/v1";
     const dataStore = require("nedb");
