@@ -265,5 +265,5 @@ module.exports = function (app) {
 
       res.sendStatus(200,"OK")
     });
-
+    console.log("OK.");
 }
