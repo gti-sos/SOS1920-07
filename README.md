@@ -10,7 +10,7 @@ URL Postman: https://documenter.getpostman.com/view/10852742/SzYUXztb?version=la
 
 Juan Antonio Moral Martinez
 
-URL Postman: https://documenter.getpostman.com/view/10681039/SzYUZLtj?version=latest
+URL Postman: https://documenter.getpostman.com/view/10681039/Szmb7Kwe?version=latest
 
 
 Pablo Paz Rubio
