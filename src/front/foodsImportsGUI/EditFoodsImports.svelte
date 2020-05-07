@@ -66,6 +66,8 @@
 
 
 <main>
+    <Button outline size="lg" color="primary" onclick="location.href='/#/foodsImports';">Inicio</Button>
+    
     <h3>Estas editando las importaciones a <strong>{params.foodsName}</strong> en <strong>{params.foodsYear}</strong></h3> 
     {#await foodsImports[0]}
     {:then foodsImports}
