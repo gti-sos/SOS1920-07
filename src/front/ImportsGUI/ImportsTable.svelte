@@ -27,7 +27,7 @@
 	async function getImports() {
 
 		console.log("Fetching contacts...");
-		const res = await fetch("/api/v1/imports?offset= "+offset+"&limit="+limit);
+		const res = await fetch("/api/v2/imports?offset= "+offset+"&limit="+limit);
 
 		if (res.ok) {
 			console.log("Ok:");
@@ -55,7 +55,7 @@
 		if(newImport.gdawaste !=0){busqueda = busqueda + "&year="+newImport.gdawaste};
 		if(newImport.gdaethylalcohol !=0){busqueda = busqueda + "&year="+newImport.gdaethylalcohol};
 
-		const res = await fetch("/api/v1/imports?offset= "+offset+"&limit="+limit+busqueda);
+		const res = await fetch("/api/v2/imports?offset= "+offset+"&limit="+limit+busqueda);
 
 		if (res.ok) {
 			console.log("Ok:");
@@ -83,7 +83,7 @@
         newImport.gdawaste=parseFloat(newImport.gdawaste),
 		newImport.gdaethylalcohol=parseFloat(newImport.gdaethylalcohol)
 		
-		const res = await fetch("/api/v1/imports", {
+		const res = await fetch("/api/v2/imports", {
 			method: "POST",
 			body: JSON.stringify(newImport),
 			headers: {
@@ -100,7 +100,7 @@
 
 	}
 	async function deleteImport(country,year) {
-		const res = await fetch("/api/v1/imports/" + country +"/"+ year, {
+		const res = await fetch("/api/v2/imports/" + country +"/"+ year, {
 			method: "DELETE"
 		}).then(function (res) {
 			if (res.ok) {
@@ -113,7 +113,7 @@
 	}
 
 	async function deleteAllImport() {
-		const res = await fetch("/api/v1/imports", {
+		const res = await fetch("/api/v2/imports", {
 			method: "DELETE"
 		}).then(function (res) {
 			if (res.ok) {

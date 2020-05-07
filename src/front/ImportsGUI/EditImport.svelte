@@ -27,7 +27,7 @@
     async function getImport() {
 
         console.log("Fetching contact...");
-        const res = await fetch("/api/v1/imports/" + params.country+"/"+params.year);
+        const res = await fetch("/api/v2/imports/" + params.country+"/"+params.year);
         console.log(params)
         if (res.ok) {
             console.log("Ok:");
@@ -52,7 +52,7 @@
 
         console.log("Updating contact..." + JSON.stringify(params.contactName));
 
-        const res = await fetch("/api/v1/imports/" + params.country+"/"+params.year, {
+        const res = await fetch("/api/v2/imports/" + params.country+"/"+params.year, {
             method: "PUT",
             body: JSON.stringify({
                 country: params.country,
