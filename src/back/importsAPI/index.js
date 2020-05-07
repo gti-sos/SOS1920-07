@@ -158,17 +158,17 @@ module.exports = function (app) {
 
         var exists = true;
         db.find({ $and: [{ country: newImport.country }, { year: newImport.year }] },function(err,doc){
-            console.log(err);
-            console.log(doc);
+
             if(doc.length == 0){exists =false};
+            
+            if((newImport == "") || (newImport.country == null) || (newImport.year == null) || (valid == false) || (exists == true)){
+                console.log("Error");
+                res.sendStatus(400,"BAD REQUEST");
+            } else {
+                db.insert(newImport);	
+                res.sendStatus(201,"CREATED");
+            }
         });
-                
-        if((newImport == "") || (newImport.country == null) || (newImport.year == null) || (valid == false) || (exists == true)){
-            res.sendStatus(400,"BAD REQUEST");
-        } else {
-            db.insert(newImport);	
-            res.sendStatus(201,"CREATED");
-        }
     });
 
     // PUT IMPORTS
