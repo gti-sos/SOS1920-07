@@ -9,11 +9,11 @@
 	let fertilizers = [];
 	let newFertilizer = {
 		country: "",
-		year: "",
-		shortTonExport: "",
-		dollarExport: "",
-		shortTonImport: "",
-		dollarImport: ""
+		year: 0,
+		shortTonExport: 0,
+		dollarExport: 0,
+		shortTonImport: 0,
+		dollarImport: 0
 	};
 	let errorMsg = "";
 	let successfulMsg = "";
@@ -52,11 +52,11 @@
 
 		console.log("Inserting fertilizer..." + JSON.stringify(newFertilizer));
 
-		newFertilizer.year = parseInt(newImport.year);
-		newFertilizer.shortTonExport = parseInt(newImport.shortTonExport);
-		newFertilizer.dollarExport = parseInt(newImport.dollarExport);
-		newFertilizer.shortTonImport = parseInt(newImport.shortTonImport);
-		newFertilizer.dollarImport = parseInt(newImport.dollarImport);
+		// newFertilizer.year = parseInt(newImport.year);
+		// newFertilizer.shortTonExport = parseInt(newImport.shortTonExport);
+		// newFertilizer.dollarExport = parseInt(newImport.dollarExport);
+		// newFertilizer.shortTonImport = parseInt(newImport.shortTonImport);
+		// newFertilizer.dollarImport = parseInt(newImport.dollarImport);
 
 		const res = await fetch("/api/v1/fertilizerImportsExports", {
 			method: "POST",
@@ -82,7 +82,7 @@
 		}).then(function (res) {
 			getFertilizers();
 		});
-		successfulMsg = "Los datos seleccionados han sido eliminados."
+		successfulMsg = "Los datos correspondientes a " + country + " y " + year + " han sido eliminados."
 	}
 
 	async function deleteAllFertilizer() {
@@ -96,26 +96,28 @@
 
 	async function searchFertilizer(){
 		
-		const res = await fetch("/api/v1/fertilizerImportsExports?limit=" + limit + "&offset=" + offset);
+		let search = "";
 
 		if(newFertilizer.country != ""){
-			res = res + "&country=" + newFertilizer.country;
-		}
+			search = search + "&country="+newFertilizer.country
+		};
 		if(newFertilizer.year != 0){
-			res = res + "&year=" + newFertilizer.year;
-		}
+			search = search + "&year="+newFertilizer.year
+		};
 		if(newFertilizer.shortTonExport != 0){
-			res = res + "&shortTonExport=" + newFertilizer.shortTonExport;
-		}
+			search = search + "&shortTonExport="+newFertilizer.shortTonExport
+		};
 		if(newFertilizer.dollarExport != 0){
-			res = res + "&dollarExport=" + newFertilizer.dollarExport;
-		}
+			search = search + "&dollarExport="+newFertilizer.dollarExport
+		};
 		if(newFertilizer.shortTonImport != 0){
-			res = res + "&shortTonImport=" + newFertilizer.shortTonImport;
-		}
+			search = search + "&shortTonImport="+newFertilizer.shortTonImport
+		};
 		if(newFertilizer.dollarImport != 0){
-			res = res + "&dollarImport=" + newFertilizer.dollarImport;
-		}
+			search = search + "&dollarImport="+newFertilizer.dollarImport
+		};
+
+		const res = await fetch("/api/v1/fertilizerImportsExports?limit=" + limit + "&offset=" + offset + search);
 
 		if(res.ok){
 			console.log("Ok:");
@@ -177,8 +179,8 @@
 					<td><input bind:value="{newFertilizer.dollarExport}"></td>
 					<td><input bind:value="{newFertilizer.shortTonImport}"></td>
 					<td><input bind:value="{newFertilizer.dollarImport}"></td>
-					<td> <Button outline  color="primary" on:click={insertFertilizer}>Insertar</Button> </td>
-					<td> <Button outline  color="primary" on:click={searchFertilizer}>Buscar</Button> </td>
+					<td> <Button outline  color="primary" on:click={insertFertilizer}>Insertar</Button>
+					<Button outline  color="primary" on:click={searchFertilizer}>Buscar</Button> </td>
 				</tr>
 
 				{#each fertilizers as fertilizer}
