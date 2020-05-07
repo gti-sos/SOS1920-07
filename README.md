@@ -5,8 +5,8 @@ Trabajo SOS orientado a analizar algunas importaciones/exportaciones de EEUU.
 
 Jorge Vilchez Acosta
 
-URL Postman: https://documenter.getpostman.com/view/10852742/SzYUXztb?version=latest
-
+URL Postman:    https://documenter.getpostman.com/view/10852742/SzYUXztb
+URL Postman V2: https://documenter.getpostman.com/view/10852742/Szme3xGx 
 
 Juan Antonio Moral Martinez
 
