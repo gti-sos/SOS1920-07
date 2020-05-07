@@ -68,15 +68,17 @@
         }).then(function (res) {
             if(res.ok){
 				getFertilizer();
-				successfulMsg = "Los datos correspondientes a " + updatedCountry + " y " + updatedYear + " han sido actualizados."
+                successfulMsg = "Los datos correspondientes a " + updatedCountry + " y " + updatedYear + " han sido actualizados."
+                errorMsg = "";
 			}else{
-				errorMsg = "Error al actualizar el dato correspondiente a " + updatedCountry + " y " + updatedYear
+                errorMsg = "Error al actualizar el dato correspondiente a " + updatedCountry + " y " + updatedYear
+                successfulMsg = "";
 			}
         });
     }
 </script>
 <main>
-    <h3>Edita los datos del fertilizante con <strong>{params.fertilizerCountry}, {params.fertilizerYear}</strong></h3>
+    <h3>Edita los datos del fertilizante con <strong>{params.country}, {params.year}</strong></h3>
     {#await fertilizer}
         Cargando fertilizantes...
     {:then fertilizer}
