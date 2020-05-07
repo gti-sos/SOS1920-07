@@ -106,6 +106,8 @@
 
 <main>
     
+    <Button outline size="lg" color="secondary" onclick="location.href='/#/foodsImports';">Inicio</Button>
+    
         
     
     <Table bordered>
