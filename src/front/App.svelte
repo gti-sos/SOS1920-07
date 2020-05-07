@@ -19,6 +19,6 @@
 </script>
 
 <main>
-	<h1>Contact Manager</h1>
+	<h1>Apis del Grupo 7 SOS</h1>
 	<Router {routes} />
 </main>
