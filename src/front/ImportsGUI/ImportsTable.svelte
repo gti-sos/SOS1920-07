@@ -6,7 +6,7 @@
 	import Table from "sveltestrap/src/Table.svelte";
 	import Button from "sveltestrap/src/Button.svelte";
 
-	let limit = 5;
+	let limit = 10;
 	let offset = 0;
 	let up = true;
 	let imports = [];

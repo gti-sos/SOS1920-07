@@ -70,7 +70,71 @@ module.exports = function (app) {
                 "gdaoat":513463,
                 "gdawaste": 725387,
                 "gdaethylalcohol":4277
+            },
+            { 
+                "country": "canada",
+                "year": 2004,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
+            },
+            { 
+                "country": "canada",
+                "year": 2005,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
+            },
+            { 
+                "country": "canada",
+                "year": 2006,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
+            },
+            { 
+                "country": "canada",
+                "year": 2007,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
+            },
+            { 
+                "country": "canada",
+                "year": 2008,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
+            },
+            { 
+                "country": "canada",
+                "year": 2009,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
+            },
+            { 
+                "country": "canada",
+                "year": 2010,
+                "gdamalt": 584620,
+                "gdabarley":50979,
+                "gdaoat":1466303,
+                "gdawaste": 26325,
+                "gdaethylalcohol":99284 
             }
+
         ];
         db.insert(importsInit);
 
