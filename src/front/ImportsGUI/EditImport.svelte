@@ -21,6 +21,7 @@
     let updatedgdawaste = 0;
     let updatedgdaethylalcohol = 0;
     let errorMsg = "";
+    let correctMsg ="";
 
     onMount(getImport);
 
@@ -42,8 +43,7 @@
             updatedgdaethylalcohol = imports.gdaethylalcohol;
             console.log("Received contact.");
         } else {
-            errorMsg = res.status + ": " + res.statusText;
-            console.log("ERROR!" + errorMsg);
+            errorMsg = "No se puede mostrar la importación con país: "+ updatedCountry+" y año: " +updatedyear ;;
         }
     }
 
@@ -68,10 +68,12 @@
             }
         }).then(function (res) {
             if (res.ok) {
-				getImports();
+                correctMsg = "Se ha actualizado la importación con país: "+ updatedCountry+" y año: " +updatedyear ;
+                getImports();
 				errorMsg = "";
 			}else{
-				errorMsg = res.status + ": " + res.statusText;
+                correctMsg ="";
+                errorMsg = "No se ha podido relizar la actualización de la importación con país: "+ updatedCountry+" y año: " +updatedyear ;
 			}
         });
 
@@ -112,7 +114,10 @@
         </Table>
     {/await}
     {#if errorMsg}
-        <p style="color: red">ERROR: {errorMsg}</p>
+        <p style="color: red">{errorMsg}</p>
     {/if}
+    {#if correctMsg}
+	    <p style="color: green">{correctMsg}</p>
+	{/if}
     <Button outline color="secondary" on:click="{pop}">Atrás</Button>
 </main>

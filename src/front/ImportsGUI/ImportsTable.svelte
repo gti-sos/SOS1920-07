@@ -20,6 +20,7 @@
 		gdaethylalcohol:0.0
 	};
 	let errorMsg = "";
+	let correctMsg = "";
 	let search = false;
 
 	onMount(getImports);
@@ -38,7 +39,7 @@
 			else{up =true};
 			console.log("Received " + imports.length + " contacts.");
 		} else {
-			errorMsg = res.status + ": " + res.statusText;
+			errorMsg = "Su busqueda no es válida";
             console.log("ERROR!" + errorMsg);
 		}
 	}
@@ -65,8 +66,10 @@
 			else{up =true};
 			console.log("Received " + imports.length + " contacts.");
 			errorMsg = "";
+			correctMsg = ""
 		} else {
 			errorMsg = "Su busqueda no es válida";
+			correctMsg = ""
             console.log("ERROR!" + errorMsg);
 		}
 	}
@@ -91,9 +94,11 @@
 		}).then(function (res) {
 			if (res.ok) {
 				getImports();
-				errorMsg = "Se ha insertado el elemento Correctamente";
+				correctMsg = "Se ha insertado el elemento Correctamente";
+				errorMsg = "";
 			}else{
-				errorMsg = res.status + ": " + res.statusText;
+				errorMsg = "No se pudo insertar el elemento Correctamente";
+				correctMsg = ""
 			}
 		});
 
@@ -104,7 +109,7 @@
 		}).then(function (res) {
 			if (res.ok) {
 				getImports();
-				errorMsg = "Se ha eliminado la importación con país: "+ country+" y año: " +year ;
+				correctMsg = "Se ha eliminado la importación con país: "+ country+" y año: " +year ;
 			}else{
 				errorMsg = "No se pudo eliminar la importación con país: "+ country+" y año: " +year ;;
 			}
@@ -118,14 +123,16 @@
 			if (res.ok) {
 				getImports();
 				errorMsg = "";
+				correctMsg = "Se han eliminado todos los elementos";
 			}else{
-				errorMsg = res.status + ": " + res.statusText;
+				errorMsg = "No se pudieron eliminar todos los elementos";
 			}
 		});
 	}
 
 	function offsetUp() {
 		offset = offset +limit;
+		correctMsg ="";
 		errorMsg = "";
 		if(search == true){getsearch()}
 		else{getImports()};
@@ -134,6 +141,7 @@
 	function offsetDown() {
 		offset = offset -limit;
 		errorMsg = "";
+		correctMsg = "";
 		if(search == true){getsearch()}
 		else{getImports()};
 	}
@@ -203,7 +211,10 @@
 		</Table>
 	{/await}
 	{#if errorMsg}
-	<p style="color: red">ERROR: {errorMsg}</p>
+	<p style="color: red">{errorMsg}</p>
+	{/if}
+	{#if correctMsg}
+	<p style="color: green">{correctMsg}</p>
 	{/if}
 
 </main>
