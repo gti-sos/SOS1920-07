@@ -172,6 +172,19 @@
         <a>Elementos por página: <input type=number bind:value={limit} min=1 max={lenfoodsImports} on:click={() =>getFoodsImports(0,0)}></a>
     </label>
     
+    {#if creado}
+    <p style="color:green;">Registro Creado Correctamente.</p>
+    {/if}
+    {#if borrado_reg}
+    <p style="color:red;">Registro Borrado Correctamente.</p>
+    {/if}
+    {#if errRepe}
+    <p style="color:red;">Registro Ya está creado, si deséa actualizarlo búsquelo y haga click en el País.</p>
+    {/if}
+    {#if errNotEmpty}
+    <p style="color:red;">Registro no valido, puede que tenga algún parámetro vacío.</p>
+    {/if}
+    
         
     
     <Table bordered>
@@ -235,18 +248,7 @@
     <Button on:click={() =>aumoffset()}>Siguiente</Button>
     {/if}
     {/await}
-    {#if creado}
-    <p style="color:green;">Registro Creado Correctamente.</p>
-    {/if}
-    {#if borrado_reg}
-    <p style="color:red;">Registro Borrado Correctamente.</p>
-    {/if}
-    {#if errRepe}
-    <p style="color:red;">Registro Ya está creado, si deséa actualizarlo búsquelo y haga click en el País.</p>
-    {/if}
-    {#if errNotEmpty}
-    <p style="color:red;">Registro no valido, puede que tenga algún parámetro vacío.</p>
-    {/if}
+    
 
 </main>
 
