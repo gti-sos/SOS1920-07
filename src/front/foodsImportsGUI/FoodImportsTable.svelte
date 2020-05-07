@@ -168,6 +168,8 @@
     {#await foodsImports}
     {:then foodsImports}
     
+    <p style="color:green;">Si no aparece ningún dato pulse borrar todo y podrá rellenar la tabla.</p>
+    
     <label>
         <a>Elementos por página: <input type=number bind:value={limit} min=1 max={lenfoodsImports} on:click={() =>getFoodsImports(0,0)}></a>
     </label>
