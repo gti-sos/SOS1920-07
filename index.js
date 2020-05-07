@@ -14,8 +14,6 @@ importsAPI(app);
 foodsImports(app);
 fertilizerImportsExportsAPI(app);
 
-var port = process.env.PORT || 80;
-
 app.use("/", express.static("./public"));
 
 app.listen(port, () => {
