@@ -6,8 +6,6 @@ module.exports = function (app) {
     const BASE_API_URL = "/api/v2";
     const dataStore = require("nedb");
     const path = require("path");
-    const data=require("./initialFoods");
-    var InitialfoodsImports;
     const dbFileName = path.join(__dirname,"foodsImports.db")
 
     const db = new dataStore({
