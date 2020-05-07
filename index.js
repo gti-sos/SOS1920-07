@@ -14,7 +14,7 @@ importsAPI(app);
 foodsImports(app);
 fertilizerImportsExportsAPI(app);
 
-var port = process.env.PORT || 12345;
+var port = process.env.PORT || 80;
 
 app.use("/", express.static("./public"));
 
