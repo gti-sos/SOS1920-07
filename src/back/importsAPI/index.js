@@ -103,8 +103,6 @@ module.exports = function (app) {
             if(req.query.gdawaste !=null){ busqueda.gdawaste = parseFloat(req.query.gdawaste)};
             if(req.query.gdaethylalcohol !=null){ busqueda.gdaethylalcohol = parseFloat(req.query.gdaethylalcohol)};
             
-            console.log(busqueda);
-
             db.find( busqueda, (err,imports) =>{
                 
                 if(offset != null){
@@ -112,7 +110,6 @@ module.exports = function (app) {
                 }
 
                 if(limit != null){
-                    console.log("limit"+imports);
                     imports = imports.slice(0,limit);
                 }
                 
@@ -136,7 +133,6 @@ module.exports = function (app) {
 
 
                 res.send(JSON.stringify(imports,null,2));
-                console.log("PRUEBA"+JSON.stringify(imports,null,2));
             });
         }else{
             res.sendStatus(400);
@@ -158,12 +154,19 @@ module.exports = function (app) {
             }
         }
         
-        var newContact = req.body;
+        var newImport = req.body;
+
+        var exists = true;
+        db.find({ $and: [{ country: newImport.country }, { year: newImport.year }] },function(err,doc){
+            console.log(err);
+            console.log(doc);
+            if(doc.length == 0){exists =false};
+        });
                 
-        if((newContact == "") || (newContact.country == null) || (newContact.year == null) || (valid == false) ){
+        if((newImport == "") || (newImport.country == null) || (newImport.year == null) || (valid == false) || (exists == true)){
             res.sendStatus(400,"BAD REQUEST");
         } else {
-            db.insert(newContact);	
+            db.insert(newImport);	
             res.sendStatus(201,"CREATED");
         }
     });
@@ -255,7 +258,7 @@ module.exports = function (app) {
         
         var countryParam = req.params.country;
         var yearParam = req.params.year;
-        
+        console.log(countryParam)
         db.remove({country:countryParam, year:parseInt(yearParam)},{},(err, numRemoved)=>{
             console.log(numRemoved);
             if(numRemoved >= 1){
