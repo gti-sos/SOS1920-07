@@ -37,7 +37,6 @@
 			if(imports.length < limit){up = false}
 			else{up =true};
 			console.log("Received " + imports.length + " contacts.");
-			errorMsg = "";
 		} else {
 			errorMsg = res.status + ": " + res.statusText;
             console.log("ERROR!" + errorMsg);
@@ -127,12 +126,14 @@
 
 	function offsetUp() {
 		offset = offset +limit;
+		errorMsg = "";
 		if(search == true){getsearch()}
 		else{getImports()};
 	}
 
 	function offsetDown() {
 		offset = offset -limit;
+		errorMsg = "";
 		if(search == true){getsearch()}
 		else{getImports()};
 	}
