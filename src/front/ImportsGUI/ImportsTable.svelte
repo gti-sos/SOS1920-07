@@ -168,7 +168,7 @@
 					<td><input bind:value="{newImport.gdawaste}"></td>
 					<td><input bind:value="{newImport.gdaethylalcohol}"></td>
 					<td> <Button outline  color="primary" on:click={insertImport}>Insertar</Button>
-						<Button outline  color="primary" on:click={getsearch}>Busqueda</Button>
+						<Button outline  color="success" on:click={getsearch}>Busqueda</Button>
 					</td>
 				</tr>
 
@@ -187,16 +187,16 @@
 				<tr>
 					<td style="text-align: center;" colspan="4">
 						{#if offset != 0}
-						<Button outline color="danger" on:click="{offsetDown}">&lt;</Button>
+						<Button color="secondary" on:click="{offsetDown}">&lt;</Button>
 						{/if}
 						{#if up == true}
-						<Button outline color="danger" on:click="{offsetUp}">&gt;</Button>
+						<Button color="secondary" on:click="{offsetUp}">&gt;</Button>
 						{/if}
 					</td>
 					<td style="text-align: center;" colspan="2">
-						<Button outline color="danger" on:click="{getImports}">Buscar Todo</Button>
+						<Button color="success" on:click="{getImports}">Buscar Todo</Button>
 					</td>
-					<td style="text-align: center;" colspan="2"><Button outline color="danger" on:click="{deleteAllImport}">Borrar Todo</Button></td>
+					<td style="text-align: center;" colspan="2"><Button color="danger" on:click="{deleteAllImport}">Borrar Todo</Button></td>
 				</tr>
 			</tbody>
 		</Table>
