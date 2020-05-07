@@ -13,8 +13,8 @@
 
     export let params = {};
     let fertilizer = {};
-    let updatedCountry = "XXXX";
-    let updatedYear = "XXXX";
+    let updatedCountry = params.country;
+    let updatedYear = parseInt(params.year);
     let updatedShortTonExport = 100;
     let updatedDollarExport = 100;
     let updatedShortTonImport = 100;
@@ -27,14 +27,14 @@
     async function getFertilizer() {
 
         console.log("Fetching fertilizer...");
-        const res = await fetch("/api/v1/fertilizerImportsExports/" + params.fertilizerCountry + params.fertilizerYear);
+        const res = await fetch("/api/v1/fertilizerImportsExports/" + params.country + params.year);
 
         if (res.ok) {
             console.log("Ok:");
             const json = await res.json();
             fertilizer = json;
-            updatedCountry = params.fertilizerCountry;
-            updatedYear = params.fertilizerYear;
+            updatedCountry = params.country;
+            updatedYear = params.year;
             updatedShortTonExport = fertilizer.shortTonExport;
             updatedDollarExport = fertilizer.dollarExport;
             updatedShortTonImport = fertilizer.shortTonImport;
@@ -42,7 +42,7 @@
             successfulMsg = "Datos del fertilizante recibidos."
             console.log("Received fertilizer.");
         } else {
-            errorMsg = "Error al obtener los datos.";
+            errorMsg = "Error al obtener los datos correspondientes a " + updatedCountry + " y " + updatedYear;
             console.log("ERROR!");
         }
     }
@@ -50,13 +50,13 @@
 
     async function updateFertilizer() {
 
-        console.log("Updating fertilizer..." + JSON.stringify(params.fertilizerCountry) + JSON.stringify(params.fertilizerYear));
+        console.log("Updating fertilizer..." + JSON.stringify(params.country) + JSON.stringify(params.year));
 
-        const res = await fetch("/api/v1/fertilizerImportsExports/" + params.fertilizerCountry + "/" + params.fertilizerYear, {
+        const res = await fetch("/api/v1/fertilizerImportsExports/" + params.country + "/" + params.year, {
             method: "PUT",
             body: JSON.stringify({
-                country: params.fertilizerCountry,
-                year: parseInt(params.fertilizerYear),
+                country: params.country,
+                year: parseInt(params.year),
                 shortTonExport: parseInt(updatedShortTonExport),
                 dollarExport: parseInt(updatedDollarExport),
                 shortTonImport: parseInt(updatedShortTonImport),
@@ -68,9 +68,9 @@
         }).then(function (res) {
             if(res.ok){
 				getFertilizer();
-				successfulMsg = "Los datos han sido actualizados."
+				successfulMsg = "Los datos correspondientes a " + updatedCountry + " y " + updatedYear + " han sido actualizados."
 			}else{
-				errorMsg = "Error al actualizar el dato."
+				errorMsg = "Error al actualizar el dato correspondiente a " + updatedCountry + " y " + updatedYear
 			}
         });
     }
