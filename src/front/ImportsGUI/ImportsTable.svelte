@@ -67,7 +67,7 @@
 			console.log("Received " + imports.length + " contacts.");
 			errorMsg = "";
 		} else {
-			errorMsg = res.status + ": " + res.statusText;
+			errorMsg = "Su busqueda no es válida";
             console.log("ERROR!" + errorMsg);
 		}
 	}
@@ -92,7 +92,7 @@
 		}).then(function (res) {
 			if (res.ok) {
 				getImports();
-				errorMsg = "";
+				errorMsg = "Se ha insertado el elemento Correctamente";
 			}else{
 				errorMsg = res.status + ": " + res.statusText;
 			}
@@ -105,9 +105,9 @@
 		}).then(function (res) {
 			if (res.ok) {
 				getImports();
-				errorMsg = "";
+				errorMsg = "Se ha eliminado la importación con país: "+ country+" y año: " +year ;
 			}else{
-				errorMsg = res.status + ": " + res.statusText;
+				errorMsg = "No se pudo eliminar la importación con país: "+ country+" y año: " +year ;;
 			}
 		});
 	}
