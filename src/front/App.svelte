@@ -3,6 +3,8 @@
 
 	import ImportsTable from './ImportsGUI/ImportsTable.svelte';
 	import EditImport from './ImportsGUI/EditImport.svelte';
+	import HomeImport from './ImportsGUI/Home.svelte';
+	import GraphImport from './ImportsGUI/Graph.svelte';
 
 	import NotFound from './NotFound.svelte';
 	
@@ -19,11 +21,13 @@
 	const routes = {
 		"/": Home,
 		"/import/:country/:year": EditImport,
-		"/import":ImportsTable,
+		"/import-table":ImportsTable,
+		"/imports-graph": GraphImport,
+		"/imports": HomeImport,
 		"/foodsImports": FoodImportsTable,
 		"/foodsImports/:foodsName/:foodsYear":EditFoodsImports,
 		"/foodsImports/SearchFoodsImport/":SearchFoodsImport,
-		"/importsgui": GUIIMPORTS,
+		
 		"/fertilizerImportsExports": FertilizersTable,
 		"/fertilizerImportsExports/:country/:year":EditFertilizer,
 		"*": NotFound
