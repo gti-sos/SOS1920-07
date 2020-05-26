@@ -10,8 +10,15 @@
     let params = "total";
     
     let selectCountry = [
-        { id : 1, text: "canada" },
-        { id : 2, text: "total" }
+        { id : 1, text: "total" },
+        { id : 2, text: "canada" },
+        { id : 3, text: "european-union-27" },
+        { id : 4, text: "china" },
+        { id : 5, text: "argentina" },
+        { id : 6, text: "mexico" },
+        { id : 7, text: "south-korea" },
+        { id : 9, text: "brazil" }
+        
 	];
 
 	let selected ;
