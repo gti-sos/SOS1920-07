@@ -4,9 +4,16 @@ const path = require("path");
 
 const importsAPI = require(path.join(__dirname,"./src/back/importsAPI"));
 const foodsImports = require(path.join(__dirname,"./src/back/foodsImports"));
-var app = express();
 const fertilizerImportsExportsAPI = require(path.join(__dirname,"./src/back/fertilizerImportsExportsAPI"));
 const port = process.env.PORT || 9999;
+
+var app = express();
+
+app.all('/', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next()
+  });
 
 app.use(bodyParser.json());
 
