@@ -192,7 +192,6 @@ async function CargaGrafica(){
 
 
 <main>
-<Button outline size="lg" color="primary" onclick="location.href='/#/foodsImports';">Inicio</Button>
     <figure class="highcharts-figure">
         <div id="container"></div>
         <p class="highcharts-description">

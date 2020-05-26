@@ -2760,7 +2760,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (1:0) <script>   import {    onMount   }
+    // (1:0) <script>  import {   onMount  }
     function create_catch_block(ctx) {
     	const block = {
     		c: noop,
@@ -2775,7 +2775,7 @@ var app = (function () {
     		block,
     		id: create_catch_block.name,
     		type: "catch",
-    		source: "(1:0) <script>   import {    onMount   }",
+    		source: "(1:0) <script>  import {   onMount  }",
     		ctx
     	});
 
@@ -2996,16 +2996,16 @@ var app = (function () {
     			td7 = element("td");
     			create_component(button.$$.fragment);
     			attr_dev(a, "href", a_href_value = "#/import/" + /*imported*/ ctx[22].country + "/" + /*imported*/ ctx[22].year);
-    			add_location(a, file$2, 185, 10, 5061);
-    			add_location(td0, file$2, 185, 6, 5057);
-    			add_location(td1, file$2, 186, 6, 5150);
-    			add_location(td2, file$2, 187, 6, 5182);
-    			add_location(td3, file$2, 188, 6, 5217);
-    			add_location(td4, file$2, 189, 6, 5254);
-    			add_location(td5, file$2, 190, 6, 5288);
-    			add_location(td6, file$2, 191, 6, 5324);
-    			add_location(td7, file$2, 192, 6, 5367);
-    			add_location(tr, file$2, 184, 5, 5045);
+    			add_location(a, file$2, 185, 10, 4876);
+    			add_location(td0, file$2, 185, 6, 4872);
+    			add_location(td1, file$2, 186, 6, 4964);
+    			add_location(td2, file$2, 187, 6, 4995);
+    			add_location(td3, file$2, 188, 6, 5029);
+    			add_location(td4, file$2, 189, 6, 5065);
+    			add_location(td5, file$2, 190, 6, 5098);
+    			add_location(td6, file$2, 191, 6, 5133);
+    			add_location(td7, file$2, 192, 6, 5175);
+    			add_location(tr, file$2, 184, 5, 4861);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -3495,43 +3495,43 @@ var app = (function () {
     			t28 = space();
     			td10 = element("td");
     			create_component(button3.$$.fragment);
-    			add_location(th0, file$2, 159, 5, 4203);
-    			add_location(th1, file$2, 160, 5, 4223);
-    			add_location(th2, file$2, 161, 5, 4242);
-    			add_location(th3, file$2, 162, 5, 4263);
-    			add_location(th4, file$2, 163, 5, 4285);
-    			add_location(th5, file$2, 164, 5, 4306);
-    			add_location(th6, file$2, 165, 5, 4330);
-    			add_location(th7, file$2, 166, 5, 4353);
-    			add_location(tr0, file$2, 158, 4, 4192);
-    			add_location(thead, file$2, 157, 3, 4179);
-    			add_location(input0, file$2, 171, 9, 4427);
-    			add_location(td0, file$2, 171, 5, 4423);
-    			add_location(input1, file$2, 172, 9, 4483);
-    			add_location(td1, file$2, 172, 5, 4479);
-    			add_location(input2, file$2, 173, 9, 4536);
-    			add_location(td2, file$2, 173, 5, 4532);
-    			add_location(input3, file$2, 174, 9, 4592);
-    			add_location(td3, file$2, 174, 5, 4588);
-    			add_location(input4, file$2, 175, 9, 4650);
-    			add_location(td4, file$2, 175, 5, 4646);
-    			add_location(input5, file$2, 176, 9, 4705);
-    			add_location(td5, file$2, 176, 5, 4701);
-    			add_location(input6, file$2, 177, 9, 4762);
-    			add_location(td6, file$2, 177, 5, 4758);
-    			add_location(td7, file$2, 178, 5, 4822);
-    			add_location(tr1, file$2, 170, 4, 4412);
+    			add_location(th0, file$2, 159, 5, 4044);
+    			add_location(th1, file$2, 160, 5, 4063);
+    			add_location(th2, file$2, 161, 5, 4081);
+    			add_location(th3, file$2, 162, 5, 4101);
+    			add_location(th4, file$2, 163, 5, 4122);
+    			add_location(th5, file$2, 164, 5, 4142);
+    			add_location(th6, file$2, 165, 5, 4165);
+    			add_location(th7, file$2, 166, 5, 4187);
+    			add_location(tr0, file$2, 158, 4, 4034);
+    			add_location(thead, file$2, 157, 3, 4022);
+    			add_location(input0, file$2, 171, 9, 4256);
+    			add_location(td0, file$2, 171, 5, 4252);
+    			add_location(input1, file$2, 172, 9, 4311);
+    			add_location(td1, file$2, 172, 5, 4307);
+    			add_location(input2, file$2, 173, 9, 4363);
+    			add_location(td2, file$2, 173, 5, 4359);
+    			add_location(input3, file$2, 174, 9, 4418);
+    			add_location(td3, file$2, 174, 5, 4414);
+    			add_location(input4, file$2, 175, 9, 4475);
+    			add_location(td4, file$2, 175, 5, 4471);
+    			add_location(input5, file$2, 176, 9, 4529);
+    			add_location(td5, file$2, 176, 5, 4525);
+    			add_location(input6, file$2, 177, 9, 4585);
+    			add_location(td6, file$2, 177, 5, 4581);
+    			add_location(td7, file$2, 178, 5, 4644);
+    			add_location(tr1, file$2, 170, 4, 4242);
     			set_style(td8, "text-align", "center");
     			attr_dev(td8, "colspan", "4");
-    			add_location(td8, file$2, 196, 5, 5522);
+    			add_location(td8, file$2, 196, 5, 5326);
     			set_style(td9, "text-align", "center");
     			attr_dev(td9, "colspan", "2");
-    			add_location(td9, file$2, 204, 5, 5800);
+    			add_location(td9, file$2, 204, 5, 5596);
     			set_style(td10, "text-align", "center");
     			attr_dev(td10, "colspan", "2");
-    			add_location(td10, file$2, 207, 5, 5939);
-    			add_location(tr2, file$2, 195, 4, 5511);
-    			add_location(tbody, file$2, 169, 3, 4399);
+    			add_location(td10, file$2, 207, 5, 5732);
+    			add_location(tr2, file$2, 195, 4, 5316);
+    			add_location(tbody, file$2, 169, 3, 4230);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, thead, anchor);
@@ -3806,7 +3806,7 @@ var app = (function () {
     	return block;
     }
 
-    // (154:17)     Loading imports...   {:then imports}
+    // (154:17)    Loading imports...  {:then imports}
     function create_pending_block(ctx) {
     	let t;
 
@@ -3829,7 +3829,7 @@ var app = (function () {
     		block,
     		id: create_pending_block.name,
     		type: "pending",
-    		source: "(154:17)     Loading imports...   {:then imports}",
+    		source: "(154:17)    Loading imports...  {:then imports}",
     		ctx
     	});
 
@@ -3846,7 +3846,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*errorMsg*/ ctx[3]);
     			set_style(p, "color", "red");
-    			add_location(p, file$2, 213, 1, 6127);
+    			add_location(p, file$2, 213, 1, 5914);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3881,7 +3881,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*correctMsg*/ ctx[4]);
     			set_style(p, "color", "green");
-    			add_location(p, file$2, 216, 1, 6193);
+    			add_location(p, file$2, 216, 1, 5977);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -3936,7 +3936,7 @@ var app = (function () {
     			if (if_block0) if_block0.c();
     			t1 = space();
     			if (if_block1) if_block1.c();
-    			add_location(main, file$2, 151, 0, 4087);
+    			add_location(main, file$2, 151, 0, 3936);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6232,107 +6232,12 @@ var app = (function () {
     	let t12;
     	let t13;
     	let td7;
-    	let t24;
-    	let t25;
-    	let tr2;
-    	let td8;
-    	let t26;
-    	let td9;
-    	let t27;
-    	let current_block_type_index;
-    	let if_block;
-    	let t28;
-    	let td10;
-    	let t29;
-    	let td11;
-    	let t30;
-    	let td12;
-    	let current;
-    	let dispose;
-
-    	const button0 = new Button({
-    			props: {
-    				outline: true,
-    				color: "primary",
-    				$$slots: { default: [create_default_slot_10] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	button0.$on("click", /*insertFoodsImports_aux*/ ctx[13]);
-    	let each_value = /*foodsImports*/ ctx[10];
-    	validate_each_argument(each_value);
-    	let each_blocks = [];
-
-    	for (let i = 0; i < each_value.length; i += 1) {
-    		each_blocks[i] = create_each_block$1(get_each_context$1(ctx, each_value, i));
-    	}
-
-    	const out = i => transition_out(each_blocks[i], 1, 1, () => {
-    		each_blocks[i] = null;
-    	});
-
-    	const button1 = new Button({
-    			props: {
-    				onclick: "location.href='/#/foodsImports/SearchFoodsImport/';",
-    				type: "submit",
-    				color: "info",
-    				size: "lg",
-    				$$slots: { default: [create_default_slot_8] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const button2 = new Button({
-    			props: {
-    				onclick: "location.href='/#/foodsImports/MiGrafica/';",
-    				type: "submit",
-    				color: "info",
-    				size: "lg",
-    				$$slots: { default: [create_default_slot_7$1] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const if_block_creators = [create_if_block_2$2, create_else_block$3];
-    	const if_blocks = [];
     	let current;
 
     	function click_handler_1(...args) {
     		return /*click_handler_1*/ ctx[29](/*food*/ ctx[34], ...args);
     	}
 
-    	current_block_type_index = select_block_type(ctx);
-    	if_block = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
-
-    	const button3 = new Button({
-    			props: {
-    				onclick: "location.href='/#/foodsImports/MiGrafica2/';",
-    				type: "submit",
-    				color: "info",
-    				size: "lg",
-    				$$slots: { default: [create_default_slot_5$1] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const button4 = new Button({
-    			props: {
-    				onclick: "location.href='/#/foodsImports/Integraciones/';",
-    				type: "submit",
-    				color: "info",
-    				size: "lg",
-    				$$slots: { default: [create_default_slot_4$1] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
-    	const button5 = new Button({
     	const button = new Button({
     			props: {
     				outline: true,
@@ -6343,7 +6248,6 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	button5.$on("click", /*click_handler_3*/ ctx[31]);
     	button.$on("click", click_handler_1);
 
     	const block = {
@@ -12522,18 +12426,6 @@ var app = (function () {
     	let promise;
     	let current;
 
-    	const button = new Button({
-    			props: {
-    				outline: true,
-    				size: "lg",
-    				color: "primary",
-    				onclick: "location.href='/#/foodsImports';",
-    				$$slots: { default: [create_default_slot_2$3] },
-    				$$scope: { ctx }
-    			},
-    			$$inline: true
-    		});
-
     	let info = {
     		ctx,
     		current: null,
@@ -12610,13 +12502,10 @@ var app = (function () {
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(button.$$.fragment, local);
     			transition_in(info.block);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(button.$$.fragment, local);
-
     			for (let i = 0; i < 3; i += 1) {
     				const block = info.blocks[i];
     				transition_out(block);
@@ -12631,7 +12520,6 @@ var app = (function () {
     			detach_dev(script3);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
-    			destroy_component(button);
     			info.block.d();
     			info.token = null;
     			info = null;
@@ -12964,13 +12852,6 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (109:4) <Button outline size="lg" color="primary" onclick="location.href='/#/foodsImports';">
-    function create_default_slot_5$2(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Inicio");
     // (1:0) <script>   import {    onMount   }
     function create_catch_block$6(ctx) {
     	const block = {
@@ -13276,9 +13157,6 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$2.name,
-    		type: "slot",
-    		source: "(109:4) <Button outline size=\\\"lg\\\" color=\\\"primary\\\" onclick=\\\"location.href='/#/foodsImports';\\\">",
     		id: create_each_block$5.name,
     		type: "each",
     		source: "(186:4) {#each fertilizers as fertilizer}",
@@ -13288,35 +13166,6 @@ var app = (function () {
     	return block;
     }
 
-    // (126:20) <Button outline color="primary" on:click={getFoodsImport_aux1} >
-    function create_default_slot_4$2(ctx) {
-    	let t;
-
-    	const block = {
-    		c: function create() {
-    			t = text("Buscar");
-    		},
-    		m: function mount(target, anchor) {
-    			insert_dev(target, t, anchor);
-    		},
-    		d: function destroy(detaching) {
-    			if (detaching) detach_dev(t);
-    		}
-    	};
-
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_default_slot_4$2.name,
-    		type: "slot",
-    		source: "(126:20) <Button outline color=\\\"primary\\\" on:click={getFoodsImport_aux1} >",
-    		ctx
-    	});
-
-    	return block;
-    }
-
-    // (113:4) <Table bordered>
-    function create_default_slot_3$2(ctx) {
     // (162:2) <Table bordered>
     function create_default_slot_4$3(ctx) {
     	let thead;
@@ -13430,22 +13279,6 @@ var app = (function () {
     			input1 = element("input");
     			t15 = space();
     			td2 = element("td");
-    			create_component(button.$$.fragment);
-    			attr_dev(th0, "colspan", "4");
-    			add_location(th0, file$7, 115, 16, 4128);
-    			attr_dev(th1, "colspan", "4");
-    			add_location(th1, file$7, 116, 16, 4171);
-    			add_location(tr0, file$7, 114, 12, 4106);
-    			add_location(thead, file$7, 113, 8, 4085);
-    			add_location(input0, file$7, 123, 32, 4321);
-    			attr_dev(td0, "colspan", "4");
-    			add_location(td0, file$7, 123, 16, 4305);
-    			add_location(input1, file$7, 124, 32, 4390);
-    			attr_dev(td1, "colspan", "4");
-    			add_location(td1, file$7, 124, 16, 4374);
-    			add_location(td2, file$7, 125, 16, 4443);
-    			add_location(tr1, file$7, 122, 12, 4283);
-    			add_location(tbody, file$7, 120, 8, 4260);
     			input2 = element("input");
     			t16 = space();
     			td3 = element("td");
@@ -14326,13 +14159,6 @@ var app = (function () {
     		if ("offset" in $$props) offset = $$props.offset;
     	};
 
-    	dispatch_dev("SvelteRegisterBlock", {
-    		block,
-    		id: create_then_block$4.name,
-    		type: "then",
-    		source: "(157:20) {:then foodsImports}",
-    		ctx
-    	});
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
@@ -14361,9 +14187,6 @@ var app = (function () {
     	];
     }
 
-    // (167:36) <Button outline color="danger" on:click={() => deleteFoodsImports(food.Name,food.Year)}>
-    function create_default_slot_1$4(ctx) {
-    	let t;
     class FertilizersTable extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
@@ -14396,9 +14219,6 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$4.name,
-    		type: "slot",
-    		source: "(167:36) <Button outline color=\\\"danger\\\" on:click={() => deleteFoodsImports(food.Name,food.Year)}>",
     		id: create_catch_block$7.name,
     		type: "catch",
     		source: "(1:0) <script>      import {          onMount      }",
@@ -14408,41 +14228,6 @@ var app = (function () {
     	return block;
     }
 
-    // (158:24) {#each foodsImports as food}
-    function create_each_block$2(ctx) {
-    	let tr;
-    	let td0;
-    	let a;
-    	let t0_value = /*food*/ ctx[23].name + "";
-    	let t0;
-    	let a_href_value;
-    	let t1;
-    	let td1;
-    	let t2_value = /*food*/ ctx[23].year + "";
-    	let t2;
-    	let t3;
-    	let td2;
-    	let t4_value = /*food*/ ctx[23].TVegANDPrep + "";
-    	let t4;
-    	let t5;
-    	let td3;
-    	let t6_value = /*food*/ ctx[23].fruitJuice + "";
-    	let t6;
-    	let t7;
-    	let td4;
-    	let t8_value = /*food*/ ctx[23].TSweANDCndy + "";
-    	let t8;
-    	let t9;
-    	let td5;
-    	let t10_value = /*food*/ ctx[23].TLiveAnimal + "";
-    	let t10;
-    	let t11;
-    	let td6;
-    	let t12_value = /*food*/ ctx[23].FishFilletANDMince + "";
-    	let t12;
-    	let t13;
-    	let td7;
-    	let t14;
     // (84:4) {:then fertilizer}
     function create_then_block$7(ctx) {
     	let current;
@@ -14458,43 +14243,6 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			tr = element("tr");
-    			td0 = element("td");
-    			a = element("a");
-    			t0 = text(t0_value);
-    			t1 = space();
-    			td1 = element("td");
-    			t2 = text(t2_value);
-    			t3 = space();
-    			td2 = element("td");
-    			t4 = text(t4_value);
-    			t5 = space();
-    			td3 = element("td");
-    			t6 = text(t6_value);
-    			t7 = space();
-    			td4 = element("td");
-    			t8 = text(t8_value);
-    			t9 = space();
-    			td5 = element("td");
-    			t10 = text(t10_value);
-    			t11 = space();
-    			td6 = element("td");
-    			t12 = text(t12_value);
-    			t13 = space();
-    			td7 = element("td");
-    			create_component(button.$$.fragment);
-    			t14 = space();
-    			attr_dev(a, "href", a_href_value = "#/foodsImports/" + /*food*/ ctx[23].name + "/" + /*food*/ ctx[23].year);
-    			add_location(a, file$7, 159, 36, 5558);
-    			add_location(td0, file$7, 159, 32, 5554);
-    			add_location(td1, file$7, 160, 32, 5661);
-    			add_location(td2, file$7, 161, 32, 5715);
-    			add_location(td3, file$7, 162, 32, 5776);
-    			add_location(td4, file$7, 163, 32, 5836);
-    			add_location(td5, file$7, 164, 32, 5897);
-    			add_location(td6, file$7, 165, 32, 5958);
-    			add_location(td7, file$7, 166, 32, 6026);
-    			add_location(tr, file$7, 158, 28, 5516);
     			create_component(table.$$.fragment);
     		},
     		m: function mount(target, anchor) {
@@ -14526,9 +14274,6 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_each_block$2.name,
-    		type: "each",
-    		source: "(158:24) {#each foodsImports as food}",
     		id: create_then_block$7.name,
     		type: "then",
     		source: "(84:4) {:then fertilizer}",
@@ -14538,8 +14283,6 @@ var app = (function () {
     	return block;
     }
 
-    // (156:41)                       {:then foodsImports}
-    function create_pending_block$4(ctx) {
     // (105:25) <Button outline  color="primary" on:click={updateFertilizer}>
     function create_default_slot_2$7(ctx) {
     	let t;
@@ -15274,13 +15017,7 @@ var app = (function () {
     	}
     }
 
-    /* node_modules\sveltestrap\src\CustomInput.svelte generated by Svelte v3.22.2 */
-    const file$8 = "node_modules\\sveltestrap\\src\\CustomInput.svelte";
-
-    // (106:0) {:else}
-    function create_else_block$5(ctx) {
-    	let input;
-    	let dispose;
+    /* src\front\Home.svelte generated by Svelte v3.22.2 */
 
     const file$g = "src\\front\\Home.svelte";
 
@@ -15308,16 +15045,8 @@ var app = (function () {
     			attr_dev(a2, "href", "#/fertilizerImportsExports");
     			add_location(a2, file$g, 4, 0, 110);
     		},
-    		m: function mount(target, anchor, remount) {
-    			insert_dev(target, input, anchor);
-    			if (remount) run_all(dispose);
-
-    			dispose = [
-    				listen_dev(input, "blur", /*blur_handler_2*/ ctx[34], false, false, false),
-    				listen_dev(input, "focus", /*focus_handler_2*/ ctx[35], false, false, false),
-    				listen_dev(input, "change", /*change_handler_2*/ ctx[36], false, false, false),
-    				listen_dev(input, "input", /*input_handler_2*/ ctx[37], false, false, false)
-    			];
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a0, anchor);
@@ -15326,6 +15055,7 @@ var app = (function () {
     			insert_dev(target, t3, anchor);
     			insert_dev(target, a2, anchor);
     		},
+    		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
@@ -15383,11 +15113,10 @@ var app = (function () {
     	let t1;
     	let current;
 
-    			if (default_slot) {
-    				if (default_slot.p && dirty[0] & /*$$scope*/ 16777216) {
-    					default_slot.p(get_slot_context(default_slot_template, ctx, /*$$scope*/ ctx[24], null), get_slot_changes(default_slot_template, /*$$scope*/ ctx[24], dirty, null));
-    				}
-    			}
+    	const router = new Router({
+    			props: { routes: /*routes*/ ctx[0] },
+    			$$inline: true
+    		});
 
     	const block = {
     		c: function create() {
@@ -15410,18 +15139,19 @@ var app = (function () {
     			mount_component(router, main, null);
     			current = true;
     		},
+    		p: noop,
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(default_slot, local);
+    			transition_in(router.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(default_slot, local);
+    			transition_out(router.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
-    			if (default_slot) default_slot.d(detaching);
+    			if (detaching) detach_dev(main);
+    			destroy_component(router);
     		}
     	};
 
