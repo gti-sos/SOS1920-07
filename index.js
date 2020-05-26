@@ -1,13 +1,17 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require('cors')
 const path = require("path");
 
 
 const importsAPI = require(path.join(__dirname,"./src/back/importsAPI"));
 const foodsImports = require(path.join(__dirname,"./src/back/foodsImports"));
-var app = express();
 const fertilizerImportsExportsAPI = require(path.join(__dirname,"./src/back/fertilizerImportsExportsAPI"));
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 9999;
+
+var app = express();
+
+app.use(cors());
 
 app.use(bodyParser.json());
 

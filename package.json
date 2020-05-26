@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "test": "newman run tests/importsTest.json",
     "start": "node index"
   },
   "devDependencies": {
@@ -23,8 +24,10 @@
     "@amcharts/amcharts4": "^4.9.23",
     "billboard.js": "^1.12.0-next.5",
     "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "nedb": "^1.8.0",
+    "newman": "^5.0.1",
     "svelte-spa-router": "^2.1.0",
     "sveltestrap": "^3.3.3"
   }

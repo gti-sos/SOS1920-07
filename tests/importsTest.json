@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "4c2b1fb0-d06a-49d5-8686-9c6055f915af",
+		"name": "SOS1920-07-imports V2",
+		"description": "GET a la ruta base (p.e. “/towns”) devuelve una lista con todos los recursos\r\nPOST a la ruta base (p.e. “/towns”) crea un nuevo recurso\r\nGET a un recurso (p.e. “/towns/seville”) devuelve ese recurso \r\nDELETE a un recurso (p.e. “/towns/seville”) borra ese recurso\r\nPUT a un recurso (p.e. “/towns/seville”) actualiza ese recurso \r\nPOST a un recurso (p.e. “/towns/seville”) debe dar un error de método no permitido.\r\nPUT a la ruta base (p.e. “/towns”) debe dar un error de método no permitido.\r\nDELETE a la ruta base (p.e. “/towns”) borra todos los recursos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get loadInit",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e0271baf-9a00-44f5-9817-a7f61d35e59e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports/loadInitialData",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get imports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "adad8595-3410-412d-99bd-638d5bfc06de",
+						"exec": [
+							"pm.test(\"There are more than 1 imports\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData).to.have.lengthOf.above(1);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "year,country,gdamalt",
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2000",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "canada",
+							"disabled": true
+						},
+						{
+							"key": "gdamalt",
+							"value": "584620",
+							"disabled": true
+						},
+						{
+							"key": "pruen",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "gdaethylalcohol",
+							"value": "18233.24",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get imports search",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "58b225cc-bda8-4a24-9a10-70fd6341acff",
+						"exec": [
+							"pm.test(\"There are more than 0 imports\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData).to.have.lengthOf.above(0);",
+							"});",
+							"",
+							"pm.test(\"Json have property year\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData[0]).to.have.property('year');",
+							"});",
+							"pm.test(\"Json not have property gdaoat\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData[0]).to.not.have.property('gdaoat');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports?fields=year,country,gdamalt&year=2000&country=canada&gdamalt=584620&gdabarley=50979&gdaoat=1466303&gdaethylalcohol=99284&gdawaste=26325",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "year,country,gdamalt"
+						},
+						{
+							"key": "year",
+							"value": "2000"
+						},
+						{
+							"key": "country",
+							"value": "canada"
+						},
+						{
+							"key": "gdamalt",
+							"value": "584620"
+						},
+						{
+							"key": "gdabarley",
+							"value": "50979"
+						},
+						{
+							"key": "gdaoat",
+							"value": "1466303"
+						},
+						{
+							"key": "gdaethylalcohol",
+							"value": "99284"
+						},
+						{
+							"key": "gdawaste",
+							"value": "26325"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get imports pagination",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7dddbaab-a690-40d0-91e3-352a49b07321",
+						"exec": [
+							"pm.test(\"There are exactly 2 imports\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData).to.have.lengthOf(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports?offset=1&limit=2",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "year,country,gdamalt",
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						},
+						{
+							"key": "year",
+							"value": "2000",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "canada",
+							"disabled": true
+						},
+						{
+							"key": "gdamalt",
+							"value": "584620",
+							"disabled": true
+						},
+						{
+							"key": "pruen",
+							"value": "5",
+							"disabled": true
+						},
+						{
+							"key": "gdaethylalcohol",
+							"value": "18233.24",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post imports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e9935a1d-87b3-4ce2-8f01-08c805b32fb5",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\t\"country\": \"canada\",\r\n        \"year\": 2021,\r\n        \"gdamalt\": 317164,\r\n        \"gdabarley\":41789,\r\n        \"gdaoat\":842972,\r\n        \"gdawaste\": 32931,\r\n        \"gdaethylalcohol\":79943 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post imports eror",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "195a6989-fd86-4f2f-8593-64f34a148472",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"country\": \"european-union-27\",\r\n\t\"year\": 2001,\r\n\t\"gdamalt\": 581.02,\r\n\t\"gdabarley\":24803,\r\n\t\"gdat\":360042463,\r\n\t\"gdawaste\": 651417,\r\n\t\"gdaethylalcohol\":18233.24 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get imports recurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "324672eb-1469-4b94-991c-6b7bef4646c5",
+						"exec": [
+							"",
+							"pm.test(\"There are 1 imports\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData).to.have.property('country');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports",
+						"canada",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete imports recurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d955ed27-21fb-4cc7-a0ee-5d1035949c01",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports/european-union-27/2000",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports",
+						"european-union-27",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put imports recurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49ce6815-9270-425a-9dff-f10ab038d4a2",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"country\": \"canada\",\r\n\t\"year\": 2000,\r\n\t\"gdamalt\": 0,\r\n\t\"gdabarley\":50979,\r\n\t\"gdaoat\":1466303,\r\n\t\"gdawaste\": 26325,\r\n\t\"gdaethylalcohol\":99284 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports",
+						"canada",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put imports recurso error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "153f057f-0d67-470c-a1f2-c6574f7f4aa7",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {",
+							"    pm.response.to.have.status(400);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"country\": \"canada\",\r\n\t\"year\": 2000,\r\n\t\"gdamalt\": 0,\r\n\t\"gdabarley\":50979,\r\n\t\"gdat\":1466303,\r\n\t\"gdawaste\": 26325,\r\n\t\"gdaethylalcohol\":99284 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports",
+						"canada",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post imports recurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f00c2857-bb92-482b-af44-d3e9ae697a01",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"country\": \"canada\",\r\n\t\"year\": 2000,\r\n\t\"gdamalt\": 0,\r\n\t\"gdabarley\":50979,\r\n\t\"gdaoat\":1466303,\r\n\t\"gdawaste\": 26325,\r\n\t\"gdaethylalcohol\":99284 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports",
+						"canada",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put imports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8c927666-2ffb-464f-bfeb-c73b70ab4a50",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\"country\": \"european-union-27\",\r\n\t\"year\": 2000,\r\n\t\"gdamalt\": 581.02,\r\n\t\"gdabarley\":24803,\r\n\t\"gdaoat\":360042463,\r\n\t\"gdawaste\": 651417,\r\n\t\"gdaethylalcohol\":18233.24 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete imports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3223fda9-34b5-44d3-bbd4-f47c0bf78600",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/imports",
+					"host": [
+						"http://localhost:9999"
+					],
+					"path": [
+						"api",
+						"v2",
+						"imports"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
