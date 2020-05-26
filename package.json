@@ -16,11 +16,12 @@
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.22.2"
+    "svelte": "^3.22.3"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "billboard.js": "^1.12.10",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
