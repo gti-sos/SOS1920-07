@@ -5,15 +5,18 @@
     
     
 
-    
+    //Paginación
     let offset=0;
     let limit=10;
     let offset_aux=0;
+    //Se ha borrado todo?
     let borrado=false;
+    //Se acaba de crear todo
     let creado=false;
     let borrado_reg=false;
 
     let foodsImports = [];
+    //Insetar
     let newfoodsImports={
         name:"",
         year:"",
@@ -25,7 +28,9 @@
 
     };
     let lenfoodsImports= 10;
+    //No puede estar vacío
     let errNotEmpty=false;
+    //Insertado repetido
     let errRepe=false;
     
 
@@ -37,7 +42,7 @@
         let foodsImports_aux= json_aux;
         lenfoodsImports=foodsImports_aux.length;
     }
-
+    //Cargamos datos iniciales
     async function loadInitialFoodsImports(){
         borrado=false;
         const res_aux= await fetch("/api/v2/foodsImports/loadInitialData");
@@ -59,6 +64,7 @@
         FishFilletANDMince:""
 
     };
+        //Inicializamos el valor longitud de datos para mostrar más o menos elementos
         initFoods();
         if(off==undefined){
             offset=0;
@@ -237,8 +243,9 @@
                 <td colspan="2"></td>
                 {/if}
 
-                <td colspan="1"></td>
-                <td style="text-align: center;" colspan="2" > <Button color="danger" size="lg" on:click={() => deleteAllFoodsImports()}>Borrar Todo</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica2/';" type="submit" color="info" size="lg">Grafica Billboard</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/Integraciones/';" type="submit" color="info" size="lg">Integraciones</Button></td>
+                <td style="text-align: center;" colspan="1" > <Button color="danger" size="lg" on:click={() => deleteAllFoodsImports()}>Borrar Todo</Button></td>
             </tr>
         </tbody>
     </Table>
