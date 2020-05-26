@@ -29,9 +29,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v2/imports/loadInitialData",
+					"raw": "http://localhost:9999/api/v2/imports/loadInitialData",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -64,9 +64,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v2/imports",
+					"raw": "http://localhost:9999/api/v2/imports",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -149,9 +149,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v2/imports?fields=year,country,gdamalt&year=2000&country=canada&gdamalt=584620&gdabarley=50979&gdaoat=1466303&gdaethylalcohol=99284&gdawaste=26325",
+					"raw": "http://localhost:9999/api/v2/imports?fields=year,country,gdamalt&year=2000&country=canada&gdamalt=584620&gdabarley=50979&gdaoat=1466303&gdaethylalcohol=99284&gdawaste=26325",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -217,9 +217,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v2/imports?offset=1&limit=2",
+					"raw": "http://localhost:9999/api/v2/imports?offset=1&limit=2",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -299,9 +299,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports",
+					"raw": "http://localhost:9999/api/v2/imports",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -341,9 +341,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports",
+					"raw": "http://localhost:9999/api/v2/imports",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -376,9 +376,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v2/imports/canada/2000",
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -420,9 +420,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports/european-union-27/2000",
+					"raw": "http://localhost:9999/api/v2/imports/european-union-27/2000",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -464,9 +464,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports/canada/2000",
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -508,9 +508,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports/canada/2000",
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -552,9 +552,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports/canada/2000",
+					"raw": "http://localhost:9999/api/v2/imports/canada/2000",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -596,9 +596,9 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost/api/v2/imports",
+					"raw": "http://localhost:9999/api/v2/imports",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
@@ -629,9 +629,9 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost/api/v2/imports",
+					"raw": "http://localhost:9999/api/v2/imports",
 					"host": [
-						"http://localhost"
+						"http://localhost:9999"
 					],
 					"path": [
 						"api",
