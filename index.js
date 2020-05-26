@@ -6,7 +6,7 @@ const importsAPI = require(path.join(__dirname,"./src/back/importsAPI"));
 const foodsImports = require(path.join(__dirname,"./src/back/foodsImports"));
 var app = express();
 const fertilizerImportsExportsAPI = require(path.join(__dirname,"./src/back/fertilizerImportsExportsAPI"));
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 9999;
 
 app.use(bodyParser.json());
 
