@@ -1,0 +1,655 @@
+{
+	"info": {
+		"_postman_id": "4d34b082-65cc-4ef7-8bda-ffbaa13fd0c0",
+		"name": "sos1920-D02-07-juamormar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InitialLoad",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e815d7cb-0616-41b1-8ea8-265fc957a8d8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/loadInitialData",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c705c4b9-b2de-4ff1-b6df-afdf2e204faf",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"CANADA\",\r\n\"year\": \"2001\",\r\n\"TVegANDPrep\": 97.4,\r\n\"fruitJuice\": 39.3,\r\n\"TSweANDCndy\": 61.1,\r\n\"TLiveAnimal\": 1228.1,\r\n\"FishFilletANDMince\": 255.2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecurso Id Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "10169658-06e8-4c53-92d8-c1035c22c390",
+						"exec": [
+							"pm.test(\"Successful BAD POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([400]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"CANADA\",\r\n\"year\": \"2001\",\r\n\"TVegANDPrep\": 97.4,\r\n\"fruitJuice\": 39.3,\r\n\"TSweANDCndy\": 61.1,\r\n\"TLiveAnimal\": 1228.1,\r\n\"FishFilletANDMince\": 255.2,\r\n\"_id\":\"a1231aa3432d\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostRecurso Wrong JSON",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "107a223c-35b6-4a13-ba48-7f5133d0e398",
+						"exec": [
+							"pm.test(\"Successful BAD POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([400]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"CANADA\",\r\n\"year\": \"2001\",\r\n\"TVegANDPrep\": 97.4,\r\n\"fruitJuice\": 39.3,\r\n\"TSweANDCndy\": 61.1,\r\n\"TLiveAnimal\": 1228.1,\r\n\"FishFilletANDMince\": 255.2,\r\n\"_id\":\"a1231aa3432d\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutRecursoConcreto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7f48922a-c7a4-4e5a-85d3-d5497b45117e",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\": \"CANADA\",\r\n\"year\": \"2001\",\r\n\"TVegANDPrep\": 0,\r\n\"fruitJuice\": 0,\r\n\"TSweANDCndy\": 0,\r\n\"TLiveAnimal\": 0,\r\n\"FishFilletANDMince\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/CANADA/2001",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"CANADA",
+						"2001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecursoConcreto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6abf6206-106d-447c-80a9-8fa505000b38",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/CANADA/2001",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"CANADA",
+						"2001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecursoPais",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ceb33508-4369-4a97-a2e8-6633ffef056b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/CANADA",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"CANADA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecursoAño",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d37fc916-89df-48c7-be8f-90d804bd8a8b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/2001",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"2001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecursoConcreto(F04)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2007a0a2-51cd-40b0-85c9-9b5a3dfac1ce",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports?name=CANADA&year=2000",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "CANADA"
+						},
+						{
+							"key": "year",
+							"value": "2000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GerRecursosPaginación(F04)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6d398e97-973b-44d2-9c33-9aadd20a070e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports?offset=2&limit=1",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecursoConcreto",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0e2e96b9-5186-4755-be57-e3f0836966d8",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/CANADA/2001",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"CANADA",
+						"2001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRecursos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "887e2080-5807-480a-8c72-cb0987bc7832",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "CHINA",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2000",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRecurso",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c6f5890-d0be-4cad-88bb-a2c25724e354",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InitialLoad Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "220d5477-c267-4d31-8c5f-38b3073f6503",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/loadInitialData",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ILEGAL POST",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9954221b-5e58-4799-b352-0ecce30c39ac",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"CANADA\",\r\n\"year\": 2001,\r\n\"TVegANDPrep\": 97.4,\r\n\"fruitJuice\": 39.3,\r\n\"TSweANDCndy\": 61.1,\r\n\"TLiveAnimal\": 1228.1,\r\n\"FishFilletANDMince\": 255.2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports/CANADA/2000",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports",
+						"CANADA",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ILEGAL PUT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "768f50fc-81b0-433f-a238-0042af356b26",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n\"name\": \"CANADA\",\r\n\"year\": 2001,\r\n\"TVegANDPrep\": 97.4,\r\n\"fruitJuice\": 39.3,\r\n\"TSweANDCndy\": 61.1,\r\n\"TLiveAnimal\": 1228.1,\r\n\"FishFilletANDMince\": 255.2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET TEST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sos1920-07.herokuapp.com/api/v2/foodsImports",
+					"host": [
+						"https://sos1920-07.herokuapp.com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"foodsImports"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
