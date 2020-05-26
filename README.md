@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/gti-sos/SOS1920-07.svg?branch=master)](https://travis-ci.org/gti-sos/SOS1920-07)
+
 # SOS1920-07
 
 Trabajo SOS orientado a analizar algunas importaciones/exportaciones de EEUU.
