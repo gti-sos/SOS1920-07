@@ -5200,7 +5200,7 @@ var app = (function () {
     			a1.textContent = "Graficas";
     			attr_dev(a0, "href", "#/import-table");
     			add_location(a0, file$4, 0, 0, 0);
-    			attr_dev(a1, "href", "#/imports-graph?country=total");
+    			attr_dev(a1, "href", "#/imports-graph");
     			add_location(a1, file$4, 2, 0, 50);
     		},
     		l: function claim(nodes) {
@@ -5269,7 +5269,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (127:12) {#each selectCountry as question}
+    // (134:12) {#each selectCountry as question}
     function create_each_block$1(ctx) {
     	let option;
     	let t0_value = /*question*/ ctx[7].text + "";
@@ -5284,7 +5284,7 @@ var app = (function () {
     			t1 = space();
     			option.__value = option_value_value = /*question*/ ctx[7];
     			option.value = option.__value;
-    			add_location(option, file$5, 127, 16, 3469);
+    			add_location(option, file$5, 134, 16, 3712);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -5301,14 +5301,14 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(127:12) {#each selectCountry as question}",
+    		source: "(134:12) {#each selectCountry as question}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:8) <Button outline color="danger"  on:click={loadGraph}>
+    // (140:8) <Button outline color="danger"  on:click={loadGraph}>
     function create_default_slot$2(ctx) {
     	let t;
 
@@ -5328,7 +5328,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(133:8) <Button outline color=\\\"danger\\\"  on:click={loadGraph}>",
+    		source: "(140:8) <Button outline color=\\\"danger\\\"  on:click={loadGraph}>",
     		ctx
     	});
 
@@ -5412,27 +5412,27 @@ var app = (function () {
     			t8 = space();
     			create_component(button.$$.fragment);
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$5, 107, 4, 2548);
+    			add_location(script0, file$5, 114, 4, 2791);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$5, 108, 4, 2618);
+    			add_location(script1, file$5, 115, 4, 2861);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$5, 109, 4, 2698);
+    			add_location(script2, file$5, 116, 4, 2941);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$5, 110, 4, 2775);
+    			add_location(script3, file$5, 117, 4, 3018);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$5, 111, 4, 2854);
+    			add_location(script4, file$5, 118, 4, 3097);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$5, 117, 4, 3016);
-    			add_location(code, file$5, 120, 8, 3168);
+    			add_location(div, file$5, 124, 4, 3259);
+    			add_location(code, file$5, 127, 8, 3411);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$5, 118, 4, 3047);
+    			add_location(p, file$5, 125, 4, 3290);
     			attr_dev(label, "for", "cars");
-    			add_location(label, file$5, 124, 8, 3286);
+    			add_location(label, file$5, 131, 8, 3529);
     			if (/*selected*/ ctx[0] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[5].call(select));
-    			add_location(select, file$5, 125, 8, 3335);
+    			add_location(select, file$5, 132, 8, 3578);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$5, 116, 0, 2977);
-    			add_location(main, file$5, 115, 0, 2970);
+    			add_location(figure, file$5, 123, 0, 3220);
+    			add_location(main, file$5, 122, 0, 3213);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5546,7 +5546,18 @@ var app = (function () {
 
     function instance$6($$self, $$props, $$invalidate) {
     	let params = "total";
-    	let selectCountry = [{ id: 1, text: "canada" }, { id: 2, text: "total" }];
+
+    	let selectCountry = [
+    		{ id: 1, text: "total" },
+    		{ id: 2, text: "canada" },
+    		{ id: 3, text: "european-union-27" },
+    		{ id: 4, text: "china" },
+    		{ id: 5, text: "argentina" },
+    		{ id: 6, text: "mexico" },
+    		{ id: 7, text: "south-korea" },
+    		{ id: 9, text: "brazil" }
+    	];
+
     	let selected;
     	let answer = "";
 
