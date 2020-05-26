@@ -230,7 +230,7 @@
             {/each}
             <tr>
                 <td  style="text-align: center;" colspan="2" ><Button onclick="location.href='/#/foodsImports/SearchFoodsImport/';" type="submit" color="info" size="lg">Búsquedas</Button></td>
-                <td colspan="1"></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica/';" type="submit" color="info" size="lg">Grafica HighChart</Button></td>
                 {#if borrado==true}
                 <td  style="text-align: center;" colspan="2" ><Button  type="submit" color="success" size="lg" on:click={() =>loadInitialFoodsImports()}>Se han borrado todos los datos, puede volver a cargar los valores iniciales</Button></td>
                 {:else}

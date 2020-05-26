@@ -11,6 +11,7 @@
 	import FoodImportsTable from './foodsImportsGUI/FoodImportsTable.svelte';
 	import EditFoodsImports from './foodsImportsGUI/EditFoodsImports.svelte';
 	import SearchFoodsImport from './foodsImportsGUI/SearchFoodsImport.svelte';
+	import MiGrafica from "./foodsImportsGUI/MiGrafica.svelte";
 	
 	import FertilizersTable from './fertilizerGUI/FertilizersTable.svelte';
 	import EditFertilizer from './fertilizerGUI/EditFertilizer.svelte';
@@ -28,6 +29,8 @@
 		"/foodsImports/:foodsName/:foodsYear":EditFoodsImports,
 		"/foodsImports/SearchFoodsImport/":SearchFoodsImport,
 		
+		"/foodsImports/MiGrafica/":MiGrafica,
+		"/importsgui": GUIIMPORTS,
 		"/fertilizerImportsExports": FertilizersTable,
 		"/fertilizerImportsExports/:country/:year":EditFertilizer,
 		"*": NotFound
