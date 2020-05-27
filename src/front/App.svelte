@@ -5,6 +5,7 @@
 	import EditImport from './ImportsGUI/EditImport.svelte';
 	import HomeImport from './ImportsGUI/Home.svelte';
 	import GraphImport from './ImportsGUI/Graph.svelte';
+	import Graph2Import from './ImportsGUI/Graph2.svelte';
 
 	import NotFound from './NotFound.svelte';
 	
@@ -26,6 +27,7 @@
 		"/import/:country/:year": EditImport,
 		"/import-table":ImportsTable,
 		"/imports-graph": GraphImport,
+		"/imports-graph2": Graph2Import,
 		"/imports": HomeImport,
 		"/foodsImports": FoodImportsTable,
 		"/foodsImports/:foodsName/:foodsYear":EditFoodsImports,
