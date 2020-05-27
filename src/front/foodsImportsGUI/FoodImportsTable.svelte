@@ -244,7 +244,7 @@
                 {/if}
 
                 <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica2/';" type="submit" color="info" size="lg">Grafica Billboard</Button></td>
-                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/Integraciones/';" type="submit" color="info" size="lg">Integraciones</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/Integrations/';" type="submit" color="info" size="lg">Integraciones</Button></td>
                 <td style="text-align: center;" colspan="1" > <Button color="danger" size="lg" on:click={() => deleteAllFoodsImports()}>Borrar Todo</Button></td>
             </tr>
         </tbody>
