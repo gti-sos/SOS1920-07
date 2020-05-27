@@ -75,7 +75,7 @@ function CargaGrafica_aux(integracio){
 async function CargaDatos22(){
     categoriass=['España'];
     textt="Integración con Grupo 9 Comparación entre Puntos de Españoles en Formula1 y Importaciones de Vegetales desde España a EEUU"
-    const resData2= await fetch("http://sos1920-22.herokuapp.com/api/v2/formula-stats")
+    const resData2= await fetch("https://sos1920-22.herokuapp.com/api/v2/formula-stats")
     const datos2 =  await resData2.json();
     var data=[];
     var lista_2=[0];
@@ -119,7 +119,7 @@ async function CargaDatos5(){
     var total=0;
     textt1="% del total en esos años";
     textt2="%";
-    
+
     datos2.forEach(e => {
         if(e.year==2015){
             lista_2[0]=lista_2[0]+e["total_spending"]
