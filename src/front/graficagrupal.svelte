@@ -8,53 +8,58 @@
     onMount(cargagrafica);
 
 	async function cargagrafica() {
-        const resDatamio= await fetch("/api/v2/foodsImports/")
-        const datosmio =  await resDatamio.json();
-        let lista_22=[];
-        datosmio.forEach(e => {
-        if(e.year==2017){
-            lista_22.push({name:e["name"],value:e.fruitJuice+e.TVegANDPrep+e.TSweANDCndy+e.TLiveAnimal+e.FishFilletANDMince})
-        }
+        let seriess=[];
+        let lista_aux=[];
+        const resData2= await fetch("https://sos1920-07.herokuapp.com/api/v2/Imports")
+        const datos2 =  await resData2.json();
+        console.log(datos2)
+        datos2.forEach(e => {
+            if(e.year==2010||e.year==2011||e.year==2012){
+                if(lista_aux.length<10){
+                    lista_aux.push({name:e["country"],value:e["gdaethylalcohol"]})
+                }
+            }
         });
 
+        seriess.push({name:"Importaciones de Alcohol",data:lista_aux})
+        const resData1=await fetch("https://sos1920-07.herokuapp.com/api/v1/fertilizerImportsExports")
+        const datos1 =  await resData1.json();
+        datos1.forEach(e => {
+            if(e.year=="2010"||e.year=="2011"||e.year=="2012"){
+                if(lista_aux.length<10){
+                    lista_aux.push({name:e["country"],value:e["dollarImport"]/1000})
+                }
+            }
+        });
 
-		let datos;//cargamos el promise
-        let datosfinal;//cargamoos el json final
-        let lista_2=[];
-        let data=[];
-        let seriess;
-        fetch("https://covid-193.p.rapidapi.com/statistics", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "covid-193.p.rapidapi.com",
-            "x-rapidapi-key": "e9457b4852msh28855afa9b653a6p17e389jsn4490c02919a1"
-        }
-        })
-        .then(response => {
-            datos =  response.json();
-            
-            datos.then((value) => {
-                datosfinal=value["response"];
-                datosfinal.forEach(e => {
-                    if( lista_2.length>15){
-                    }else{
-                        if(e["country"]=="All"){
+        seriess.push({name:"Importaciones de Dolares",data:lista_aux})
 
-                        }else{
-                            lista_2.push({name:e["country"],value:e["deaths"]["total"]})
-                        }
-                    }
-                    
-                });
-                    seriess=[{name:"Fallecidos",data:lista_2},{name:"Importaciones a EEUU",data:lista_22}]
-                    console.log(seriess)
-                    Highcharts.chart('container', {
+
+
+        const resData= await fetch("/api/v2/foodsImports/")
+        const datos =  await resData.json();
+        datos.forEach(e => {
+            if(e.year=="2010"||e.year=="2011"||e.year=="2012"){
+                if(lista_aux.length<10){
+                    lista_aux.push({name:e["name"],value:e["TSweANDCndy"]})
+                }
+            }
+        });
+
+        seriess.push({name:"Importaciones de Caramelos y Dulces",data:lista_aux})
+
+        
+        
+
+
+        
+        Highcharts.chart('container', {
                         chart: {
                             type: 'packedbubble',
                             height: '100%'
                         },
                         title: {
-                            text: 'Fallecidos por COVID-19/Importaciones a EEUU'
+                            text: 'Gráfica Grupal'
                         },
                         tooltip: {
                             useHTML: true,
@@ -88,15 +93,8 @@
                         },
                         series: seriess
                     });
-
-
-                });
-        })
-        .catch(err => {
-            console.log(err);
-        });
-	}
-	
+    }
+    
 </script>
 
 <svelte:head>
@@ -112,7 +110,7 @@
 	<figure class="highcharts-figure">
 		<div id="container"></div>
 		<p class="highcharts-description">
-			Gráfica de Api externa que muestra algunos paises con personas fallecidas por COVID-19.
+			Gráfica Grupal de comparación entre Importaciones de Alcohol, Dulces y Dolares a EEUU.
 		</p>
 	</figure>
 </main>

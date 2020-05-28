@@ -16,12 +16,14 @@
 	import MiGrafica2 from "./foodsImportsGUI/MiGrafica2.svelte";
 	import foodIntegrations from "./foodsImportsGUI/Integrations.svelte";
 	import externalApis from "./foodsImportsGUI/externalapi.svelte";
-	
+	import externalApis1 from "./foodsImportsGUI/externalapi1.svelte";
+
 	import FertilizersTable from './fertilizerGUI/FertilizersTable.svelte';
 	import EditFertilizer from './fertilizerGUI/EditFertilizer.svelte';
 	
 	import Home from './Home.svelte';
 	import GUIIMPORTS from './ImportsGUI/Home.svelte';
+	import graficagrupal from "./graficagrupal.svelte";
 
 	const routes = {
 		"/": Home,
@@ -37,6 +39,8 @@
 		"/foodsImports/MiGrafica2/":MiGrafica2,
 		"/foodsImports/Integrations/":foodIntegrations,
 		"/foodsImports/externalapi/":externalApis,
+		"/foodsImports/externalapi1/":externalApis1,
+		"/graficagrupal":graficagrupal,
 		"/importsgui": GUIIMPORTS,
 		"/fertilizerImportsExports": FertilizersTable,
 		"/fertilizerImportsExports/:country/:year":EditFertilizer,

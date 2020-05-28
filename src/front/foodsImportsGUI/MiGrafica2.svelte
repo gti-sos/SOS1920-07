@@ -106,4 +106,5 @@ setTimeout(function() {
 <Button outline size="lg" color="primary" onclick="location.href='/#/foodsImports';">Inicio</Button>
 <div id='donutChart'></div>
 <h4>Grafica realizada con billboard sobre el porcentaje total de importaciones a Estados Unidos</h4>
+<h6>Esta gráfica se replica por todas las paginas después de hacer uso de ella, para solucionarlo hay que recargar la página en la que estés, no he encontrado solución al problema en ningún lado.</h6>
 </main>

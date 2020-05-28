@@ -23,38 +23,33 @@
         let lista_2=[];
         let data=[];
         let seriess;
-        fetch("https://covid-193.p.rapidapi.com/statistics", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-host": "covid-193.p.rapidapi.com",
-            "x-rapidapi-key": "e9457b4852msh28855afa9b653a6p17e389jsn4490c02919a1"
-        }
+        fetch("https://restcountries-v1.p.rapidapi.com/all", {
+        	"method": "GET",
+	        "headers": {
+	        	"x-rapidapi-host": "restcountries-v1.p.rapidapi.com",
+		        "x-rapidapi-key": "e9457b4852msh28855afa9b653a6p17e389jsn4490c02919a1"
+        	}
         })
         .then(response => {
             datos =  response.json();
             
             datos.then((value) => {
-                datosfinal=value["response"];
-                datosfinal.forEach(e => {
-                    if( lista_2.length>15){
-                    }else{
-                        if(e["country"]=="All"){
-
-                        }else{
-                            lista_2.push({name:e["country"],value:e["deaths"]["total"]})
-                        }
+                console.log(value)
+                value.forEach(e => {
+                    if(e["languages"].length>3){
+                         lista_2.push({name:e["name"],value:e["languages"].length})  
                     }
                     
+                    
                 });
-                    seriess=[{name:"Fallecidos",data:lista_2},{name:"Importaciones a EEUU",data:lista_22}]
-                    console.log(seriess)
+                    seriess=[{name:"Lenguas Oficialles",data:lista_2},{name:"Importaciones a EEUU",data:lista_22}]
                     Highcharts.chart('container', {
                         chart: {
                             type: 'packedbubble',
                             height: '100%'
                         },
                         title: {
-                            text: 'Fallecidos por COVID-19/Importaciones a EEUU'
+                            text: 'Países con más de 3 lenguas Oficiales/Importaciones a EEUU'
                         },
                         tooltip: {
                             useHTML: true,
@@ -112,7 +107,7 @@
 	<figure class="highcharts-figure">
 		<div id="container"></div>
 		<p class="highcharts-description">
-			Gráfica de Api externa que muestra algunos paises con personas fallecidas por COVID-19.
+			Gráfica de Api externa que muestra los paises con más de 3 lenguas oficiales.
 		</p>
 	</figure>
 </main>
@@ -153,3 +148,7 @@
 }
 
 </style>
+
+
+
+
