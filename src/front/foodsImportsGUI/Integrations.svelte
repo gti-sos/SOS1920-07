@@ -148,7 +148,7 @@ async function CargaDatos22(){
     const datos2 =  await resData2.json();
     var data=[];
     var lista_2=[0];
-    var name2="Puntos de Españoles en MotoGP";
+    var name2="Puntos de Españoles en Formula1";
     var total=0;
     textt1="Valores"
     textt2="puntos/toneladas"
