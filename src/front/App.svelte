@@ -15,6 +15,7 @@
 	import MiGrafica from "./foodsImportsGUI/MiGrafica.svelte";
 	import MiGrafica2 from "./foodsImportsGUI/MiGrafica2.svelte";
 	import foodIntegrations from "./foodsImportsGUI/Integrations.svelte";
+	import externalApis from "./foodsImportsGUI/externalapi.svelte";
 	
 	import FertilizersTable from './fertilizerGUI/FertilizersTable.svelte';
 	import EditFertilizer from './fertilizerGUI/EditFertilizer.svelte';
@@ -35,6 +36,7 @@
 		"/foodsImports/MiGrafica/":MiGrafica,
 		"/foodsImports/MiGrafica2/":MiGrafica2,
 		"/foodsImports/Integrations/":foodIntegrations,
+		"/foodsImports/externalapi/":externalApis,
 		"/importsgui": GUIIMPORTS,
 		"/fertilizerImportsExports": FertilizersTable,
 		"/fertilizerImportsExports/:country/:year":EditFertilizer,

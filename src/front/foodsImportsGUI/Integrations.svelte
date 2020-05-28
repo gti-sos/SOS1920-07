@@ -3,6 +3,7 @@ import {onMount} from "svelte";
 import { FormGroup, CustomInput, Label } from 'sveltestrap';
 import { Button } from "sveltestrap";
 
+
 let inputValue;
 
 onMount(CargaGrafica);
@@ -18,58 +19,126 @@ let categoriass;//Aquí cargamos el eje x de la gráfica
 let textt;//Aquí cargamos el texto de arriba
 let textt1="% del total en esos años";//Aquí se carga la descripción del eje y
 let textt2="%";//Aquí se carga las unidades
-
+let exter=0;//Para saber si hemos elegido una de las apis externas
+let chatr;
 
 function CargaGrafica_aux(integracio){
     console.log("Paso")
     console.log("Esto es lo que pasa"+integracio)
     switch(integracio){
         case "":
-            integ=1;
+            integ=0;
             break;
 
         case "Integracion G2 Turismo Rural":
+            exter=0;
             integ=1;
             CargaDatos2();
             break;
         case "Integracion G9 Energías Renovables":
+            exter=0;
             integ=1;
             CargaDatos9()
             break;
         case "Integracion G1 Migración":
+            exter=0;
             integ=1;
             CargaDatos1()
             break;
         case "Integracion G30 Azucar consumida":
+            exter=0;
             integ=1;
             CargaDatos30()
             break;
         case "Integracion G4 Accidentes de Tráfico":
+            exter=0;
             integ=1;
             CargaDatos4()
             break;
         case "Integracion G23 Venta de Cigarros":
+            exter=0;
             integ=1;
             CargaDatos23()
             break;
         case "Integracion G28 Venta de Vehículos eléctricos":
+            exter=0;
             integ=1;
             CargaDatos28()
             break;
         case "Integracion G8 MotoGP":
+            exter=0;
             integ=1;
             CargaDatos8()
             break;
         case "Integracion G5 Sanidad Publica":
+            exter=0;
             integ=1;
             CargaDatos5();
             break;
         case "Integracion G22 Formula1":
+            exter=0;
             integ=1;
             CargaDatos22();
             break;
+
     }
     
+}
+async function CargaDatos28(){
+    categoriass=['2010','2012','2014'];
+    textt="Integración con Grupo 9 Comparación entre Porcentaje de Producción de Coches Eléctricos y Total de Importaciones a EEUU"
+    const resData2= await fetch("https://sos1920-28.herokuapp.com/api/v1/gce")
+    const datos2 =  await resData2.json();
+    var data=[];
+    var lista_2=[0,0,0];
+    var name2="% de Gasto en Salud Plública";
+    var total=0;
+    textt1="% del total en esos años";
+    textt2="%";
+
+    datos2.forEach(e => {
+        if(e.year==2015){
+            lista_2[0]=lista_2[0]+e["gce_cars"]
+        }
+        if(e.year==2016){
+            lista_2[1]=lista_2[1]+e["gce_cars"]
+        }
+        if(e.year==2017){
+            lista_2[2]=lista_2[2]+e["gce_cars"]
+        }
+    });
+    total=lista_2[0]+lista_2[1]+lista_2[2]
+    lista_2[0]=(lista_2[0]/total).toFixed(5)*100
+    lista_2[1]=(lista_2[1]/total).toFixed(5)*100
+    lista_2[2]=(lista_2[2]/total).toFixed(5)*100
+
+    data.push({name:name2,data:lista_2});
+    const resData= await fetch("/api/v2/foodsImports/")
+    const datos =  await resData.json();
+    
+    lista_2=[0,0,0];
+    var name1="% del total de Importaciones";
+    datos.forEach(e => {
+        if(e.year==2015){
+            lista_2[0]=lista_2[0]+e.fruitJuice+e.TVegANDPrep+e.TSweANDCndy+e.TLiveAnimal+e.FishFilletANDMince
+        }
+        if(e.year==2016){
+            lista_2[1]=lista_2[1]+e.fruitJuice+e.TVegANDPrep+e.TSweANDCndy+e.TLiveAnimal+e.FishFilletANDMince
+        }
+        if(e.year==2017){
+            lista_2[2]=lista_2[2]+e.fruitJuice+e.TVegANDPrep+e.TSweANDCndy+e.TLiveAnimal+e.FishFilletANDMince
+        }
+    });
+
+    total=lista_2[0]+lista_2[1]+lista_2[2]
+    lista_2[0]=(lista_2[0]/total).toFixed(5)*100
+    lista_2[1]=(lista_2[1]/total).toFixed(5)*100
+    lista_2[2]=(lista_2[2]/total).toFixed(5)*100
+    data.push({name:name1,data:lista_2});
+    console.log(data)
+    seriess=data;
+    CargaGrafica();
+
 }
 //------------------------------------Integración Grupo 22----------------------------------------
 async function CargaDatos22(){
@@ -529,7 +598,7 @@ async function CargaDatos2(){
 function CargaGrafica(){    
 
     if(integ==1){
-    Highcharts.chart('container', {
+    chatr=Highcharts.chart('container', {
     
     chart: {
         type: 'column'
@@ -573,6 +642,7 @@ function CargaGrafica(){
 </script>
 
 <svelte:head>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
@@ -589,8 +659,16 @@ function CargaGrafica(){
         </p>
         </figure>
     {/if}
-    {#if integ==0}
+    {#if integ==0 & exter==0}
         <h2>↓Elige un grupo de Integración Abajo↓</h2>
+    {/if}
+    {#if exter==1}
+        <figure class="highcharts-figure">
+		<div id="container"></div>
+		<p class="highcharts-description">
+			Gráfica común a las tres APIs. Muestra los millones de toneladas de petróleo, los porcentajes del uso energías renovables y las ventas coches eléctricos por cada 1000.
+		</p>
+	</figure>
     {/if}
     <FormGroup>
         <Label>Integraciones </Label>
@@ -610,43 +688,3 @@ function CargaGrafica(){
 
 </main>
 
-<style>
-.highcharts-figure, .highcharts-data-table table {
-    min-width: 310px; 
-    max-width: 800px;
-    margin: 1em auto;
-}
-
-#container {
-    height: 400px;
-}
-
-.highcharts-data-table table {
-	font-family: Verdana, sans-serif;
-	border-collapse: collapse;
-	border: 1px solid #EBEBEB;
-	margin: 10px auto;
-	text-align: center;
-	width: 100%;
-	max-width: 500px;
-}
-.highcharts-data-table caption {
-    padding: 1em 0;
-    font-size: 1.2em;
-    color: #555;
-}
-.highcharts-data-table th {
-	font-weight: 600;
-    padding: 0.5em;
-}
-.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-    padding: 0.5em;
-}
-.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-    background: #f8f8f8;
-}
-.highcharts-data-table tr:hover {
-    background: #f1f7ff;
-}
-
-</style>

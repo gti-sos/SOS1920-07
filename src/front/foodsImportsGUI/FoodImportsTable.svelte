@@ -236,14 +236,17 @@
             {/each}
             <tr>
                 <td  style="text-align: center;" colspan="2" ><Button onclick="location.href='/#/foodsImports/SearchFoodsImport/';" type="submit" color="info" size="lg">Búsquedas</Button></td>
-                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica/';" type="submit" color="info" size="lg">Grafica HighChart</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/externalapi/';" type="submit" color="info" size="lg">API Externa 1</Button></td>
+                
                 {#if borrado==true}
                 <td  style="text-align: center;" colspan="2" ><Button  type="submit" color="success" size="lg" on:click={() =>loadInitialFoodsImports()}>Se han borrado todos los datos, puede volver a cargar los valores iniciales</Button></td>
                 {:else}
-                <td colspan="2"></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica/';" type="submit" color="info" size="lg">Grafica HighChart</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica2/';" type="submit" color="info" size="lg">Grafica Billboard</Button></td>
+                
                 {/if}
 
-                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/MiGrafica2/';" type="submit" color="info" size="lg">Grafica Billboard</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/externalapi/';" type="submit" color="info" size="lg">API Externa 2</Button></td>
                 <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/Integrations/';" type="submit" color="info" size="lg">Integraciones</Button></td>
                 <td style="text-align: center;" colspan="1" > <Button color="danger" size="lg" on:click={() => deleteAllFoodsImports()}>Borrar Todo</Button></td>
             </tr>
