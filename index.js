@@ -8,7 +8,7 @@ const importsAPIV2 = require(path.join(__dirname,"./src/back/importsAPI/v2"));
 const importsAPIV3 = require(path.join(__dirname,"./src/back/importsAPI/v3"));
 const foodsImports = require(path.join(__dirname,"./src/back/foodsImports"));
 const fertilizerImportsExportsAPI = require(path.join(__dirname,"./src/back/fertilizerImportsExportsAPI"));
-const port = process.env.PORT || 9999;
+const port = process.env.PORT || 8745;
 
 var app = express();
 
