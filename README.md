@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/gti-sos/SOS1920-07.svg?branch=master)](https://travis-ci.org/gti-sos/SOS1920-07)
+[![codecov](https://codecov.io/gh/gti-sos/SOS1920-07/branch/master/graph/badge.svg)](https://codecov.io/gh/gti-sos/SOS1920-07)
 
 # SOS1920-07
 
