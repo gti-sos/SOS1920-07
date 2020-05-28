@@ -171,6 +171,7 @@
 
 
 <main>
+<Button outline size="lg" color="primary" onclick="location.href='/#/';">Inicio</Button>
     {#await foodsImports}
     {:then foodsImports}
     
@@ -246,7 +247,7 @@
                 
                 {/if}
 
-                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/externalapi/';" type="submit" color="info" size="lg">API Externa 2</Button></td>
+                <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/externalapi1/';" type="submit" color="info" size="lg">API Externa 2</Button></td>
                 <td  style="text-align: center;" colspan="1" ><Button onclick="location.href='/#/foodsImports/Integrations/';" type="submit" color="info" size="lg">Integraciones</Button></td>
                 <td style="text-align: center;" colspan="1" > <Button color="danger" size="lg" on:click={() => deleteAllFoodsImports()}>Borrar Todo</Button></td>
             </tr>
