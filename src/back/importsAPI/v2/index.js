@@ -8,6 +8,8 @@ module.exports = function (app) {
     const path = require("path");
     const dataStore = require("nedb");
     const BASE_API_URL = "/api/v2";
+    const request = require('request');
+    const express = require("express");
     const dbFileName = path.join(__dirname,"imports.db");
     const db = new dataStore({
         filename: dbFileName,
@@ -18,6 +20,19 @@ module.exports = function (app) {
 
     
     var importsInit = [];
+
+    //PROXY
+
+    const paht1 = "/api/v2/foodsImports";
+    var apiServerHost = 'https://sos1920-07.herokuapp.com/';
+
+    app.use(paht1, function(req, res) {
+        var url = apiServerHost + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+      });
+
+      app.use(express.static('.'));
 
     // LOAD INIT IMPORT
 
