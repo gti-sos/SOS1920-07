@@ -47,7 +47,6 @@
                     
                 });
                     seriess=[{name:"Fallecidos",data:lista_2},{name:"Importaciones a EEUU",data:lista_22}]
-                    console.log(seriess)
                     Highcharts.chart('container', {
                         chart: {
                             type: 'packedbubble',

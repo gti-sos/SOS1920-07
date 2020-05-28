@@ -10,7 +10,7 @@ onMount(CargaGrafica);
 
 let mySet_aux=["Integracion G2 Turismo Rural","Integracion G9 Energías Renovables","Integracion G1 Migración",
     "Integracion G30 Azucar consumida","Integracion G4 Accidentes de Tráfico","Integracion G23 Venta de Cigarros",
-    "Integracion G28 Venta de Vehículos eléctricos","Integracion G8 MotoGP","Integracion G5 Sanidad Publica",
+    "Integracion G28 Venta de Vehículos eléctricos(Mediante Proxy)","Integracion G8 MotoGP","Integracion G5 Sanidad Publica",
     "Integracion G22 Formula1"];
 let pais_aux;
 let integ=0;//Para saber si hemos elegido ya o no la gráfica
@@ -60,7 +60,7 @@ function CargaGrafica_aux(integracio){
             integ=1;
             CargaDatos23()
             break;
-        case "Integracion G28 Venta de Vehículos eléctricos":
+        case "Integracion G28 Venta de Vehículos eléctricos(Mediante Proxy)":
             exter=0;
             integ=1;
             CargaDatos28()
@@ -86,8 +86,8 @@ function CargaGrafica_aux(integracio){
 }
 async function CargaDatos28(){
     categoriass=['2010','2012','2014'];
-    textt="Integración con Grupo 9 Comparación entre Porcentaje de Producción de Coches Eléctricos y Total de Importaciones a EEUU"
-    const resData2= await fetch("https://sos1920-28.herokuapp.com/api/v1/gce")
+    textt="Integración con Grupo 28 Comparación entre Porcentaje de Producción de Coches Eléctricos y Total de Importaciones a EEUU"
+    const resData2= await fetch("/api/v1/gce")
     const datos2 =  await resData2.json();
     var data=[];
     var lista_2=[0,0,0];
@@ -97,13 +97,13 @@ async function CargaDatos28(){
     textt2="%";
 
     datos2.forEach(e => {
-        if(e.year==2015){
+        if(e.year==2010){
             lista_2[0]=lista_2[0]+e["gce_cars"]
         }
-        if(e.year==2016){
+        if(e.year==2012){
             lista_2[1]=lista_2[1]+e["gce_cars"]
         }
-        if(e.year==2017){
+        if(e.year==2014){
             lista_2[2]=lista_2[2]+e["gce_cars"]
         }
     });
@@ -143,7 +143,7 @@ async function CargaDatos28(){
 //------------------------------------Integración Grupo 22----------------------------------------
 async function CargaDatos22(){
     categoriass=['España'];
-    textt="Integración con Grupo 9 Comparación entre Puntos de Españoles en Formula1 y Importaciones de Vegetales desde España a EEUU"
+    textt="Integración con Grupo 22 Comparación entre Puntos de Españoles en Formula1 y Importaciones de Vegetales desde España a EEUU"
     const resData2= await fetch("https://sos1920-22.herokuapp.com/api/v2/formula-stats")
     const datos2 =  await resData2.json();
     var data=[];
@@ -179,7 +179,7 @@ async function CargaDatos22(){
 //------------------------------------Integración Grupo 5----------------------------------------
 async function CargaDatos5(){
     categoriass=['2015','2016','2017'];
-    textt="Integración con Grupo 9 Comparación entre Porcentaje de Gasto en Salud Plública y Total de Importaciones a EEUU"
+    textt="Integración con Grupo 5 Comparación entre Porcentaje de Gasto en Salud Plública y Total de Importaciones a EEUU"
     const resData2= await fetch("https://sos1920-05.herokuapp.com/api/v1/health_public")
     const datos2 =  await resData2.json();
     var data=[];
@@ -236,7 +236,7 @@ async function CargaDatos5(){
 //------------------------------------Integración Grupo 8----------------------------------------
 async function CargaDatos8(){
     categoriass=['España'];
-    textt="Integración con Grupo 9 Comparación entre Vistorias de Españoles en MotoGP y Importaciones de Vegetales desde España a EEUU"
+    textt="Integración con Grupo 8 Comparación entre Vistorias de Españoles en MotoGP y Importaciones de Vegetales desde España a EEUU"
     const resData2= await fetch("https://sos1920-08.herokuapp.com/api/v1/motogp-statistics")
     const datos2 =  await resData2.json();
     var data=[];
@@ -496,7 +496,7 @@ async function CargaDatos1(){
 async function CargaDatos9(){
     categoriass=['2016','2017'];
     textt="Integración con Grupo 9 Comparación entre Porcentaje de Uso de Energías Renovables y Total de Importaciones a EEUU"
-    const resData2= await fetch("http://sos1920-09.herokuapp.com/api/v2/renewable-sources-stats")
+    const resData2= await fetch("https://sos1920-09.herokuapp.com/api/v2/renewable-sources-stats")
     const datos2 =  await resData2.json();
     var data=[];
     var lista_2=[0,0];
