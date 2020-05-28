@@ -16,7 +16,7 @@
 </div>
 <div>
 <h2> </h2>
-<Button outline size="lg" color="success" onclick="location.href='/#/graficagrupal';">Gráfica Grupal</Button>
+<Button outline size="lg" color="success" onclick="location.href='/#/analitics';">Gráfica Grupal</Button>
 </div>
 <div>
 <h2> </h2>
