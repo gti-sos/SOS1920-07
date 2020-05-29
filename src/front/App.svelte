@@ -6,6 +6,7 @@
 	import HomeImport from './ImportsGUI/Home.svelte';
 	import GraphImport from './ImportsGUI/Graph.svelte';
 	import Graph2Import from './ImportsGUI/Graph2.svelte';
+	import ImportsIntegrations from './ImportsGUI/Integrations.svelte';
 
 	import NotFound from './NotFound.svelte';
 	
@@ -31,6 +32,7 @@
 		"/import-table":ImportsTable,
 		"/imports-graph": GraphImport,
 		"/imports-graph2": Graph2Import,
+		"/imports-integrations": ImportsIntegrations,
 		"/imports": HomeImport,
 		"/foodsImports": FoodImportsTable,
 		"/foodsImports/:foodsName/:foodsYear":EditFoodsImports,
