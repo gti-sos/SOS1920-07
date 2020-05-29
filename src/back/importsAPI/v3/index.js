@@ -23,8 +23,8 @@ module.exports = function (app) {
 
     //PROXY
 
-    const paht1 = "api/v3/ts";
-    var apiServerHost = '';
+    const paht1 = "/list.php";
+    var apiServerHost = 'https://the-cocktail-db.p.rapidapi.com';
 
     app.use(paht1, function(req, res) {
         var url = apiServerHost + req.baseUrl + req.url;
