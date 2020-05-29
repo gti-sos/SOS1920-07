@@ -24,6 +24,7 @@
 	import Home from './Home.svelte';
 	import GUIIMPORTS from './ImportsGUI/Home.svelte';
 	import graficagrupal from "./analitics.svelte";
+	import Integrations from "./Integrations.svelte";
 
 	const routes = {
 		"/": Home,
@@ -41,6 +42,8 @@
 		"/foodsImports/externalapi/":externalApis,
 		"/foodsImports/externalapi1/":externalApis1,
 		"/analitics":graficagrupal,
+		"/Integrations":Integrations,
+		
 		"/importsgui": GUIIMPORTS,
 		"/fertilizerImportsExports": FertilizersTable,
 		"/fertilizerImportsExports/:country/:year":EditFertilizer,
