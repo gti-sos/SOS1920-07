@@ -1,5 +1,12 @@
 <script>
 
+import {
+        pop
+    } from "svelte-spa-router";
+
+    
+    import Button from "sveltestrap/src/Button.svelte";
+
 function sortJSON(data, key, orden) {
     return data.sort(function (a, b) {
         var x = a[key],
@@ -113,5 +120,6 @@ async function loadGraph(){
 
 <main>
 <canvas id="myChart" width="800" height="400"></canvas>
+<Button outline color="secondary" on:click="{pop}"> <i class="fas fa-arrow-circle-left"></i> Atrás </Button>
 
 </main>

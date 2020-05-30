@@ -3,7 +3,6 @@
     import {
         pop
     } from "svelte-spa-router";
-    const BASE_API_URL = "/api/v3/imports";
 
     // Function Sort
 

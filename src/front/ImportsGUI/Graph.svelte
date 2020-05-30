@@ -139,4 +139,5 @@ async function loadGraph(){
         </select>
         <Button outline color="danger"  on:click={loadGraph}>Buscar</Button>
 </figure>
+<Button outline color="secondary" on:click="{pop}"> <i class="fas fa-arrow-circle-left"></i> Atrás </Button>
 </main>
