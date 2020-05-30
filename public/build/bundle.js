@@ -5967,7 +5967,7 @@ var app = (function () {
     const { console: console_1$5, document: document_1$1 } = globals;
     const file$7 = "src\\front\\ImportsGUI\\Integrations.svelte";
 
-    // (1093:4) <Button outline color="secondary" on:click="{pop}">
+    // (1091:4) <Button outline color="secondary" on:click="{pop}">
     function create_default_slot$3(ctx) {
     	let i;
     	let t;
@@ -5977,7 +5977,7 @@ var app = (function () {
     			i = element("i");
     			t = text(" Atrás");
     			attr_dev(i, "class", "fas fa-arrow-circle-left");
-    			add_location(i, file$7, 1092, 56, 42560);
+    			add_location(i, file$7, 1090, 56, 42513);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -5993,7 +5993,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(1093:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(1091:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -6185,126 +6185,126 @@ var app = (function () {
     			t41 = space();
     			create_component(button13.$$.fragment);
     			if (script.src !== (script_src_value = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$7, 1012, 4, 38531);
-    			add_location(style, file$7, 1017, 4, 38658);
-    			add_location(button0, file$7, 1030, 12, 38930);
-    			add_location(button1, file$7, 1031, 12, 39046);
-    			add_location(button2, file$7, 1032, 12, 39161);
-    			add_location(button3, file$7, 1033, 12, 39276);
-    			add_location(button4, file$7, 1034, 12, 39390);
-    			add_location(button5, file$7, 1035, 12, 39506);
-    			add_location(button6, file$7, 1036, 12, 39622);
-    			add_location(button7, file$7, 1037, 12, 39738);
-    			add_location(button8, file$7, 1038, 12, 39854);
-    			add_location(button9, file$7, 1039, 12, 39970);
-    			add_location(button10, file$7, 1040, 12, 40087);
-    			add_location(button11, file$7, 1041, 12, 40204);
-    			add_location(button12, file$7, 1042, 12, 40321);
+    			add_location(script, file$7, 1010, 4, 38484);
+    			add_location(style, file$7, 1015, 4, 38611);
+    			add_location(button0, file$7, 1028, 12, 38883);
+    			add_location(button1, file$7, 1029, 12, 38999);
+    			add_location(button2, file$7, 1030, 12, 39114);
+    			add_location(button3, file$7, 1031, 12, 39229);
+    			add_location(button4, file$7, 1032, 12, 39343);
+    			add_location(button5, file$7, 1033, 12, 39459);
+    			add_location(button6, file$7, 1034, 12, 39575);
+    			add_location(button7, file$7, 1035, 12, 39691);
+    			add_location(button8, file$7, 1036, 12, 39807);
+    			add_location(button9, file$7, 1037, 12, 39923);
+    			add_location(button10, file$7, 1038, 12, 40040);
+    			add_location(button11, file$7, 1039, 12, 40157);
+    			add_location(button12, file$7, 1040, 12, 40274);
     			attr_dev(div0, "class", "list-group");
     			attr_dev(div0, "id", "list-tab");
     			attr_dev(div0, "role", "tablist");
-    			add_location(div0, file$7, 1028, 10, 38861);
+    			add_location(div0, file$7, 1026, 10, 38814);
     			attr_dev(div1, "class", "col-4");
-    			add_location(div1, file$7, 1027, 8, 38830);
+    			add_location(div1, file$7, 1025, 8, 38783);
     			attr_dev(canvas0, "id", "myChartExterOne");
     			attr_dev(canvas0, "width", "800");
     			attr_dev(canvas0, "height", "400");
-    			add_location(canvas0, file$7, 1049, 16, 40614);
+    			add_location(canvas0, file$7, 1047, 16, 40567);
     			attr_dev(div2, "class", "panel active");
     			attr_dev(div2, "id", "api-1");
-    			add_location(div2, file$7, 1048, 12, 40558);
+    			add_location(div2, file$7, 1046, 12, 40511);
     			attr_dev(canvas1, "id", "myChartExterTwo");
     			attr_dev(canvas1, "width", "800");
     			attr_dev(canvas1, "height", "400");
-    			add_location(canvas1, file$7, 1052, 16, 40760);
+    			add_location(canvas1, file$7, 1050, 16, 40713);
     			attr_dev(div3, "class", "panel");
     			attr_dev(div3, "id", "api-2");
-    			add_location(div3, file$7, 1051, 12, 40711);
+    			add_location(div3, file$7, 1049, 12, 40664);
     			attr_dev(canvas2, "id", "myChartExterThree");
     			attr_dev(canvas2, "width", "800");
     			attr_dev(canvas2, "height", "400");
-    			add_location(canvas2, file$7, 1055, 16, 40906);
+    			add_location(canvas2, file$7, 1053, 16, 40859);
     			attr_dev(div4, "class", "panel");
     			attr_dev(div4, "id", "api-3");
-    			add_location(div4, file$7, 1054, 12, 40857);
+    			add_location(div4, file$7, 1052, 12, 40810);
     			attr_dev(canvas3, "id", "myChartExterThree");
     			attr_dev(canvas3, "width", "800");
     			attr_dev(canvas3, "height", "400");
-    			add_location(canvas3, file$7, 1058, 16, 41054);
+    			add_location(canvas3, file$7, 1056, 16, 41007);
     			attr_dev(div5, "class", "panel");
     			attr_dev(div5, "id", "api-4");
-    			add_location(div5, file$7, 1057, 12, 41005);
+    			add_location(div5, file$7, 1055, 12, 40958);
     			attr_dev(canvas4, "id", "myChartInterOne");
     			attr_dev(canvas4, "width", "800");
     			attr_dev(canvas4, "height", "400");
-    			add_location(canvas4, file$7, 1061, 16, 41202);
+    			add_location(canvas4, file$7, 1059, 16, 41155);
     			attr_dev(div6, "class", "panel");
     			attr_dev(div6, "id", "api-5");
-    			add_location(div6, file$7, 1060, 12, 41153);
+    			add_location(div6, file$7, 1058, 12, 41106);
     			attr_dev(canvas5, "id", "myChartInter2");
     			attr_dev(canvas5, "width", "800");
     			attr_dev(canvas5, "height", "400");
-    			add_location(canvas5, file$7, 1064, 16, 41348);
+    			add_location(canvas5, file$7, 1062, 16, 41301);
     			attr_dev(div7, "class", "panel");
     			attr_dev(div7, "id", "api-6");
-    			add_location(div7, file$7, 1063, 12, 41299);
+    			add_location(div7, file$7, 1061, 12, 41252);
     			attr_dev(canvas6, "id", "myChartInter3");
     			attr_dev(canvas6, "width", "800");
     			attr_dev(canvas6, "height", "400");
-    			add_location(canvas6, file$7, 1067, 16, 41492);
+    			add_location(canvas6, file$7, 1065, 16, 41445);
     			attr_dev(div8, "class", "panel");
     			attr_dev(div8, "id", "api-7");
-    			add_location(div8, file$7, 1066, 12, 41443);
+    			add_location(div8, file$7, 1064, 12, 41396);
     			attr_dev(canvas7, "id", "myChartInter4");
     			attr_dev(canvas7, "width", "800");
     			attr_dev(canvas7, "height", "400");
-    			add_location(canvas7, file$7, 1070, 16, 41636);
+    			add_location(canvas7, file$7, 1068, 16, 41589);
     			attr_dev(div9, "class", "panel");
     			attr_dev(div9, "id", "api-8");
-    			add_location(div9, file$7, 1069, 12, 41587);
+    			add_location(div9, file$7, 1067, 12, 41540);
     			attr_dev(canvas8, "id", "myChartInter5");
     			attr_dev(canvas8, "width", "800");
     			attr_dev(canvas8, "height", "400");
-    			add_location(canvas8, file$7, 1073, 16, 41780);
+    			add_location(canvas8, file$7, 1071, 16, 41733);
     			attr_dev(div10, "class", "panel");
     			attr_dev(div10, "id", "api-9");
-    			add_location(div10, file$7, 1072, 12, 41731);
+    			add_location(div10, file$7, 1070, 12, 41684);
     			attr_dev(canvas9, "id", "myChartInter6");
     			attr_dev(canvas9, "width", "800");
     			attr_dev(canvas9, "height", "400");
-    			add_location(canvas9, file$7, 1076, 16, 41925);
+    			add_location(canvas9, file$7, 1074, 16, 41878);
     			attr_dev(div11, "class", "panel");
     			attr_dev(div11, "id", "api-10");
-    			add_location(div11, file$7, 1075, 12, 41875);
+    			add_location(div11, file$7, 1073, 12, 41828);
     			attr_dev(canvas10, "id", "myChartInter7");
     			attr_dev(canvas10, "width", "800");
     			attr_dev(canvas10, "height", "400");
-    			add_location(canvas10, file$7, 1079, 16, 42070);
+    			add_location(canvas10, file$7, 1077, 16, 42023);
     			attr_dev(div12, "class", "panel");
     			attr_dev(div12, "id", "api-11");
-    			add_location(div12, file$7, 1078, 12, 42020);
+    			add_location(div12, file$7, 1076, 12, 41973);
     			attr_dev(canvas11, "id", "myChartInter8");
     			attr_dev(canvas11, "width", "800");
     			attr_dev(canvas11, "height", "400");
-    			add_location(canvas11, file$7, 1082, 16, 42215);
+    			add_location(canvas11, file$7, 1080, 16, 42168);
     			attr_dev(div13, "class", "panel");
     			attr_dev(div13, "id", "api-12");
-    			add_location(div13, file$7, 1081, 12, 42165);
+    			add_location(div13, file$7, 1079, 12, 42118);
     			attr_dev(canvas12, "id", "myChartInter9");
     			attr_dev(canvas12, "width", "800");
     			attr_dev(canvas12, "height", "400");
-    			add_location(canvas12, file$7, 1085, 16, 42360);
+    			add_location(canvas12, file$7, 1083, 16, 42313);
     			attr_dev(div14, "class", "panel");
     			attr_dev(div14, "id", "api-13");
-    			add_location(div14, file$7, 1084, 12, 42310);
+    			add_location(div14, file$7, 1082, 12, 42263);
     			attr_dev(div15, "class", "tab-content");
     			attr_dev(div15, "id", "nav-tabContent");
-    			add_location(div15, file$7, 1047, 10, 40499);
+    			add_location(div15, file$7, 1045, 10, 40452);
     			attr_dev(div16, "class", "col-8");
-    			add_location(div16, file$7, 1046, 8, 40468);
+    			add_location(div16, file$7, 1044, 8, 40421);
     			attr_dev(div17, "class", "row");
-    			add_location(div17, file$7, 1026, 4, 38803);
-    			add_location(main, file$7, 1016, 0, 38646);
+    			add_location(div17, file$7, 1024, 4, 38756);
+    			add_location(main, file$7, 1014, 0, 38599);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6791,7 +6791,7 @@ var app = (function () {
     		let population = [];
 
     		MyDataExte.forEach(e => {
-    			population.push(e.Valor);
+    			population.push(e.Valor * 10);
     		});
 
     		var myChartExterOne = new Chart(ctx,
@@ -6836,7 +6836,7 @@ var app = (function () {
     							borderWidth: 1
     						},
     						{
-    							label: "Separación Divorcios España",
+    							label: "Separación Divorcios España *10",
     							data: population,
     							backgroundColor: "rgba(8, 255, 0, 0.1)",
     							borderColor: "rgba(8, 255, 0, 0.1)",
@@ -7315,18 +7315,36 @@ var app = (function () {
     		var color = Chart.helpers.color;
     		var ctx = document.getElementById("myChartInter6");
     		let MyDataExte = [];
-    		const resData2 = await fetch("/api/v3/plugin-vehicles-stats");
+    		const resData2 = await fetch("/api/v1/roads");
     		MyDataExte = await resData2.json();
 
     		MyDataExte = MyDataExte.filter(e => {
-    			return e.country == "Spain";
+    			return e.province == "Cadiz";
     		});
 
-    		//sortJSON(MyDataExte, 'year','asc'); 
+    		sortJSON$1(MyDataExte, "year", "asc");
     		console.log(MyDataExte);
 
-    		let unic = MyDataExte["pev-stock"];
-    		let dataExtern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, unic * 5];
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["total"] * 500
+    		];
 
     		var myChartExterOne = new Chart(ctx,
     		{
@@ -7370,7 +7388,7 @@ var app = (function () {
     							borderWidth: 1
     						},
     						{
-    							label: "Falta",
+    							label: "Carreteras en cadiz por 500",
     							data: dataExtern,
     							backgroundColor: "rgba(8, 255, 0, 0.1)",
     							borderColor: "rgba(8, 255, 0, 0.1)",
@@ -7420,7 +7438,7 @@ var app = (function () {
     			0,
     			0,
     			0,
-    			MyDataExte[0]["under_190"] * 300000
+    			MyDataExte[0]["under_190"] * 30000000
     		];
 
     		var myChartExterOne = new Chart(ctx,
@@ -7496,7 +7514,6 @@ var app = (function () {
     		});
 
     		sortJSON$1(MyDataExte, "year", "asc");
-    		console.log(MyDataExte);
 
     		let dataExtern = [
     			0,

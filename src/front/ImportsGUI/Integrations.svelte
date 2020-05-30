@@ -249,7 +249,7 @@
         sortJSON(MyDataExte, 'Anyo','asc');   
         let population = []
         MyDataExte.forEach(e => {
-            population.push(e.Valor);
+            population.push(e.Valor*10);
         });
 
         var myChartExterOne = new Chart(ctx, {
@@ -292,7 +292,7 @@
                     borderWidth: 1
                 },
                 {
-                    label: 'Separación Divorcios España',
+                    label: 'Separación Divorcios España *10',
                     data: population,
                     backgroundColor: "rgba(8, 255, 0, 0.1)",
                     borderColor: "rgba(8, 255, 0, 0.1)",
@@ -687,13 +687,12 @@
 
         let MyDataExte = [];
 
-        const resData2 = await fetch("/api/v3/plugin-vehicles-stats");
+        const resData2 = await fetch("/api/v1/roads");
         MyDataExte = await resData2.json();
-        MyDataExte = MyDataExte.filter(e => {return e.country == "Spain"});
-        //sortJSON(MyDataExte, 'year','asc'); 
+        MyDataExte = MyDataExte.filter(e => {return e.province == "Cadiz"});
+        sortJSON(MyDataExte, 'year','asc'); 
         console.log(MyDataExte); 
-        let unic = MyDataExte["pev-stock"] ;
-        let dataExtern = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,unic*5]
+        let dataExtern = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MyDataExte[0]["total"]*500]
         
 
         var myChartExterOne = new Chart(ctx, {
@@ -736,7 +735,7 @@
                     borderWidth: 1
                 },
                 {
-                    label: 'Falta',
+                    label: 'Carreteras en cadiz por 500',
                     data: dataExtern,
                     backgroundColor: "rgba(8, 255, 0, 0.1)",
                     borderColor: "rgba(8, 255, 0, 0.1)",
@@ -766,7 +765,7 @@
         MyDataExte = await resData2.json();
         MyDataExte = MyDataExte.filter(e => {return e.country == "armenia"});
         sortJSON(MyDataExte, 'year','asc'); 
-        let dataExtern = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MyDataExte[0]["under_190"]*300000]
+        let dataExtern = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,MyDataExte[0]["under_190"]*30000000]
         
 
         var myChartExterOne = new Chart(ctx, {
@@ -839,7 +838,6 @@
         MyDataExte = await resData2.json();
         MyDataExte = MyDataExte.filter(e => {return e.country == "spain"});
         sortJSON(MyDataExte, 'year','asc'); 
-        console.log(MyDataExte); 
         let dataExtern = [0,0,0,0,0,0,0,0,0,0,MyDataExte[0]["poverty_prp"]*100,0,0,0,0,MyDataExte[1]["poverty_prp"]*100,0,MyDataExte[2]["poverty_prp"]*100]
         
 
