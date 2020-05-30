@@ -5967,7 +5967,7 @@ var app = (function () {
     const { console: console_1$5, document: document_1$1 } = globals;
     const file$7 = "src\\front\\ImportsGUI\\Integrations.svelte";
 
-    // (191:4) <Button outline color="secondary" on:click="{pop}">
+    // (1093:4) <Button outline color="secondary" on:click="{pop}">
     function create_default_slot$3(ctx) {
     	let i;
     	let t;
@@ -5977,7 +5977,7 @@ var app = (function () {
     			i = element("i");
     			t = text(" Atrás");
     			attr_dev(i, "class", "fas fa-arrow-circle-left");
-    			add_location(i, file$7, 190, 56, 7622);
+    			add_location(i, file$7, 1092, 56, 42560);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -5993,7 +5993,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$3.name,
     		type: "slot",
-    		source: "(191:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(1093:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -6005,25 +6005,82 @@ var app = (function () {
     	let script_src_value;
     	let t0;
     	let main;
-    	let div6;
+    	let style;
+    	let t2;
+    	let div17;
     	let div1;
     	let div0;
     	let button0;
-    	let t2;
-    	let button1;
     	let t4;
-    	let div5;
-    	let div4;
-    	let div2;
-    	let p0;
+    	let button1;
     	let t6;
-    	let div3;
-    	let p1;
+    	let button2;
     	let t8;
+    	let button3;
+    	let t10;
+    	let button4;
+    	let t12;
+    	let button5;
+    	let t14;
+    	let button6;
+    	let t16;
+    	let button7;
+    	let t18;
+    	let button8;
+    	let t20;
+    	let button9;
+    	let t22;
+    	let button10;
+    	let t24;
+    	let button11;
+    	let t26;
+    	let button12;
+    	let t28;
+    	let div16;
+    	let div15;
+    	let div2;
+    	let canvas0;
+    	let t29;
+    	let div3;
+    	let canvas1;
+    	let t30;
+    	let div4;
+    	let canvas2;
+    	let t31;
+    	let div5;
+    	let canvas3;
+    	let t32;
+    	let div6;
+    	let canvas4;
+    	let t33;
+    	let div7;
+    	let canvas5;
+    	let t34;
+    	let div8;
+    	let canvas6;
+    	let t35;
+    	let div9;
+    	let canvas7;
+    	let t36;
+    	let div10;
+    	let canvas8;
+    	let t37;
+    	let div11;
+    	let canvas9;
+    	let t38;
+    	let div12;
+    	let canvas10;
+    	let t39;
+    	let div13;
+    	let canvas11;
+    	let t40;
+    	let div14;
+    	let canvas12;
+    	let t41;
     	let current;
     	let dispose;
 
-    	const button2 = new Button({
+    	const button13 = new Button({
     			props: {
     				outline: true,
     				color: "secondary",
@@ -6033,59 +6090,221 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	button2.$on("click", pop);
+    	button13.$on("click", pop);
 
     	const block = {
     		c: function create() {
     			script = element("script");
     			t0 = space();
     			main = element("main");
-    			div6 = element("div");
+    			style = element("style");
+    			style.textContent = ".active {\r\n            display: block;\r\n        }\r\n        .panel {\r\n            display: none;\r\n        }";
+    			t2 = space();
+    			div17 = element("div");
     			div1 = element("div");
     			div0 = element("div");
     			button0 = element("button");
-    			button0.textContent = "Integración con 01 emigrants-stats";
-    			t2 = space();
-    			button1 = element("button");
-    			button1.textContent = "Integración con 02 emigrants-stats";
+    			button0.textContent = "Integración Api Externa 1";
     			t4 = space();
-    			div5 = element("div");
-    			div4 = element("div");
-    			div2 = element("div");
-    			p0 = element("p");
-    			p0.textContent = "1";
+    			button1 = element("button");
+    			button1.textContent = "Integración Api Externa 2";
     			t6 = space();
-    			div3 = element("div");
-    			p1 = element("p");
-    			p1.textContent = "2";
+    			button2 = element("button");
+    			button2.textContent = "Integración Api Externa 3";
     			t8 = space();
-    			create_component(button2.$$.fragment);
+    			button3 = element("button");
+    			button3.textContent = "ntegración Api Externa 4";
+    			t10 = space();
+    			button4 = element("button");
+    			button4.textContent = "Integración Api Interna 09";
+    			t12 = space();
+    			button5 = element("button");
+    			button5.textContent = "Integración Api Interna 02";
+    			t14 = space();
+    			button6 = element("button");
+    			button6.textContent = "Integración Api Interna 23";
+    			t16 = space();
+    			button7 = element("button");
+    			button7.textContent = "Integración Api Interna 06";
+    			t18 = space();
+    			button8 = element("button");
+    			button8.textContent = "Integración Api Interna 11";
+    			t20 = space();
+    			button9 = element("button");
+    			button9.textContent = "Integración Api Interna 04";
+    			t22 = space();
+    			button10 = element("button");
+    			button10.textContent = "Integración Api Interna 27";
+    			t24 = space();
+    			button11 = element("button");
+    			button11.textContent = "Integración Api Interna 01";
+    			t26 = space();
+    			button12 = element("button");
+    			button12.textContent = "Integración Api Interna 05";
+    			t28 = space();
+    			div16 = element("div");
+    			div15 = element("div");
+    			div2 = element("div");
+    			canvas0 = element("canvas");
+    			t29 = space();
+    			div3 = element("div");
+    			canvas1 = element("canvas");
+    			t30 = space();
+    			div4 = element("div");
+    			canvas2 = element("canvas");
+    			t31 = space();
+    			div5 = element("div");
+    			canvas3 = element("canvas");
+    			t32 = space();
+    			div6 = element("div");
+    			canvas4 = element("canvas");
+    			t33 = space();
+    			div7 = element("div");
+    			canvas5 = element("canvas");
+    			t34 = space();
+    			div8 = element("div");
+    			canvas6 = element("canvas");
+    			t35 = space();
+    			div9 = element("div");
+    			canvas7 = element("canvas");
+    			t36 = space();
+    			div10 = element("div");
+    			canvas8 = element("canvas");
+    			t37 = space();
+    			div11 = element("div");
+    			canvas9 = element("canvas");
+    			t38 = space();
+    			div12 = element("div");
+    			canvas10 = element("canvas");
+    			t39 = space();
+    			div13 = element("div");
+    			canvas11 = element("canvas");
+    			t40 = space();
+    			div14 = element("div");
+    			canvas12 = element("canvas");
+    			t41 = space();
+    			create_component(button13.$$.fragment);
     			if (script.src !== (script_src_value = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$7, 160, 4, 6675);
-    			add_location(button0, file$7, 170, 12, 6931);
-    			add_location(button1, file$7, 171, 12, 7056);
+    			add_location(script, file$7, 1012, 4, 38531);
+    			add_location(style, file$7, 1017, 4, 38658);
+    			add_location(button0, file$7, 1030, 12, 38930);
+    			add_location(button1, file$7, 1031, 12, 39046);
+    			add_location(button2, file$7, 1032, 12, 39161);
+    			add_location(button3, file$7, 1033, 12, 39276);
+    			add_location(button4, file$7, 1034, 12, 39390);
+    			add_location(button5, file$7, 1035, 12, 39506);
+    			add_location(button6, file$7, 1036, 12, 39622);
+    			add_location(button7, file$7, 1037, 12, 39738);
+    			add_location(button8, file$7, 1038, 12, 39854);
+    			add_location(button9, file$7, 1039, 12, 39970);
+    			add_location(button10, file$7, 1040, 12, 40087);
+    			add_location(button11, file$7, 1041, 12, 40204);
+    			add_location(button12, file$7, 1042, 12, 40321);
     			attr_dev(div0, "class", "list-group");
     			attr_dev(div0, "id", "list-tab");
     			attr_dev(div0, "role", "tablist");
-    			add_location(div0, file$7, 168, 10, 6862);
+    			add_location(div0, file$7, 1028, 10, 38861);
     			attr_dev(div1, "class", "col-4");
-    			add_location(div1, file$7, 167, 8, 6831);
-    			add_location(p0, file$7, 178, 16, 7356);
+    			add_location(div1, file$7, 1027, 8, 38830);
+    			attr_dev(canvas0, "id", "myChartExterOne");
+    			attr_dev(canvas0, "width", "800");
+    			attr_dev(canvas0, "height", "400");
+    			add_location(canvas0, file$7, 1049, 16, 40614);
     			attr_dev(div2, "class", "panel active");
     			attr_dev(div2, "id", "api-1");
-    			add_location(div2, file$7, 177, 12, 7300);
-    			add_location(p1, file$7, 181, 16, 7447);
+    			add_location(div2, file$7, 1048, 12, 40558);
+    			attr_dev(canvas1, "id", "myChartExterTwo");
+    			attr_dev(canvas1, "width", "800");
+    			attr_dev(canvas1, "height", "400");
+    			add_location(canvas1, file$7, 1052, 16, 40760);
     			attr_dev(div3, "class", "panel");
     			attr_dev(div3, "id", "api-2");
-    			add_location(div3, file$7, 180, 12, 7398);
-    			attr_dev(div4, "class", "tab-content");
-    			attr_dev(div4, "id", "nav-tabContent");
-    			add_location(div4, file$7, 176, 10, 7241);
-    			attr_dev(div5, "class", "col-8");
-    			add_location(div5, file$7, 175, 8, 7210);
-    			attr_dev(div6, "class", "row");
-    			add_location(div6, file$7, 166, 4, 6804);
-    			add_location(main, file$7, 164, 0, 6790);
+    			add_location(div3, file$7, 1051, 12, 40711);
+    			attr_dev(canvas2, "id", "myChartExterThree");
+    			attr_dev(canvas2, "width", "800");
+    			attr_dev(canvas2, "height", "400");
+    			add_location(canvas2, file$7, 1055, 16, 40906);
+    			attr_dev(div4, "class", "panel");
+    			attr_dev(div4, "id", "api-3");
+    			add_location(div4, file$7, 1054, 12, 40857);
+    			attr_dev(canvas3, "id", "myChartExterThree");
+    			attr_dev(canvas3, "width", "800");
+    			attr_dev(canvas3, "height", "400");
+    			add_location(canvas3, file$7, 1058, 16, 41054);
+    			attr_dev(div5, "class", "panel");
+    			attr_dev(div5, "id", "api-4");
+    			add_location(div5, file$7, 1057, 12, 41005);
+    			attr_dev(canvas4, "id", "myChartInterOne");
+    			attr_dev(canvas4, "width", "800");
+    			attr_dev(canvas4, "height", "400");
+    			add_location(canvas4, file$7, 1061, 16, 41202);
+    			attr_dev(div6, "class", "panel");
+    			attr_dev(div6, "id", "api-5");
+    			add_location(div6, file$7, 1060, 12, 41153);
+    			attr_dev(canvas5, "id", "myChartInter2");
+    			attr_dev(canvas5, "width", "800");
+    			attr_dev(canvas5, "height", "400");
+    			add_location(canvas5, file$7, 1064, 16, 41348);
+    			attr_dev(div7, "class", "panel");
+    			attr_dev(div7, "id", "api-6");
+    			add_location(div7, file$7, 1063, 12, 41299);
+    			attr_dev(canvas6, "id", "myChartInter3");
+    			attr_dev(canvas6, "width", "800");
+    			attr_dev(canvas6, "height", "400");
+    			add_location(canvas6, file$7, 1067, 16, 41492);
+    			attr_dev(div8, "class", "panel");
+    			attr_dev(div8, "id", "api-7");
+    			add_location(div8, file$7, 1066, 12, 41443);
+    			attr_dev(canvas7, "id", "myChartInter4");
+    			attr_dev(canvas7, "width", "800");
+    			attr_dev(canvas7, "height", "400");
+    			add_location(canvas7, file$7, 1070, 16, 41636);
+    			attr_dev(div9, "class", "panel");
+    			attr_dev(div9, "id", "api-8");
+    			add_location(div9, file$7, 1069, 12, 41587);
+    			attr_dev(canvas8, "id", "myChartInter5");
+    			attr_dev(canvas8, "width", "800");
+    			attr_dev(canvas8, "height", "400");
+    			add_location(canvas8, file$7, 1073, 16, 41780);
+    			attr_dev(div10, "class", "panel");
+    			attr_dev(div10, "id", "api-9");
+    			add_location(div10, file$7, 1072, 12, 41731);
+    			attr_dev(canvas9, "id", "myChartInter6");
+    			attr_dev(canvas9, "width", "800");
+    			attr_dev(canvas9, "height", "400");
+    			add_location(canvas9, file$7, 1076, 16, 41925);
+    			attr_dev(div11, "class", "panel");
+    			attr_dev(div11, "id", "api-10");
+    			add_location(div11, file$7, 1075, 12, 41875);
+    			attr_dev(canvas10, "id", "myChartInter7");
+    			attr_dev(canvas10, "width", "800");
+    			attr_dev(canvas10, "height", "400");
+    			add_location(canvas10, file$7, 1079, 16, 42070);
+    			attr_dev(div12, "class", "panel");
+    			attr_dev(div12, "id", "api-11");
+    			add_location(div12, file$7, 1078, 12, 42020);
+    			attr_dev(canvas11, "id", "myChartInter8");
+    			attr_dev(canvas11, "width", "800");
+    			attr_dev(canvas11, "height", "400");
+    			add_location(canvas11, file$7, 1082, 16, 42215);
+    			attr_dev(div13, "class", "panel");
+    			attr_dev(div13, "id", "api-12");
+    			add_location(div13, file$7, 1081, 12, 42165);
+    			attr_dev(canvas12, "id", "myChartInter9");
+    			attr_dev(canvas12, "width", "800");
+    			attr_dev(canvas12, "height", "400");
+    			add_location(canvas12, file$7, 1085, 16, 42360);
+    			attr_dev(div14, "class", "panel");
+    			attr_dev(div14, "id", "api-13");
+    			add_location(div14, file$7, 1084, 12, 42310);
+    			attr_dev(div15, "class", "tab-content");
+    			attr_dev(div15, "id", "nav-tabContent");
+    			add_location(div15, file$7, 1047, 10, 40499);
+    			attr_dev(div16, "class", "col-8");
+    			add_location(div16, file$7, 1046, 8, 40468);
+    			attr_dev(div17, "class", "row");
+    			add_location(div17, file$7, 1026, 4, 38803);
+    			add_location(main, file$7, 1016, 0, 38646);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6094,56 +6313,135 @@ var app = (function () {
     			append_dev(document_1$1.head, script);
     			insert_dev(target, t0, anchor);
     			insert_dev(target, main, anchor);
-    			append_dev(main, div6);
-    			append_dev(div6, div1);
+    			append_dev(main, style);
+    			append_dev(main, t2);
+    			append_dev(main, div17);
+    			append_dev(div17, div1);
     			append_dev(div1, div0);
     			append_dev(div0, button0);
-    			append_dev(div0, t2);
+    			append_dev(div0, t4);
     			append_dev(div0, button1);
-    			append_dev(div6, t4);
-    			append_dev(div6, div5);
-    			append_dev(div5, div4);
-    			append_dev(div4, div2);
-    			append_dev(div2, p0);
-    			append_dev(div4, t6);
-    			append_dev(div4, div3);
-    			append_dev(div3, p1);
-    			append_dev(main, t8);
-    			mount_component(button2, main, null);
+    			append_dev(div0, t6);
+    			append_dev(div0, button2);
+    			append_dev(div0, t8);
+    			append_dev(div0, button3);
+    			append_dev(div0, t10);
+    			append_dev(div0, button4);
+    			append_dev(div0, t12);
+    			append_dev(div0, button5);
+    			append_dev(div0, t14);
+    			append_dev(div0, button6);
+    			append_dev(div0, t16);
+    			append_dev(div0, button7);
+    			append_dev(div0, t18);
+    			append_dev(div0, button8);
+    			append_dev(div0, t20);
+    			append_dev(div0, button9);
+    			append_dev(div0, t22);
+    			append_dev(div0, button10);
+    			append_dev(div0, t24);
+    			append_dev(div0, button11);
+    			append_dev(div0, t26);
+    			append_dev(div0, button12);
+    			append_dev(div17, t28);
+    			append_dev(div17, div16);
+    			append_dev(div16, div15);
+    			append_dev(div15, div2);
+    			append_dev(div2, canvas0);
+    			append_dev(div15, t29);
+    			append_dev(div15, div3);
+    			append_dev(div3, canvas1);
+    			append_dev(div15, t30);
+    			append_dev(div15, div4);
+    			append_dev(div4, canvas2);
+    			append_dev(div15, t31);
+    			append_dev(div15, div5);
+    			append_dev(div5, canvas3);
+    			append_dev(div15, t32);
+    			append_dev(div15, div6);
+    			append_dev(div6, canvas4);
+    			append_dev(div15, t33);
+    			append_dev(div15, div7);
+    			append_dev(div7, canvas5);
+    			append_dev(div15, t34);
+    			append_dev(div15, div8);
+    			append_dev(div8, canvas6);
+    			append_dev(div15, t35);
+    			append_dev(div15, div9);
+    			append_dev(div9, canvas7);
+    			append_dev(div15, t36);
+    			append_dev(div15, div10);
+    			append_dev(div10, canvas8);
+    			append_dev(div15, t37);
+    			append_dev(div15, div11);
+    			append_dev(div11, canvas9);
+    			append_dev(div15, t38);
+    			append_dev(div15, div12);
+    			append_dev(div12, canvas10);
+    			append_dev(div15, t39);
+    			append_dev(div15, div13);
+    			append_dev(div13, canvas11);
+    			append_dev(div15, t40);
+    			append_dev(div15, div14);
+    			append_dev(div14, canvas12);
+    			append_dev(main, t41);
+    			mount_component(button13, main, null);
     			current = true;
     			if (remount) run_all(dispose);
 
     			dispose = [
-    				listen_dev(script, "load", loadGraph$1, false, false, false),
-    				listen_dev(button0, "click", /*click_handler*/ ctx[2], false, false, false),
-    				listen_dev(button0, "click", /*showgraph*/ ctx[1], false, false, false),
-    				listen_dev(button1, "click", /*click_handler_1*/ ctx[3], false, false, false),
-    				listen_dev(button1, "click", /*showgraph*/ ctx[1], false, false, false)
+    				listen_dev(script, "load", /*loadGraph*/ ctx[1], false, false, false),
+    				listen_dev(button0, "click", /*click_handler*/ ctx[23], false, false, false),
+    				listen_dev(button0, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button1, "click", /*click_handler_1*/ ctx[24], false, false, false),
+    				listen_dev(button1, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button2, "click", /*click_handler_2*/ ctx[25], false, false, false),
+    				listen_dev(button2, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button3, "click", /*click_handler_3*/ ctx[26], false, false, false),
+    				listen_dev(button3, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button4, "click", /*click_handler_4*/ ctx[27], false, false, false),
+    				listen_dev(button4, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button5, "click", /*click_handler_5*/ ctx[28], false, false, false),
+    				listen_dev(button5, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button6, "click", /*click_handler_6*/ ctx[29], false, false, false),
+    				listen_dev(button6, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button7, "click", /*click_handler_7*/ ctx[30], false, false, false),
+    				listen_dev(button7, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button8, "click", /*click_handler_8*/ ctx[31], false, false, false),
+    				listen_dev(button8, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button9, "click", /*click_handler_9*/ ctx[32], false, false, false),
+    				listen_dev(button9, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button10, "click", /*click_handler_10*/ ctx[33], false, false, false),
+    				listen_dev(button10, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button11, "click", /*click_handler_11*/ ctx[34], false, false, false),
+    				listen_dev(button11, "click", /*showgraph*/ ctx[2], false, false, false),
+    				listen_dev(button12, "click", /*click_handler_12*/ ctx[35], false, false, false),
+    				listen_dev(button12, "click", /*showgraph*/ ctx[2], false, false, false)
     			];
     		},
-    		p: function update(ctx, [dirty]) {
-    			const button2_changes = {};
+    		p: function update(ctx, dirty) {
+    			const button13_changes = {};
 
-    			if (dirty & /*$$scope*/ 16) {
-    				button2_changes.$$scope = { dirty, ctx };
+    			if (dirty[1] & /*$$scope*/ 32) {
+    				button13_changes.$$scope = { dirty, ctx };
     			}
 
-    			button2.$set(button2_changes);
+    			button13.$set(button13_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
-    			transition_in(button2.$$.fragment, local);
+    			transition_in(button13.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
-    			transition_out(button2.$$.fragment, local);
+    			transition_out(button13.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
     			detach_dev(script);
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
-    			destroy_component(button2);
+    			destroy_component(button13);
     			run_all(dispose);
     		}
     	};
@@ -6161,7 +6459,7 @@ var app = (function () {
 
     const BASE_API_URL = "/api/v3/imports";
 
-    // Funcion que Ordena
+    // Function Sort
     function sortJSON$1(data, key, orden) {
     	return data.sort(function (a, b) {
     		var x = a[key], y = b[key];
@@ -6176,10 +6474,13 @@ var app = (function () {
     	});
     }
 
-    // Externa 1
-    async function loadapiextern1() {
+    function instance$8($$self, $$props, $$invalidate) {
     	let MyData = [];
-    	let MyDataExte = [];
+    	let gdamalt = [];
+    	let gdabarley = [];
+    	let gdaoat = [];
+    	let gdawaste = [];
+    	let gdaethylalcohol = [];
 
     	let country = [
     		"2000",
@@ -6202,174 +6503,1181 @@ var app = (function () {
     		"2017"
     	];
 
-    	const resData = await fetch("/api/v2/imports" + "?country=total");
-    	MyData = await resData.json();
-    	sortJSON$1(MyData, "year", "asc");
+    	async function importsData() {
+    		const resData = await fetch("/api/v2/imports" + "?country=total");
+    		MyData = await resData.json();
+    		sortJSON$1(MyData, "year", "asc");
 
-    	const resData2 = await fetch("https://the-cocktail-db.p.rapidapi.com/list.php", {
-    		method: "GET",
-    		qs: { i: "list" },
-    		headers: {
-    			"x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-    			"x-rapidapi-key": "SIGN-UP-FOR-KEY",
-    			useQueryString: true
-    		}
-    	});
+    		gdamalt = [
+    			MyData[0].gdamalt,
+    			MyData[1].gdamalt,
+    			MyData[2].gdamalt,
+    			MyData[3].gdamalt,
+    			MyData[4].gdamalt,
+    			MyData[5].gdamalt,
+    			MyData[6].gdamalt,
+    			MyData[7].gdamalt,
+    			MyData[8].gdamalt,
+    			MyData[9].gdamalt,
+    			MyData[10].gdamalt,
+    			MyData[11].gdamalt,
+    			MyData[12].gdamalt,
+    			MyData[13].gdamalt,
+    			MyData[14].gdamalt,
+    			MyData[15].gdamalt,
+    			MyData[16].gdamalt,
+    			MyData[17].gdamalt
+    		];
 
-    	MyDataExte = await resData2.json();
-    	console.log(MyDataExte);
+    		gdabarley = [
+    			MyData[0].gdabarley,
+    			MyData[1].gdabarley,
+    			MyData[2].gdabarley,
+    			MyData[3].gdabarley,
+    			MyData[4].gdabarley,
+    			MyData[5].gdabarley,
+    			MyData[6].gdabarley,
+    			MyData[7].gdabarley,
+    			MyData[8].gdabarley,
+    			MyData[9].gdabarley,
+    			MyData[10].gdabarley,
+    			MyData[11].gdabarley,
+    			MyData[12].gdabarley,
+    			MyData[13].gdabarley,
+    			MyData[14].gdabarley,
+    			MyData[15].gdabarley,
+    			MyData[16].gdabarley,
+    			MyData[17].gdabarley
+    		];
 
-    	var myChart = new Chart(ctx,
-    	{
-    			type: "line",
-    			data: {
-    				labels: country,
-    				datasets: [
-    					{
-    						label: "Importacion Malta Total",
-    						data: [
-    							MyData[0].gdamalt,
-    							MyData[1].gdamalt,
-    							MyData[2].gdamalt,
-    							MyData[3].gdamalt,
-    							MyData[4].gdamalt,
-    							MyData[5].gdamalt,
-    							MyData[6].gdamalt,
-    							MyData[7].gdamalt,
-    							MyData[8].gdamalt,
-    							MyData[9].gdamalt,
-    							MyData[10].gdamalt,
-    							MyData[11].gdamalt,
-    							MyData[12].gdamalt,
-    							MyData[13].gdamalt,
-    							MyData[14].gdamalt,
-    							MyData[15].gdamalt,
-    							MyData[16].gdamalt,
-    							MyData[17].gdamalt
-    						],
-    						backgroundColor: ["rgba(0,191,255,0.2)"],
-    						borderColor: ["rgba(0,191,255,0.2)"],
-    						borderWidth: 1
-    					},
-    					{
-    						label: "Importacion Cebada Total",
-    						data: [
-    							MyData[0].gdabarley,
-    							MyData[1].gdabarley,
-    							MyData[2].gdabarley,
-    							MyData[3].gdabarley,
-    							MyData[4].gdabarley,
-    							MyData[5].gdabarley,
-    							MyData[6].gdabarley,
-    							MyData[7].gdabarley,
-    							MyData[8].gdabarley,
-    							MyData[9].gdabarley,
-    							MyData[10].gdabarley,
-    							MyData[11].gdabarley,
-    							MyData[12].gdabarley,
-    							MyData[13].gdabarley,
-    							MyData[14].gdabarley,
-    							MyData[15].gdabarley,
-    							MyData[16].gdabarley,
-    							MyData[17].gdabarley
-    						],
-    						backgroundColor: "rgba(255, 0, 0, 0.1)",
-    						borderColor: "rgba(255, 0, 0, 0.1)",
-    						borderWidth: 1
-    					},
-    					{
-    						label: "Importacion Avena Total",
-    						data: [
-    							MyData[0].gdaoat,
-    							MyData[1].gdaoat,
-    							MyData[2].gdaoat,
-    							MyData[3].gdaoat,
-    							MyData[4].gdaoat,
-    							MyData[5].gdaoat,
-    							MyData[6].gdaoat,
-    							MyData[7].gdaoat,
-    							MyData[8].gdaoat,
-    							MyData[9].gdaoat,
-    							MyData[10].gdaoat,
-    							MyData[11].gdaoat,
-    							MyData[12].gdaoat,
-    							MyData[13].gdaoat,
-    							MyData[14].gdaoat,
-    							MyData[15].gdaoat,
-    							MyData[16].gdaoat,
-    							MyData[17].gdaoat
-    						],
-    						backgroundColor: "rgba(42, 187, 155, 0.1)",
-    						borderColor: "rgba(42, 187, 155, 0.1)",
-    						borderWidth: 1
-    					},
-    					{
-    						label: "Exportación Residuos Total/10",
-    						data: [
-    							MyData[0].gdawaste / 10,
-    							MyData[1].gdawaste / 10,
-    							MyData[2].gdawaste / 10,
-    							MyData[3].gdawaste / 10,
-    							MyData[4].gdawaste / 10,
-    							MyData[5].gdawaste / 10,
-    							MyData[6].gdawaste / 10,
-    							MyData[7].gdawaste / 10,
-    							MyData[8].gdawaste / 10,
-    							MyData[9].gdawaste / 10,
-    							MyData[10].gdawaste / 10,
-    							MyData[11].gdawaste / 10,
-    							MyData[12].gdawaste / 10,
-    							MyData[13].gdawaste / 10,
-    							MyData[14].gdawaste / 10,
-    							MyData[15].gdawaste / 10,
-    							MyData[16].gdawaste / 10,
-    							MyData[17].gdawaste / 10
-    						],
-    						backgroundColor: "rgba(253, 227, 167, 0.1)",
-    						borderColor: "rgba(253, 227, 167, 0.1)",
-    						borderWidth: 1
-    					},
-    					{
-    						label: "Exportació Alcohol Total/10",
-    						data: [
-    							MyData[0].gdaethylalcohol / 10,
-    							MyData[1].gdaethylalcohol / 10,
-    							MyData[2].gdaethylalcohol / 10,
-    							MyData[3].gdaethylalcohol / 10,
-    							MyData[4].gdaethylalcohol / 10,
-    							MyData[5].gdaethylalcohol / 10,
-    							MyData[6].gdaethylalcohol / 10,
-    							MyData[7].gdaethylalcohol / 10,
-    							MyData[8].gdaethylalcohol / 10,
-    							MyData[9].gdaethylalcohol / 10,
-    							MyData[10].gdaethylalcohol / 10,
-    							MyData[11].gdaethylalcohol / 10,
-    							MyData[12].gdaethylalcohol / 10,
-    							MyData[13].gdaethylalcohol / 10,
-    							MyData[14].gdaethylalcohol / 10,
-    							MyData[15].gdaethylalcohol / 10,
-    							MyData[16].gdaethylalcohol / 10,
-    							MyData[17].gdaethylalcohol / 10
-    						],
-    						backgroundColor: "rgba(255, 0, 0, 0.1)",
-    						borderColor: "rgba(255, 0, 0, 0.1)",
-    						borderWidth: 1
-    					}
-    				]
-    			},
-    			options: {
-    				scales: {
-    					yAxes: [{ ticks: { beginAtZero: true } }]
-    				}
-    			}
+    		gdaoat = [
+    			MyData[0].gdaoat / 10,
+    			MyData[1].gdaoat / 10,
+    			MyData[2].gdaoat / 10,
+    			MyData[3].gdaoat / 10,
+    			MyData[4].gdaoat / 10,
+    			MyData[5].gdaoat / 10,
+    			MyData[6].gdaoat / 10,
+    			MyData[7].gdaoat / 10,
+    			MyData[8].gdaoat / 10,
+    			MyData[9].gdaoat / 10,
+    			MyData[10].gdaoat / 10,
+    			MyData[11].gdaoat / 10,
+    			MyData[12].gdaoat / 10,
+    			MyData[13].gdaoat / 10,
+    			MyData[14].gdaoat / 10,
+    			MyData[15].gdaoat / 10,
+    			MyData[16].gdaoat / 10,
+    			MyData[17].gdaoat / 10
+    		];
+
+    		gdawaste = [
+    			MyData[0].gdawaste / 10,
+    			MyData[1].gdawaste / 10,
+    			MyData[2].gdawaste / 10,
+    			MyData[3].gdawaste / 10,
+    			MyData[4].gdawaste / 10,
+    			MyData[5].gdawaste / 10,
+    			MyData[6].gdawaste / 10,
+    			MyData[7].gdawaste / 10,
+    			MyData[8].gdawaste / 10,
+    			MyData[9].gdawaste / 10,
+    			MyData[10].gdawaste / 10,
+    			MyData[11].gdawaste / 10,
+    			MyData[12].gdawaste / 10,
+    			MyData[13].gdawaste / 10,
+    			MyData[14].gdawaste / 10,
+    			MyData[15].gdawaste / 10,
+    			MyData[16].gdawaste / 10,
+    			MyData[17].gdawaste / 10
+    		];
+
+    		gdaethylalcohol = [
+    			MyData[0].gdaethylalcohol / 10,
+    			MyData[1].gdaethylalcohol / 10,
+    			MyData[2].gdaethylalcohol / 10,
+    			MyData[3].gdaethylalcohol / 10,
+    			MyData[4].gdaethylalcohol / 10,
+    			MyData[5].gdaethylalcohol / 10,
+    			MyData[6].gdaethylalcohol / 10,
+    			MyData[7].gdaethylalcohol / 10,
+    			MyData[8].gdaethylalcohol / 10,
+    			MyData[9].gdaethylalcohol / 10,
+    			MyData[10].gdaethylalcohol / 10,
+    			MyData[11].gdaethylalcohol / 10,
+    			MyData[12].gdaethylalcohol / 10,
+    			MyData[13].gdaethylalcohol / 10,
+    			MyData[14].gdaethylalcohol / 10,
+    			MyData[15].gdaethylalcohol / 10,
+    			MyData[16].gdaethylalcohol / 10,
+    			MyData[17].gdaethylalcohol / 10
+    		];
+
+    		loadapiextern1();
+    		loadapiextern2();
+    		loadapiextern3();
+    		loadapiInter1();
+    		loadapiInter2();
+    		loadapiInter3();
+    		loadapiInter4();
+    		loadapiInter5();
+    		loadapiInter6();
+    		loadapiInter7();
+    		loadapiInter8();
+    		loadapiInter9();
+    	}
+
+    	
+
+    	// Externa 1
+    	async function loadapiextern1() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartExterOne");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2886?tip=AM");
+    		MyDataExte = await resData2.json();
+    		MyDataExte = MyDataExte[0].Data.slice(2, 20);
+    		sortJSON$1(MyDataExte, "Anyo", "asc");
+    		let population = [];
+
+    		MyDataExte.forEach(e => {
+    			population.push(e.Valor);
     		});
-    }
 
-    function loadGraph$1() {
-    	loadapiextern1();
-    }
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Poblacion Cantabria",
+    							data: population,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
 
-    function instance$8($$self, $$props, $$invalidate) {
+    	
+
+    	// Externa 2
+    	async function loadapiextern2() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartExterTwo");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2855?tip=AM");
+    		MyDataExte = await resData2.json();
+    		MyDataExte = MyDataExte[0].Data.slice(2, 20);
+    		sortJSON$1(MyDataExte, "Anyo", "asc");
+    		let population = [];
+
+    		MyDataExte.forEach(e => {
+    			population.push(e.Valor);
+    		});
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Poblacion Albatece",
+    							data: population,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Externa 3
+    	async function loadapiextern3() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartExterThree");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/20171?tip=AM");
+    		MyDataExte = await resData2.json();
+    		MyDataExte = MyDataExte[0].Data.slice(2, 20);
+    		sortJSON$1(MyDataExte, "Anyo", "asc");
+    		let population = [];
+
+    		MyDataExte.forEach(e => {
+    			population.push(e.Valor);
+    		});
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Separación Divorcios España",
+    							data: population,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 1
+    	async function loadapiInter1() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInterOne");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v3/plugin-vehicles-stats");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.country == "Spain";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+    		let unic = MyDataExte[0]["pev-stock"];
+    		let dataExtern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, unic * 5];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Ventas Acumuladas Vehiculos España * 5",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 2
+    	async function loadapiInter2() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter2");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v2/evolution-of-cycling-routes");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.province == "sevilla";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0].metropolitan * 5000,
+    			0,
+    			MyDataExte[1].metropolitan * 5000
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "rutas ciclistas Metropolitano Sevilla * 5000",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 3
+    	async function loadapiInter3() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter3");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v2/fires-stats");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.community == "andalucia";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["total_fire"] * 1000,
+    			MyDataExte[1]["total_fire"] * 1000,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Total Incendios Andalucia * 1000",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 4
+    	async function loadapiInter4() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter4");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v2/not-hospitalized-stats");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.province == "Sevilla";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["total"] * 100,
+    			0,
+    			0,
+    			0
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Victimas nos hospitalizadas en accidente Sevilla *100",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 5
+    	async function loadapiInter5() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter5");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v2/economic-freedom-indexes");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.country == "Panama";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["efiindex"] * 10000,
+    			MyDataExte[1]["efiindex"] * 10000
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Libertad por pais Indice Panama * 10000",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 6
+    	async function loadapiInter6() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter6");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v3/plugin-vehicles-stats");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.country == "Spain";
+    		});
+
+    		//sortJSON(MyDataExte, 'year','asc'); 
+    		console.log(MyDataExte);
+
+    		let unic = MyDataExte["pev-stock"];
+    		let dataExtern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, unic * 5];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Falta",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 7
+    	async function loadapiInter7() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter7");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v2/poverty-stats");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.country == "armenia";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["under_190"] * 300000
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Falta Nombre",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 8
+    	async function loadapiInter8() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter8");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v2/poverty-stat");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.country == "spain";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+    		console.log(MyDataExte);
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["poverty_prp"] * 100,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[1]["poverty_prp"] * 100,
+    			0,
+    			MyDataExte[2]["poverty_prp"] * 100
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Ingreso mínimo en españa * 100",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Compañero 9
+    	async function loadapiInter9() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartInter9");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("/api/v1/life_expectancies");
+    		MyDataExte = await resData2.json();
+
+    		MyDataExte = MyDataExte.filter(e => {
+    			return e.country == "mexico";
+    		});
+
+    		sortJSON$1(MyDataExte, "year", "asc");
+
+    		let dataExtern = [
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			0,
+    			MyDataExte[0]["average_life_expectancy"] * 10000,
+    			0,
+    			0
+    		];
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Experanza de vida  * 10000",
+    							data: dataExtern,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	function loadGraph() {
+    		importsData();
+    	}
+
     	
 
     	// Cambiar Api que se visualiza
@@ -6379,12 +7687,17 @@ var app = (function () {
     		console.log(api_active);
     		document.getElementById("api-1").className = "panel";
     		document.getElementById("api-2").className = "panel";
-    		document.getElementById("api-2").className = "panel";
-    		document.getElementById("api-2").className = "panel";
-    		document.getElementById("api-2").className = "panel";
-    		document.getElementById("api-2").className = "panel";
-    		document.getElementById("api-2").className = "panel";
-    		document.getElementById("api-2").className = "panel";
+    		document.getElementById("api-3").className = "panel";
+    		document.getElementById("api-4").className = "panel";
+    		document.getElementById("api-5").className = "panel";
+    		document.getElementById("api-6").className = "panel";
+    		document.getElementById("api-7").className = "panel";
+    		document.getElementById("api-8").className = "panel";
+    		document.getElementById("api-9").className = "panel";
+    		document.getElementById("api-10").className = "panel";
+    		document.getElementById("api-11").className = "panel";
+    		document.getElementById("api-12").className = "panel";
+    		document.getElementById("api-13").className = "panel";
     		let id = "api-" + String(api_active);
     		document.getElementById(id).className = "panel active";
     		console.log(id);
@@ -6401,19 +7714,56 @@ var app = (function () {
     	validate_slots("Integrations", $$slots, []);
     	const click_handler = () => $$invalidate(0, api_active = 1);
     	const click_handler_1 = () => $$invalidate(0, api_active = 2);
+    	const click_handler_2 = () => $$invalidate(0, api_active = 3);
+    	const click_handler_3 = () => $$invalidate(0, api_active = 4);
+    	const click_handler_4 = () => $$invalidate(0, api_active = 5);
+    	const click_handler_5 = () => $$invalidate(0, api_active = 6);
+    	const click_handler_6 = () => $$invalidate(0, api_active = 7);
+    	const click_handler_7 = () => $$invalidate(0, api_active = 8);
+    	const click_handler_8 = () => $$invalidate(0, api_active = 9);
+    	const click_handler_9 = () => $$invalidate(0, api_active = 10);
+    	const click_handler_10 = () => $$invalidate(0, api_active = 11);
+    	const click_handler_11 = () => $$invalidate(0, api_active = 12);
+    	const click_handler_12 = () => $$invalidate(0, api_active = 13);
 
     	$$self.$capture_state = () => ({
     		Button,
     		pop,
     		BASE_API_URL,
     		sortJSON: sortJSON$1,
+    		MyData,
+    		gdamalt,
+    		gdabarley,
+    		gdaoat,
+    		gdawaste,
+    		gdaethylalcohol,
+    		country,
+    		importsData,
     		loadapiextern1,
-    		loadGraph: loadGraph$1,
+    		loadapiextern2,
+    		loadapiextern3,
+    		loadapiInter1,
+    		loadapiInter2,
+    		loadapiInter3,
+    		loadapiInter4,
+    		loadapiInter5,
+    		loadapiInter6,
+    		loadapiInter7,
+    		loadapiInter8,
+    		loadapiInter9,
+    		loadGraph,
     		api_active,
     		showgraph
     	});
 
     	$$self.$inject_state = $$props => {
+    		if ("MyData" in $$props) MyData = $$props.MyData;
+    		if ("gdamalt" in $$props) gdamalt = $$props.gdamalt;
+    		if ("gdabarley" in $$props) gdabarley = $$props.gdabarley;
+    		if ("gdaoat" in $$props) gdaoat = $$props.gdaoat;
+    		if ("gdawaste" in $$props) gdawaste = $$props.gdawaste;
+    		if ("gdaethylalcohol" in $$props) gdaethylalcohol = $$props.gdaethylalcohol;
+    		if ("country" in $$props) country = $$props.country;
     		if ("api_active" in $$props) $$invalidate(0, api_active = $$props.api_active);
     	};
 
@@ -6421,13 +7771,50 @@ var app = (function () {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [api_active, showgraph, click_handler, click_handler_1];
+    	return [
+    		api_active,
+    		loadGraph,
+    		showgraph,
+    		MyData,
+    		gdamalt,
+    		gdabarley,
+    		gdaoat,
+    		gdawaste,
+    		gdaethylalcohol,
+    		country,
+    		importsData,
+    		loadapiextern1,
+    		loadapiextern2,
+    		loadapiextern3,
+    		loadapiInter1,
+    		loadapiInter2,
+    		loadapiInter3,
+    		loadapiInter4,
+    		loadapiInter5,
+    		loadapiInter6,
+    		loadapiInter7,
+    		loadapiInter8,
+    		loadapiInter9,
+    		click_handler,
+    		click_handler_1,
+    		click_handler_2,
+    		click_handler_3,
+    		click_handler_4,
+    		click_handler_5,
+    		click_handler_6,
+    		click_handler_7,
+    		click_handler_8,
+    		click_handler_9,
+    		click_handler_10,
+    		click_handler_11,
+    		click_handler_12
+    	];
     }
 
     class Integrations extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$8, create_fragment$8, safe_not_equal, {});
+    		init(this, options, instance$8, create_fragment$8, safe_not_equal, {}, [-1, -1]);
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
