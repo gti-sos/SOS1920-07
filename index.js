@@ -5,7 +5,6 @@ const path = require("path");
 
 const importsAPIV1 = require(path.join(__dirname,"./src/back/importsAPI/v1"));
 const importsAPIV2 = require(path.join(__dirname,"./src/back/importsAPI/v2"));
-const importsAPIV3 = require(path.join(__dirname,"./src/back/importsAPI/v3"));
 const foodsImports = require(path.join(__dirname,"./src/back/foodsImports/v2"));
 const foodsImports1 = require(path.join(__dirname,"./src/back/foodsImports/v3"));
 const fertilizerImportsExportsAPI = require(path.join(__dirname,"./src/back/fertilizerImportsExportsAPI"));
@@ -19,7 +18,6 @@ app.use(bodyParser.json());
 
 importsAPIV1(app);
 importsAPIV2(app);
-importsAPIV3(app);
 foodsImports(app);
 foodsImports1(app);
 fertilizerImportsExportsAPI(app);

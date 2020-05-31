@@ -1,5 +1,3 @@
-
-
 module.exports = function (app) {
     console.log("Registering imports API...");
 
@@ -8,6 +6,8 @@ module.exports = function (app) {
     const path = require("path");
     const dataStore = require("nedb");
     const BASE_API_URL = "/api/v2";
+    const request = require('request');
+    const express = require("express");
     const dbFileName = path.join(__dirname,"imports.db");
     const db = new dataStore({
         filename: dbFileName,
@@ -18,6 +18,109 @@ module.exports = function (app) {
 
     
     var importsInit = [];
+
+    //PROXY
+    // PATH
+    const paht1 = "/api/v3/plugin-vehicles-stats";
+    var apiServerHost1 = 'https://sos1920-09.herokuapp.com';
+    const paht2 = "/api/v2/evolution-of-cycling-routes";
+    var apiServerHost2 = 'https://sos1920-02.herokuapp.com';
+    const paht3 = "/api/v2/fires-stats";
+    var apiServerHost3 = 'https://sos1920-23.herokuapp.com';
+    const paht4 = "/api/v2/not-hospitalized-stats";
+    var apiServerHost4 = 'https://sos1920-06.herokuapp.com';
+    const paht5 = "/api/v2/economic-freedom-indexes";
+    var apiServerHost5 = 'https://sos1920-11.herokuapp.com';
+    const paht6 = "/api/v1/roads";
+    var apiServerHost6 = 'https://sos1920-04.herokuapp.com';
+    const paht7 = "/api/v2/poverty-stats";
+    var apiServerHost7 = 'https://sos1920-27.herokuapp.com';
+    const paht8 = "/api/v2/poverty-stat";
+    var apiServerHost8 = 'https://sos1920-01.herokuapp.com';
+    const paht9 = "/api/v1/life_expectancies";
+    var apiServerHost9 = 'https://sos1920-05.herokuapp.com';
+
+
+    //https://sos1920-09.herokuapp.com/api/v3/plugin-vehicles-stats 
+
+    app.use(paht1, function(req, res) {
+        var url = apiServerHost1 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-02.herokuapp.com/api/v2/evolution-of-cycling-routes
+
+    app.use(paht2, function(req, res) {
+        var url = apiServerHost2 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-23.herokuapp.com/api/v2/fires-stats
+    
+    app.use(paht3, function(req, res) {
+        var url = apiServerHost3 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-06.herokuapp.com/api/v1/not-hospitalized-stats
+    
+    app.use(paht4, function(req, res) {
+        var url = apiServerHost4 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-11.herokuapp.com/api/v2/economic-freedom-indexes
+    
+    app.use(paht5, function(req, res) {
+        var url = apiServerHost5 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-04.herokuapp.com/api/v1/roads/
+
+    app.use(paht6, function(req, res) {
+        var url = apiServerHost6 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-27.herokuapp.com/api/v2/poverty-stats
+    
+    app.use(paht7, function(req, res) {
+        var url = apiServerHost7 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-01.herokuapp.com/api/v2/poverty-stats
+    
+    app.use(paht8, function(req, res) {
+        var url = apiServerHost8 + req.baseUrl+"s" + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+    //https://sos1920-05.herokuapp.com/api/v1/life_expectancies
+
+    app.use(paht9, function(req, res) {
+        var url = apiServerHost9 + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
 
     // LOAD INIT IMPORT
 
