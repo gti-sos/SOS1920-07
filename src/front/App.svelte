@@ -21,6 +21,9 @@
 
 	import FertilizersTable from './fertilizerGUI/FertilizersTable.svelte';
 	import EditFertilizer from './fertilizerGUI/EditFertilizer.svelte';
+	import MyGraph from './fertilizerGUI/MyGraph.svelte';
+	import MyGraph2 from './fertilizerGUI/MyGraph2.svelte';
+	import FertilizerIntegrations from './fertilizerGUI/Integrations.svelte';
 	
 	import Home from './Home.svelte';
 	import GUIIMPORTS from './ImportsGUI/Home.svelte';
@@ -49,6 +52,9 @@
 		"/importsgui": GUIIMPORTS,
 		"/fertilizerImportsExports": FertilizersTable,
 		"/fertilizerImportsExports/:country/:year":EditFertilizer,
+		"/fertilizerImportsExports/MyGraph":MyGraph,
+		"/fertilizerImportsExports/MyGraph2":MyGraph2,
+		"/fertilizerImportsExports/Integrations":FertilizerIntegrations,
 		"*": NotFound
 	};
 </script>
