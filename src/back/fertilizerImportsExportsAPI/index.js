@@ -5,6 +5,7 @@ module.exports = function (app) {
 	const path = require("path");
 	const dbFileName = path.join(__dirname,"fertilizerImportsExports.db");
 	const BASE_API_URL = "/api/v1";
+	const request = require('request');
 
 	const db = new dataStore({
 					filename: dbFileName,
