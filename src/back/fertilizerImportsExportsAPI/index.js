@@ -10,6 +10,20 @@ module.exports = function (app) {
 					filename: dbFileName,
 					autoload: true
 	});
+
+
+
+	// PROXY
+
+    const path = "/api/v2/traffic-accidents";
+    var apiServerHost = 'https://sos1920-02.herokuapp.com';
+
+    app.use(path, function(req, res) {
+        var url = apiServerHost + req.baseUrl + req.url;
+        console.log('piped: '+req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+
 	
 	
 	app.get(BASE_API_URL+"/fertilizerImportsExports/loadInitialData", (req,res) =>{
