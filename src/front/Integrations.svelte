@@ -16,5 +16,14 @@
     <h2>Integraciones de Pablo</h2>
     <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/MyGraph';" >Gráfica Highchart</Button>
     <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/MyGraph2';" >Gráfica 2</Button>
-    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations';" >Integraciones</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations';" >Integracion API 02</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations2';" >Integraciones Ext1</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations3';" >Integraciones Ext2</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations4';" >Integraciones Ext3</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations5';" >Integraciones Ext4</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations6';" >Integraciones Ext5</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations7';" >Integraciones Ext6</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations8';" >Integraciones Ext7</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations9';" >Integraciones Ext8</Button>
+    <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations10';" >Integraciones Ext9</Button>
 </div>
