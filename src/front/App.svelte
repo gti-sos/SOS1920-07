@@ -24,6 +24,15 @@
 	import MyGraph from './fertilizerGUI/MyGraph.svelte';
 	import MyGraph2 from './fertilizerGUI/MyGraph2.svelte';
 	import FertilizerIntegrations from './fertilizerGUI/Integrations.svelte';
+	import FertilizerIntegrations2 from './fertilizerGUI/Integrations2.svelte';
+	import FertilizerIntegrations3 from './fertilizerGUI/Integrations3.svelte';
+	import FertilizerIntegrations4 from './fertilizerGUI/Integrations4.svelte';
+	import FertilizerIntegrations5 from './fertilizerGUI/Integrations5.svelte';
+	import FertilizerIntegrations6 from './fertilizerGUI/Integrations6.svelte';
+	import FertilizerIntegrations7 from './fertilizerGUI/Integrations7.svelte';
+	import FertilizerIntegrations8 from './fertilizerGUI/Integrations8.svelte';
+	import FertilizerIntegrations9 from './fertilizerGUI/Integrations9.svelte';
+	import FertilizerIntegrations10 from './fertilizerGUI/Integrations10.svelte';
 	
 	import Home from './Home.svelte';
 	import GUIIMPORTS from './ImportsGUI/Home.svelte';
@@ -55,6 +64,15 @@
 		"/fertilizerImportsExports/MyGraph":MyGraph,
 		"/fertilizerImportsExports/MyGraph2":MyGraph2,
 		"/fertilizerImportsExports/Integrations":FertilizerIntegrations,
+		"/fertilizerImportsExports/Integrations2":FertilizerIntegrations2,
+		"/fertilizerImportsExports/Integrations3":FertilizerIntegrations3,
+		"/fertilizerImportsExports/Integrations4":FertilizerIntegrations4,
+		"/fertilizerImportsExports/Integrations5":FertilizerIntegrations5,
+		"/fertilizerImportsExports/Integrations6":FertilizerIntegrations6,
+		"/fertilizerImportsExports/Integrations7":FertilizerIntegrations7,
+		"/fertilizerImportsExports/Integrations8":FertilizerIntegrations8,
+		"/fertilizerImportsExports/Integrations9":FertilizerIntegrations9,
+		"/fertilizerImportsExports/Integrations10":FertilizerIntegrations10,
 		"*": NotFound
 	};
 </script>
