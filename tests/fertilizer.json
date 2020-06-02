@@ -1,0 +1,607 @@
+{
+	"info": {
+		"_postman_id": "7da8798d-666a-43f9-89e1-0b244b1352ba",
+		"name": "sos1920-fertilizer l08",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get fertilizerImportsExports/loadInitialData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b8f6b4f-9728-4b16-b5a9-0456309f1a96",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports/loadInitialData",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get fertilizerImportsExports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b8f6b4f-9728-4b16-b5a9-0456309f1a96",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get fertilizerImportsExports/:country/:year",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39f9a651-ed12-4ac9-a530-9bc46cb52403",
+						"exec": [
+							"pm.test(\"Successful code is 200 or 404\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,404]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports/Spain/2010",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports",
+						"Spain",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get fertilizerImportsExports busqueda",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b8f6b4f-9728-4b16-b5a9-0456309f1a96",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"jsondata have property 'country'\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData[0]).to.have.property('country');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports?country=United Kingdom&year=2011&shortTonExport=9040&dollarExport=11817678&shortTonImport=42043&dollarImport=13297917",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "United Kingdom"
+						},
+						{
+							"key": "year",
+							"value": "2011"
+						},
+						{
+							"key": "shortTonExport",
+							"value": "9040"
+						},
+						{
+							"key": "dollarExport",
+							"value": "11817678"
+						},
+						{
+							"key": "shortTonImport",
+							"value": "42043"
+						},
+						{
+							"key": "dollarImport",
+							"value": "13297917"
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get fertilizerImportsExports paginacion",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b8f6b4f-9728-4b16-b5a9-0456309f1a96",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"The length is 2\", function(){",
+							"   var jsonData = pm.response.json()",
+							"   pm.expect(jsonData).to.have.lengthOf(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports?offset=1&limit=2",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "United Kingdom",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2011",
+							"disabled": true
+						},
+						{
+							"key": "shortTonExport",
+							"value": "9040",
+							"disabled": true
+						},
+						{
+							"key": "dollarExport",
+							"value": "11817678",
+							"disabled": true
+						},
+						{
+							"key": "shortTonImport",
+							"value": "42043",
+							"disabled": true
+						},
+						{
+							"key": "dollarImport",
+							"value": "13297917",
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post fertilizerImportsExports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e4609684-85de-46c5-a65e-d2661b0fc2d2",
+						"exec": [
+							"pm.test(\"Successful code is 201 or 400\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,400]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"country\": \"Spain\",\r\n\t\"year\": 2010,\r\n\t\"shortTonExport\": 6,\r\n\t\"dollarExport\": 8,\r\n\t\"shortTonImport\": 2,\r\n\t\"dollarImport\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put fertilizerImportsExports/:country/:year",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b8f6b4f-9728-4b16-b5a9-0456309f1a96",
+						"exec": [
+							"pm.test(\"Successful code is 201 or 400\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,400]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"country\": \"Spain\",\r\n\t\"year\": 2010,\r\n\t\"shortTonExport\": 639,\r\n\t\"dollarExport\": 829290,\r\n\t\"shortTonImport\": 2323,\r\n\t\"dollarImport\": 668142\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports/Spain/2010",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports",
+						"Spain",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete fertilizerImportsExports/:country/:year",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2a9096f1-c729-495f-9743-0e666d92c356",
+						"exec": [
+							"pm.test(\"Successful code is 200 or 404\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200,404]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports/Spain/2010",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports",
+						"Spain",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put fertilizerImportsExports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4b8f6b4f-9728-4b16-b5a9-0456309f1a96",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"country\": \"Spain\",\r\n\t\"year\": 2010,\r\n\t\"shortTonExport\": 639,\r\n\t\"dollarExport\": 829290,\r\n\t\"shortTonImport\": 2323,\r\n\t\"dollarImport\": 668142\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post fertilizerImportsExports/:country/:year",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e4609684-85de-46c5-a65e-d2661b0fc2d2",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"country\": \"Spain\",\r\n\t\"year\": 2011,\r\n\t\"shortTonExport\": 6,\r\n\t\"dollarExport\": 8,\r\n\t\"shortTonImport\": 2,\r\n\t\"dollarImport\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports/Spain/2010",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports",
+						"Spain",
+						"2010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete fertilizerImportsExports",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "2a9096f1-c729-495f-9743-0e666d92c356",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE_URL}}/api/v1/fertilizerImportsExports",
+					"host": [
+						"{{BASE_URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"fertilizerImportsExports"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "41037eb9-213f-4193-8bf4-8ecc4adfb29e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "219c752a-b06b-4461-b857-60d2ca379261",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
