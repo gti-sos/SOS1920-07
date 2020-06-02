@@ -1,4 +1,7 @@
 <script>
+
+    // Importaciones de svelte
+
     import {
         onMount
     } from "svelte";
@@ -10,6 +13,9 @@
 
     import Table from "sveltestrap/src/Table.svelte";
     import Button from "sveltestrap/src/Button.svelte";
+
+
+    // Creamos las variables
 
     export let params = {};
     let fertilizer = {};
@@ -23,6 +29,9 @@
     let successfulMsg = "";
 
     onMount(getFertilizer);
+
+
+    // Función para obtener los datos de un país y año concreto
 
     async function getFertilizer() {
 
@@ -47,6 +56,8 @@
         }
     }
 
+
+    // Función para actualizar los datos de un país y año concreto
 
     async function updateFertilizer() {
 
@@ -77,6 +88,9 @@
         });
     }
 </script>
+
+<!-- Similar a lo visto anteriormente en FertilizersTable -->
+
 <main>
     <h3>Edita los datos del fertilizante con <strong>{params.country}, {params.year}</strong></h3>
     {#await fertilizer}
