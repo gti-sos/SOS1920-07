@@ -1,10 +1,16 @@
 <script>
+
+	// Importaciones de svelte
+
 	import {
 		onMount
 	} from "svelte";
 
 	import Table from "sveltestrap/src/Table.svelte";
 	import Button from "sveltestrap/src/Button.svelte";
+
+
+	// Creamos las variables
 
 	let fertilizers = [];
 	let newFertilizer = {
@@ -15,12 +21,21 @@
 		shortTonImport: 0,
 		dollarImport: 0
 	};
+
+	// Variables para mostrar un mensaje al usuario
+
 	let errorMsg = "";
 	let successfulMsg = "";
+
+	// Variables relacionadas con la paginación
+
 	let limit = 10;
 	let offset = 0;
 
 	onMount(getFertilizers);
+
+
+	// Función para cargar los datos iniciales
 
 	async function loadInitialDataFertilizers() {
 		
@@ -32,6 +47,9 @@
 
 		successfulMsg = "Los datos iniciales ha sido cargados.";
 	}
+
+
+	// Función para obtener los datos. Se incluyen las variables de la paginación
 
 	async function getFertilizers() {
 
@@ -47,6 +65,9 @@
 			console.log("ERROR!");
 		}
 	}
+
+
+	// Función para insertar un nuevo dato
 
 	async function insertFertilizer() {
 
@@ -76,6 +97,9 @@
 
 	}
 
+
+	// Función para borrar el país y el año
+
 	async function deleteFertilizer(country, year) {
 		const res = await fetch("/api/v1/fertilizerImportsExports/" + country + "/" + year, {
 			method: "DELETE"
@@ -85,6 +109,9 @@
 		successfulMsg = "Los datos correspondientes a " + country + " y " + year + " han sido eliminados."
 	}
 
+
+	// Función para borrar todos los datos
+
 	async function deleteAllFertilizer() {
 		const res = await fetch("/api/v1/fertilizerImportsExports", {
 			method: "DELETE"
@@ -93,6 +120,9 @@
 		});
 		successfulMsg = "Todos los datos han sido eliminados."
 	}
+
+
+	// Función relacionada con la búsqueda
 
 	async function searchFertilizer(){
 		
@@ -135,12 +165,17 @@
 
 	}
 
+
+	// Función relacionada con la paginación - Sirve para ir a la página anterior
+
 	async function previousPage(){
 		if (offset - limit >= 0){
 			offset = offset - limit;
 			getFertilizers();
 		}
 	}
+
+	// Función relacionada con la paginación - Sirve para ir a la página siguiente
 
 	async function nextPage(){
 		const res = await fetch("/api/v1/fertilizerImportsExports");
@@ -153,6 +188,12 @@
 
 
 </script>
+
+
+
+ <!-- En el main tocamos la interfaz. Añadimos los apartados que el usuario verá y
+ distintos botones que le permitirán usar las funciones que se han implementado anteriormente
+ como insertar, buscar, cargar, eliminar, etc.  -->
 
 <main>
 
