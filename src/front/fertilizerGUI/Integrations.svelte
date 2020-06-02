@@ -1,1 +1,124 @@
+<!-- Integración con la api del grupo 2 -->
 
+<script>
+
+// Importaciones de svelte
+
+import {pop} from "svelte-spa-router";
+import Button from "sveltestrap/src/Button.svelte";
+
+
+async function loadGraph2(){
+
+
+        // Creamos las variables necesarias
+        
+        let MyData = [];
+        let dataG2 = [];
+        let ourData = [];
+ 
+
+        // Realizamos la busqueda a las dos apis
+
+        const resData = await fetch("/api/v1/fertilizerImportsExports");
+        MyData = await resData.json();
+
+
+        const resDataG2 = await fetch("/api/v2/traffic-accidents");
+        if (resDataG2.ok) {
+            const json = await resDataG2.json();
+            dataG2 = json;
+        }
+
+
+        // Obtenemos los datos de cada api y las unimos en una lista común
+        
+        MyData.forEach(element => {
+            ourData.push({
+                name: [element.country, element.year],
+                data: [element.shortTonExport, element.dollarExport, element.shortTonImport, 
+                        element.dollarImport, null, null, null]
+            });
+        });
+
+
+        dataG2.forEach(elementG2 => {
+                ourData.push({
+                    name: [elementG2.province, elementG2.year], 
+                    data: [null, null, null, null, elementG2.trafficaccidentvictim, 
+                           elementG2.dead,elementG2.injured]
+                });
+        });
+
+
+        // Creación de la gráfica highcharts
+
+        Highcharts.chart('container', {
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: ''
+                },
+                xAxis: {
+                    allowDecimals: false,
+                    categories: ['Toneladas Exportadas', 'Dólares Exportados', 'Toneladas Importadas', 'Dólares Importados', 'Victimas', 'Muertos', 'Heridos'],
+                    title: {
+                        text: 'Datos'
+                    },
+                },
+                yAxis: {
+                    title: {
+                        text: 'Cantidad'
+                    },
+                    labels: {
+                        formatter: function () {
+                            return this.value / 1000 + 'k';
+                        }
+                    }
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.y:,.0f}</b><br/>'
+                },
+                plotOptions: {
+                    area: {
+                        marker: {
+                            enabled: false,
+                            symbol: 'circle',
+                            radius: 2,
+                            states: {
+                                hover: {
+                                    enabled: true
+                                }
+                            }
+                        }
+                    }
+                },
+                series: ourData
+            });
+}
+
+</script>
+
+
+<!-- Enlaces necesarios para cargar la gráfica -->
+
+<svelte:head>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph2}"></script> 
+</svelte:head>
+
+
+
+  <main>
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        <p class="highcharts-description">Gráfica integrada con la api del grupo 2</p>
+    </figure>
+    <p>
+      <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">Volver</Button>
+    </p>
+  </main>
+      
