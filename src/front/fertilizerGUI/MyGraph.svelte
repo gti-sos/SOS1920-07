@@ -1,9 +1,12 @@
 <script>
 
-    import {onMount} from "svelte";
+    // Importamos funciones necesarias de svelte
+
     import {pop} from "svelte-spa-router";
     import Button from "sveltestrap/src/Button.svelte";
     
+
+    // Creamos algunas de las variables que necesitaremos, entre ellas un diccionario
 
     let dicountry = 
         [{key: 1, value: "Canada"},{key: 2, value: "Spain"},{key: 3, value: "United Kingdom"},
@@ -12,6 +15,8 @@
 	let ch ;
 
 
+    // Funcion para cargar nuestro gráfico. En ella buscaremos en nuestra api por país que luego
+    // podremos seleccionar para consultar los datos.
 
     async function loadGraph(){
         
@@ -37,6 +42,8 @@
     
 
     
+            // Carga de la gráfica highchart
+
             Highcharts.chart('container', {
                 chart: {
                     type: 'area'
@@ -88,6 +95,8 @@
     
     </script>
     
+
+    <!-- Añadimos enlaces de todo lo necesario para el correcto funcionamiento de la gráfica  -->
     
     <svelte:head>
         <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -103,6 +112,9 @@
             <p class="highcharts-description"></p>
 
             <label>Por favor, seleccione el país que desee consultar: </label>
+
+            <!-- Este select está relacionado con lo visto anteriormente y sirve para poder escoger
+            que país ver de forma individual en la gráfica -->
 
             <select bind:value={choosed} on:change="{() => ch = choosed.key}">
                 {#each dicountry as chcountry}
