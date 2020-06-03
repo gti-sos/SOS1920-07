@@ -6158,7 +6158,7 @@ var app = (function () {
     const { console: console_1$5, document: document_1$1 } = globals;
     const file$7 = "src\\front\\ImportsGUI\\Integrations.svelte";
 
-    // (1090:4) <Button outline color="secondary" on:click="{pop}">
+    // (1167:4) <Button outline color="secondary" on:click="{pop}">
     function create_default_slot$5(ctx) {
     	let i;
     	let t;
@@ -6168,7 +6168,7 @@ var app = (function () {
     			i = element("i");
     			t = text(" Atrás");
     			attr_dev(i, "class", "fas fa-arrow-circle-left");
-    			add_location(i, file$7, 1089, 56, 42468);
+    			add_location(i, file$7, 1166, 56, 45338);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -6184,7 +6184,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$5.name,
     		type: "slot",
-    		source: "(1090:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(1167:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -6376,126 +6376,126 @@ var app = (function () {
     			t41 = space();
     			create_component(button13.$$.fragment);
     			if (script.src !== (script_src_value = "https://cdn.jsdelivr.net/npm/chart.js@2.8.0")) attr_dev(script, "src", script_src_value);
-    			add_location(script, file$7, 1009, 4, 38439);
-    			add_location(style, file$7, 1014, 4, 38566);
-    			add_location(button0, file$7, 1027, 12, 38838);
-    			add_location(button1, file$7, 1028, 12, 38954);
-    			add_location(button2, file$7, 1029, 12, 39069);
-    			add_location(button3, file$7, 1030, 12, 39184);
-    			add_location(button4, file$7, 1031, 12, 39298);
-    			add_location(button5, file$7, 1032, 12, 39414);
-    			add_location(button6, file$7, 1033, 12, 39530);
-    			add_location(button7, file$7, 1034, 12, 39646);
-    			add_location(button8, file$7, 1035, 12, 39762);
-    			add_location(button9, file$7, 1036, 12, 39878);
-    			add_location(button10, file$7, 1037, 12, 39995);
-    			add_location(button11, file$7, 1038, 12, 40112);
-    			add_location(button12, file$7, 1039, 12, 40229);
+    			add_location(script, file$7, 1086, 4, 41310);
+    			add_location(style, file$7, 1091, 4, 41437);
+    			add_location(button0, file$7, 1104, 12, 41709);
+    			add_location(button1, file$7, 1105, 12, 41825);
+    			add_location(button2, file$7, 1106, 12, 41940);
+    			add_location(button3, file$7, 1107, 12, 42055);
+    			add_location(button4, file$7, 1108, 12, 42169);
+    			add_location(button5, file$7, 1109, 12, 42285);
+    			add_location(button6, file$7, 1110, 12, 42401);
+    			add_location(button7, file$7, 1111, 12, 42517);
+    			add_location(button8, file$7, 1112, 12, 42633);
+    			add_location(button9, file$7, 1113, 12, 42749);
+    			add_location(button10, file$7, 1114, 12, 42866);
+    			add_location(button11, file$7, 1115, 12, 42983);
+    			add_location(button12, file$7, 1116, 12, 43100);
     			attr_dev(div0, "class", "list-group");
     			attr_dev(div0, "id", "list-tab");
     			attr_dev(div0, "role", "tablist");
-    			add_location(div0, file$7, 1025, 10, 38769);
+    			add_location(div0, file$7, 1102, 10, 41640);
     			attr_dev(div1, "class", "col-4");
-    			add_location(div1, file$7, 1024, 8, 38738);
+    			add_location(div1, file$7, 1101, 8, 41609);
     			attr_dev(canvas0, "id", "myChartExterOne");
     			attr_dev(canvas0, "width", "800");
     			attr_dev(canvas0, "height", "400");
-    			add_location(canvas0, file$7, 1046, 16, 40522);
+    			add_location(canvas0, file$7, 1123, 16, 43393);
     			attr_dev(div2, "class", "panel active");
     			attr_dev(div2, "id", "api-1");
-    			add_location(div2, file$7, 1045, 12, 40466);
+    			add_location(div2, file$7, 1122, 12, 43337);
     			attr_dev(canvas1, "id", "myChartExterTwo");
     			attr_dev(canvas1, "width", "800");
     			attr_dev(canvas1, "height", "400");
-    			add_location(canvas1, file$7, 1049, 16, 40668);
+    			add_location(canvas1, file$7, 1126, 16, 43539);
     			attr_dev(div3, "class", "panel");
     			attr_dev(div3, "id", "api-2");
-    			add_location(div3, file$7, 1048, 12, 40619);
+    			add_location(div3, file$7, 1125, 12, 43490);
     			attr_dev(canvas2, "id", "myChartExterThree");
     			attr_dev(canvas2, "width", "800");
     			attr_dev(canvas2, "height", "400");
-    			add_location(canvas2, file$7, 1052, 16, 40814);
+    			add_location(canvas2, file$7, 1129, 16, 43685);
     			attr_dev(div4, "class", "panel");
     			attr_dev(div4, "id", "api-3");
-    			add_location(div4, file$7, 1051, 12, 40765);
-    			attr_dev(canvas3, "id", "myChartExterThree");
+    			add_location(div4, file$7, 1128, 12, 43636);
+    			attr_dev(canvas3, "id", "myChartExterfoor");
     			attr_dev(canvas3, "width", "800");
     			attr_dev(canvas3, "height", "400");
-    			add_location(canvas3, file$7, 1055, 16, 40962);
+    			add_location(canvas3, file$7, 1132, 16, 43833);
     			attr_dev(div5, "class", "panel");
     			attr_dev(div5, "id", "api-4");
-    			add_location(div5, file$7, 1054, 12, 40913);
+    			add_location(div5, file$7, 1131, 12, 43784);
     			attr_dev(canvas4, "id", "myChartInterOne");
     			attr_dev(canvas4, "width", "800");
     			attr_dev(canvas4, "height", "400");
-    			add_location(canvas4, file$7, 1058, 16, 41110);
+    			add_location(canvas4, file$7, 1135, 16, 43980);
     			attr_dev(div6, "class", "panel");
     			attr_dev(div6, "id", "api-5");
-    			add_location(div6, file$7, 1057, 12, 41061);
+    			add_location(div6, file$7, 1134, 12, 43931);
     			attr_dev(canvas5, "id", "myChartInter2");
     			attr_dev(canvas5, "width", "800");
     			attr_dev(canvas5, "height", "400");
-    			add_location(canvas5, file$7, 1061, 16, 41256);
+    			add_location(canvas5, file$7, 1138, 16, 44126);
     			attr_dev(div7, "class", "panel");
     			attr_dev(div7, "id", "api-6");
-    			add_location(div7, file$7, 1060, 12, 41207);
+    			add_location(div7, file$7, 1137, 12, 44077);
     			attr_dev(canvas6, "id", "myChartInter3");
     			attr_dev(canvas6, "width", "800");
     			attr_dev(canvas6, "height", "400");
-    			add_location(canvas6, file$7, 1064, 16, 41400);
+    			add_location(canvas6, file$7, 1141, 16, 44270);
     			attr_dev(div8, "class", "panel");
     			attr_dev(div8, "id", "api-7");
-    			add_location(div8, file$7, 1063, 12, 41351);
+    			add_location(div8, file$7, 1140, 12, 44221);
     			attr_dev(canvas7, "id", "myChartInter4");
     			attr_dev(canvas7, "width", "800");
     			attr_dev(canvas7, "height", "400");
-    			add_location(canvas7, file$7, 1067, 16, 41544);
+    			add_location(canvas7, file$7, 1144, 16, 44414);
     			attr_dev(div9, "class", "panel");
     			attr_dev(div9, "id", "api-8");
-    			add_location(div9, file$7, 1066, 12, 41495);
+    			add_location(div9, file$7, 1143, 12, 44365);
     			attr_dev(canvas8, "id", "myChartInter5");
     			attr_dev(canvas8, "width", "800");
     			attr_dev(canvas8, "height", "400");
-    			add_location(canvas8, file$7, 1070, 16, 41688);
+    			add_location(canvas8, file$7, 1147, 16, 44558);
     			attr_dev(div10, "class", "panel");
     			attr_dev(div10, "id", "api-9");
-    			add_location(div10, file$7, 1069, 12, 41639);
+    			add_location(div10, file$7, 1146, 12, 44509);
     			attr_dev(canvas9, "id", "myChartInter6");
     			attr_dev(canvas9, "width", "800");
     			attr_dev(canvas9, "height", "400");
-    			add_location(canvas9, file$7, 1073, 16, 41833);
+    			add_location(canvas9, file$7, 1150, 16, 44703);
     			attr_dev(div11, "class", "panel");
     			attr_dev(div11, "id", "api-10");
-    			add_location(div11, file$7, 1072, 12, 41783);
+    			add_location(div11, file$7, 1149, 12, 44653);
     			attr_dev(canvas10, "id", "myChartInter7");
     			attr_dev(canvas10, "width", "800");
     			attr_dev(canvas10, "height", "400");
-    			add_location(canvas10, file$7, 1076, 16, 41978);
+    			add_location(canvas10, file$7, 1153, 16, 44848);
     			attr_dev(div12, "class", "panel");
     			attr_dev(div12, "id", "api-11");
-    			add_location(div12, file$7, 1075, 12, 41928);
+    			add_location(div12, file$7, 1152, 12, 44798);
     			attr_dev(canvas11, "id", "myChartInter8");
     			attr_dev(canvas11, "width", "800");
     			attr_dev(canvas11, "height", "400");
-    			add_location(canvas11, file$7, 1079, 16, 42123);
+    			add_location(canvas11, file$7, 1156, 16, 44993);
     			attr_dev(div13, "class", "panel");
     			attr_dev(div13, "id", "api-12");
-    			add_location(div13, file$7, 1078, 12, 42073);
+    			add_location(div13, file$7, 1155, 12, 44943);
     			attr_dev(canvas12, "id", "myChartInter9");
     			attr_dev(canvas12, "width", "800");
     			attr_dev(canvas12, "height", "400");
-    			add_location(canvas12, file$7, 1082, 16, 42268);
+    			add_location(canvas12, file$7, 1159, 16, 45138);
     			attr_dev(div14, "class", "panel");
     			attr_dev(div14, "id", "api-13");
-    			add_location(div14, file$7, 1081, 12, 42218);
+    			add_location(div14, file$7, 1158, 12, 45088);
     			attr_dev(div15, "class", "tab-content");
     			attr_dev(div15, "id", "nav-tabContent");
-    			add_location(div15, file$7, 1044, 10, 40407);
+    			add_location(div15, file$7, 1121, 10, 43278);
     			attr_dev(div16, "class", "col-8");
-    			add_location(div16, file$7, 1043, 8, 40376);
+    			add_location(div16, file$7, 1120, 8, 43247);
     			attr_dev(div17, "class", "row");
-    			add_location(div17, file$7, 1023, 4, 38711);
-    			add_location(main, file$7, 1013, 0, 38554);
+    			add_location(div17, file$7, 1100, 4, 41582);
+    			add_location(main, file$7, 1090, 0, 41425);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -6582,38 +6582,38 @@ var app = (function () {
 
     			dispose = [
     				listen_dev(script, "load", /*loadGraph*/ ctx[1], false, false, false),
-    				listen_dev(button0, "click", /*click_handler*/ ctx[23], false, false, false),
+    				listen_dev(button0, "click", /*click_handler*/ ctx[24], false, false, false),
     				listen_dev(button0, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button1, "click", /*click_handler_1*/ ctx[24], false, false, false),
+    				listen_dev(button1, "click", /*click_handler_1*/ ctx[25], false, false, false),
     				listen_dev(button1, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button2, "click", /*click_handler_2*/ ctx[25], false, false, false),
+    				listen_dev(button2, "click", /*click_handler_2*/ ctx[26], false, false, false),
     				listen_dev(button2, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button3, "click", /*click_handler_3*/ ctx[26], false, false, false),
+    				listen_dev(button3, "click", /*click_handler_3*/ ctx[27], false, false, false),
     				listen_dev(button3, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button4, "click", /*click_handler_4*/ ctx[27], false, false, false),
+    				listen_dev(button4, "click", /*click_handler_4*/ ctx[28], false, false, false),
     				listen_dev(button4, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button5, "click", /*click_handler_5*/ ctx[28], false, false, false),
+    				listen_dev(button5, "click", /*click_handler_5*/ ctx[29], false, false, false),
     				listen_dev(button5, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button6, "click", /*click_handler_6*/ ctx[29], false, false, false),
+    				listen_dev(button6, "click", /*click_handler_6*/ ctx[30], false, false, false),
     				listen_dev(button6, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button7, "click", /*click_handler_7*/ ctx[30], false, false, false),
+    				listen_dev(button7, "click", /*click_handler_7*/ ctx[31], false, false, false),
     				listen_dev(button7, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button8, "click", /*click_handler_8*/ ctx[31], false, false, false),
+    				listen_dev(button8, "click", /*click_handler_8*/ ctx[32], false, false, false),
     				listen_dev(button8, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button9, "click", /*click_handler_9*/ ctx[32], false, false, false),
+    				listen_dev(button9, "click", /*click_handler_9*/ ctx[33], false, false, false),
     				listen_dev(button9, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button10, "click", /*click_handler_10*/ ctx[33], false, false, false),
+    				listen_dev(button10, "click", /*click_handler_10*/ ctx[34], false, false, false),
     				listen_dev(button10, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button11, "click", /*click_handler_11*/ ctx[34], false, false, false),
+    				listen_dev(button11, "click", /*click_handler_11*/ ctx[35], false, false, false),
     				listen_dev(button11, "click", /*showgraph*/ ctx[2], false, false, false),
-    				listen_dev(button12, "click", /*click_handler_12*/ ctx[35], false, false, false),
+    				listen_dev(button12, "click", /*click_handler_12*/ ctx[36], false, false, false),
     				listen_dev(button12, "click", /*showgraph*/ ctx[2], false, false, false)
     			];
     		},
     		p: function update(ctx, dirty) {
     			const button13_changes = {};
 
-    			if (dirty[1] & /*$$scope*/ 32) {
+    			if (dirty[1] & /*$$scope*/ 64) {
     				button13_changes.$$scope = { dirty, ctx };
     			}
 
@@ -6804,6 +6804,7 @@ var app = (function () {
     		loadapiextern1();
     		loadapiextern2();
     		loadapiextern3();
+    		loadapiextern4();
     		loadapiInter1();
     		loadapiInter2();
     		loadapiInter3();
@@ -6822,7 +6823,7 @@ var app = (function () {
     		var color = Chart.helpers.color;
     		var ctx = document.getElementById("myChartExterOne");
     		let MyDataExte = [];
-    		const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2886?tip=AM");
+    		const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2886?tip=AM");
     		MyDataExte = await resData2.json();
     		MyDataExte = MyDataExte[0].Data.slice(2, 20);
     		sortJSON$1(MyDataExte, "Anyo", "asc");
@@ -6897,7 +6898,7 @@ var app = (function () {
     		var color = Chart.helpers.color;
     		var ctx = document.getElementById("myChartExterTwo");
     		let MyDataExte = [];
-    		const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2855?tip=AM");
+    		const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2855?tip=AM");
     		MyDataExte = await resData2.json();
     		MyDataExte = MyDataExte[0].Data.slice(2, 20);
     		sortJSON$1(MyDataExte, "Anyo", "asc");
@@ -6972,7 +6973,7 @@ var app = (function () {
     		var color = Chart.helpers.color;
     		var ctx = document.getElementById("myChartExterThree");
     		let MyDataExte = [];
-    		const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/20171?tip=AM");
+    		const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/20171?tip=AM");
     		MyDataExte = await resData2.json();
     		MyDataExte = MyDataExte[0].Data.slice(2, 20);
     		sortJSON$1(MyDataExte, "Anyo", "asc");
@@ -7025,6 +7026,82 @@ var app = (function () {
     						},
     						{
     							label: "Separación Divorcios España *10",
+    							data: population,
+    							backgroundColor: "rgba(8, 255, 0, 0.1)",
+    							borderColor: "rgba(8, 255, 0, 0.1)",
+    							borderWidth: 1
+    						}
+    					]
+    				},
+    				options: {
+    					scales: {
+    						yAxes: [{ ticks: { beginAtZero: true } }]
+    					}
+    				}
+    			});
+    	}
+
+    	
+
+    	// Externa 4
+    	async function loadapiextern4() {
+    		var color = Chart.helpers.color;
+    		var ctx = document.getElementById("myChartExterfoor");
+    		let MyDataExte = [];
+    		const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/27152?tip=AM");
+    		MyDataExte = await resData2.json();
+    		MyDataExte = MyDataExte[0].Data.slice(2, 20);
+    		sortJSON$1(MyDataExte, "Anyo", "asc");
+    		console.log(MyDataExte);
+    		let population = [];
+
+    		MyDataExte.forEach(e => {
+    			population.push(e.Valor * 50000);
+    		});
+
+    		var myChartExterOne = new Chart(ctx,
+    		{
+    				type: "line",
+    				data: {
+    					labels: country,
+    					datasets: [
+    						{
+    							label: "Importacion Malta Total",
+    							data: gdamalt,
+    							backgroundColor: ["rgba(0,191,255,0.2)"],
+    							borderColor: ["rgba(0,191,255,0.2)"],
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Cebada Total",
+    							data: gdabarley,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Importacion Avena Total/10",
+    							data: gdaoat,
+    							backgroundColor: "rgba(42, 187, 155, 0.1)",
+    							borderColor: "rgba(42, 187, 155, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportación Residuos Total/10",
+    							data: gdawaste,
+    							backgroundColor: "rgba(253, 227, 167, 0.1)",
+    							borderColor: "rgba(253, 227, 167, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Exportació Alcohol Total/10",
+    							data: gdaethylalcohol,
+    							backgroundColor: "rgba(255, 0, 0, 0.1)",
+    							borderColor: "rgba(255, 0, 0, 0.1)",
+    							borderWidth: 1
+    						},
+    						{
+    							label: "Tasa de mortalidad Albacete 0 años *50000",
     							data: population,
     							backgroundColor: "rgba(8, 255, 0, 0.1)",
     							borderColor: "rgba(8, 255, 0, 0.1)",
@@ -7671,7 +7748,7 @@ var app = (function () {
     							borderWidth: 1
     						},
     						{
-    							label: "Falta Nombre",
+    							label: "Indice de pobreza en armenia *30000000",
     							data: dataExtern,
     							backgroundColor: "rgba(8, 255, 0, 0.1)",
     							borderColor: "rgba(8, 255, 0, 0.1)",
@@ -7946,6 +8023,7 @@ var app = (function () {
     		loadapiextern1,
     		loadapiextern2,
     		loadapiextern3,
+    		loadapiextern4,
     		loadapiInter1,
     		loadapiInter2,
     		loadapiInter3,
@@ -7990,6 +8068,7 @@ var app = (function () {
     		loadapiextern1,
     		loadapiextern2,
     		loadapiextern3,
+    		loadapiextern4,
     		loadapiInter1,
     		loadapiInter2,
     		loadapiInter3,
@@ -50905,11 +50984,11 @@ var app = (function () {
     			t = space();
     			p = element("p");
     			attr_dev(div, "id", "container");
-    			add_location(div, file$h, 656, 8, 22093);
+    			add_location(div, file$h, 656, 8, 22101);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$h, 657, 8, 22129);
+    			add_location(p, file$h, 657, 8, 22137);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$h, 655, 8, 22049);
+    			add_location(figure, file$h, 655, 8, 22057);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, figure, anchor);
@@ -50941,7 +51020,7 @@ var app = (function () {
     		c: function create() {
     			h2 = element("h2");
     			h2.textContent = "↓Elige un grupo de Integración Abajo↓";
-    			add_location(h2, file$h, 662, 8, 22248);
+    			add_location(h2, file$h, 662, 8, 22256);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
@@ -50977,11 +51056,11 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Gráfica común a las tres APIs. Muestra los millones de toneladas de petróleo, los porcentajes del uso energías renovables y las ventas coches eléctricos por cada 1000.";
     			attr_dev(div, "id", "container");
-    			add_location(div, file$h, 666, 2, 22373);
+    			add_location(div, file$h, 666, 2, 22381);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$h, 667, 2, 22403);
+    			add_location(p, file$h, 667, 2, 22411);
     			attr_dev(figure, "class", "highcharts-figure");
-    			add_location(figure, file$h, 665, 8, 22335);
+    			add_location(figure, file$h, 665, 8, 22343);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, figure, anchor);
@@ -51045,7 +51124,7 @@ var app = (function () {
     			t = text(t_value);
     			option.__value = option_value_value = /*sett*/ ctx[25];
     			option.value = option.__value;
-    			add_location(option, file$h, 680, 12, 22875);
+    			add_location(option, file$h, 680, 12, 22883);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -51093,7 +51172,7 @@ var app = (function () {
     			each_1_anchor = empty();
     			option.__value = "";
     			option.value = option.__value;
-    			add_location(option, file$h, 678, 12, 22805);
+    			add_location(option, file$h, 678, 12, 22813);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, option, anchor);
@@ -51155,7 +51234,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Buscar por país");
+    			t = text("Buscar por Integracion");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -51313,8 +51392,6 @@ var app = (function () {
     	let t2;
     	let t3;
     	let t4;
-    	let t5;
-    	let t6;
     	let current;
 
     	const button = new Button({
@@ -51359,19 +51436,17 @@ var app = (function () {
     			if (if_block2) if_block2.c();
     			t4 = space();
     			create_component(formgroup.$$.fragment);
-    			t5 = space();
-    			t6 = text(/*pais_aux*/ ctx[0]);
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts-more.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$h, 644, 0, 21524);
+    			add_location(script0, file$h, 644, 0, 21532);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$h, 645, 0, 21596);
+    			add_location(script1, file$h, 645, 0, 21604);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$h, 646, 0, 21663);
+    			add_location(script2, file$h, 646, 0, 21671);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$h, 647, 0, 21737);
+    			add_location(script3, file$h, 647, 0, 21745);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$h, 648, 0, 21813);
-    			add_location(main, file$h, 652, 0, 21911);
+    			add_location(script4, file$h, 648, 0, 21821);
+    			add_location(main, file$h, 652, 0, 21919);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -51393,8 +51468,6 @@ var app = (function () {
     			if (if_block2) if_block2.m(main, null);
     			append_dev(main, t4);
     			mount_component(formgroup, main, null);
-    			append_dev(main, t5);
-    			append_dev(main, t6);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -51446,7 +51519,6 @@ var app = (function () {
     			}
 
     			formgroup.$set(formgroup_changes);
-    			if (!current || dirty & /*pais_aux*/ 1) set_data_dev(t6, /*pais_aux*/ ctx[0]);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -51581,7 +51653,7 @@ var app = (function () {
     		const datos2 = await resData2.json();
     		var data = [];
     		var lista_2 = [0, 0, 0];
-    		var name2 = "% de Gasto en Salud Plública";
+    		var name2 = "% de Producción de Coches Eléctricos";
     		var total = 0;
     		textt1 = "% del total en esos años";
     		textt2 = "%";
@@ -52773,10 +52845,351 @@ var app = (function () {
     	}
     }
 
+    /* src\front\about.svelte generated by Svelte v3.22.3 */
+    const file$k = "src\\front\\about.svelte";
+
+    // (7:0) <Button outline size="lg" color="primary" onclick="location.href='/#/';">
+    function create_default_slot_3$5(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Inicio");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_3$5.name,
+    		type: "slot",
+    		source: "(7:0) <Button outline size=\\\"lg\\\" color=\\\"primary\\\" onclick=\\\"location.href='/#/';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (12:0) <Button outline size="lg" color="success" onclick="location.href='https://youtu.be/zAEFPiRk75k';">
+    function create_default_slot_2$7(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Vídeo de Pablo");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_2$7.name,
+    		type: "slot",
+    		source: "(12:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='https://youtu.be/zAEFPiRk75k';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (16:0) <Button outline size="lg" color="success" onclick="location.href='https://youtu.be/B86Y_uiPbus';">
+    function create_default_slot_1$8(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Vídeo de Jorge");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1$8.name,
+    		type: "slot",
+    		source: "(16:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='https://youtu.be/B86Y_uiPbus';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (20:0) <Button outline size="lg" color="success" onclick="location.href='https://youtu.be/bI5_8NjROS4';">
+    function create_default_slot$e(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Vídeo de Juan Antonio");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$e.name,
+    		type: "slot",
+    		source: "(20:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='https://youtu.be/bI5_8NjROS4';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$l(ctx) {
+    	let h10;
+    	let t0;
+    	let div0;
+    	let t1;
+    	let h11;
+    	let t2;
+    	let div1;
+    	let h20;
+    	let t3;
+    	let t4;
+    	let div2;
+    	let h21;
+    	let t5;
+    	let t6;
+    	let div3;
+    	let h22;
+    	let t7;
+    	let current;
+
+    	const button0 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "primary",
+    				onclick: "location.href='/#/';",
+    				$$slots: { default: [create_default_slot_3$5] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button1 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "success",
+    				onclick: "location.href='https://youtu.be/zAEFPiRk75k';",
+    				$$slots: { default: [create_default_slot_2$7] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button2 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "success",
+    				onclick: "location.href='https://youtu.be/B86Y_uiPbus';",
+    				$$slots: { default: [create_default_slot_1$8] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button3 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "success",
+    				onclick: "location.href='https://youtu.be/bI5_8NjROS4';",
+    				$$slots: { default: [create_default_slot$e] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			h10 = element("h1");
+    			t0 = space();
+    			div0 = element("div");
+    			create_component(button0.$$.fragment);
+    			t1 = space();
+    			h11 = element("h1");
+    			t2 = space();
+    			div1 = element("div");
+    			h20 = element("h2");
+    			t3 = space();
+    			create_component(button1.$$.fragment);
+    			t4 = space();
+    			div2 = element("div");
+    			h21 = element("h2");
+    			t5 = space();
+    			create_component(button2.$$.fragment);
+    			t6 = space();
+    			div3 = element("div");
+    			h22 = element("h2");
+    			t7 = space();
+    			create_component(button3.$$.fragment);
+    			add_location(h10, file$k, 4, 0, 80);
+    			add_location(div0, file$k, 5, 0, 91);
+    			add_location(h11, file$k, 8, 0, 196);
+    			add_location(h20, file$k, 10, 0, 214);
+    			add_location(div1, file$k, 9, 0, 207);
+    			add_location(h21, file$k, 14, 0, 365);
+    			add_location(div2, file$k, 13, 0, 358);
+    			add_location(h22, file$k, 18, 0, 515);
+    			add_location(div3, file$k, 17, 0, 508);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, h10, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, div0, anchor);
+    			mount_component(button0, div0, null);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, h11, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, h20);
+    			append_dev(div1, t3);
+    			mount_component(button1, div1, null);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, h21);
+    			append_dev(div2, t5);
+    			mount_component(button2, div2, null);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, div3, anchor);
+    			append_dev(div3, h22);
+    			append_dev(div3, t7);
+    			mount_component(button3, div3, null);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button0_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button0.$set(button0_changes);
+    			const button1_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button1.$set(button1_changes);
+    			const button2_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button2_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button2.$set(button2_changes);
+    			const button3_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button3_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button3.$set(button3_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button0.$$.fragment, local);
+    			transition_in(button1.$$.fragment, local);
+    			transition_in(button2.$$.fragment, local);
+    			transition_in(button3.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button0.$$.fragment, local);
+    			transition_out(button1.$$.fragment, local);
+    			transition_out(button2.$$.fragment, local);
+    			transition_out(button3.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(h10);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(div0);
+    			destroy_component(button0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(h11);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(div1);
+    			destroy_component(button1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			destroy_component(button2);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(div3);
+    			destroy_component(button3);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$l.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$l($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<About> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("About", $$slots, []);
+    	$$self.$capture_state = () => ({ Button });
+    	return [];
+    }
+
+    class About extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$l, create_fragment$l, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "About",
+    			options,
+    			id: create_fragment$l.name
+    		});
+    	}
+    }
+
     /* src\front\fertilizerGUI\FertilizersTable.svelte generated by Svelte v3.22.3 */
 
     const { console: console_1$e } = globals;
-    const file$k = "src\\front\\fertilizerGUI\\FertilizersTable.svelte";
+    const file$l = "src\\front\\fertilizerGUI\\FertilizersTable.svelte";
 
     function get_each_context$6(ctx, list, i) {
     	const child_ctx = ctx.slice();
@@ -52784,7 +53197,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (1:0) <script>  import {   onMount  }
+    // (1:0) <script>     // Importaciones de svelte     import {    onMount   }
     function create_catch_block$6(ctx) {
     	const block = {
     		c: noop,
@@ -52799,14 +53212,14 @@ var app = (function () {
     		block,
     		id: create_catch_block$6.name,
     		type: "catch",
-    		source: "(1:0) <script>  import {   onMount  }",
+    		source: "(1:0) <script>     // Importaciones de svelte     import {    onMount   }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:1) {:then fertilizers}
+    // (202:1) {:then fertilizers}
     function create_then_block$6(ctx) {
     	let current;
 
@@ -52854,14 +53267,14 @@ var app = (function () {
     		block,
     		id: create_then_block$6.name,
     		type: "then",
-    		source: "(161:1) {:then fertilizers}",
+    		source: "(202:1) {:then fertilizers}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (182:10) <Button outline  color="primary" on:click={insertFertilizer}>
+    // (223:10) <Button outline  color="primary" on:click={insertFertilizer}>
     function create_default_slot_7$2(ctx) {
     	let t;
 
@@ -52881,14 +53294,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$2.name,
     		type: "slot",
-    		source: "(182:10) <Button outline  color=\\\"primary\\\" on:click={insertFertilizer}>",
+    		source: "(223:10) <Button outline  color=\\\"primary\\\" on:click={insertFertilizer}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (183:5) <Button outline  color="primary" on:click={searchFertilizer}>
+    // (224:5) <Button outline  color="primary" on:click={searchFertilizer}>
     function create_default_slot_6$2(ctx) {
     	let t;
 
@@ -52908,14 +53321,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$2.name,
     		type: "slot",
-    		source: "(183:5) <Button outline  color=\\\"primary\\\" on:click={searchFertilizer}>",
+    		source: "(224:5) <Button outline  color=\\\"primary\\\" on:click={searchFertilizer}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (196:10) <Button outline color="danger" on:click="{deleteFertilizer(fertilizer.country,fertilizer.year)}">
+    // (237:10) <Button outline color="danger" on:click="{deleteFertilizer(fertilizer.country,fertilizer.year)}">
     function create_default_slot_5$3(ctx) {
     	let t;
 
@@ -52935,14 +53348,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$3.name,
     		type: "slot",
-    		source: "(196:10) <Button outline color=\\\"danger\\\" on:click=\\\"{deleteFertilizer(fertilizer.country,fertilizer.year)}\\\">",
+    		source: "(237:10) <Button outline color=\\\"danger\\\" on:click=\\\"{deleteFertilizer(fertilizer.country,fertilizer.year)}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (186:4) {#each fertilizers as fertilizer}
+    // (227:4) {#each fertilizers as fertilizer}
     function create_each_block$6(ctx) {
     	let tr;
     	let td0;
@@ -53015,15 +53428,15 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t12 = space();
     			attr_dev(a, "href", a_href_value = "#/fertilizerImportsExports/" + /*fertilizer*/ ctx[20].country + "/" + /*fertilizer*/ ctx[20].year);
-    			add_location(a, file$k, 188, 7, 4922);
-    			add_location(td0, file$k, 187, 6, 4910);
-    			add_location(td1, file$k, 190, 6, 5041);
-    			add_location(td2, file$k, 191, 6, 5074);
-    			add_location(td3, file$k, 192, 6, 5117);
-    			add_location(td4, file$k, 193, 6, 5158);
-    			add_location(td5, file$k, 194, 6, 5201);
-    			add_location(td6, file$k, 195, 6, 5242);
-    			add_location(tr, file$k, 186, 5, 4899);
+    			add_location(a, file$l, 229, 7, 5997);
+    			add_location(td0, file$l, 228, 6, 5984);
+    			add_location(td1, file$l, 231, 6, 6118);
+    			add_location(td2, file$l, 232, 6, 6152);
+    			add_location(td3, file$l, 233, 6, 6196);
+    			add_location(td4, file$l, 234, 6, 6238);
+    			add_location(td5, file$l, 235, 6, 6282);
+    			add_location(td6, file$l, 236, 6, 6324);
+    			add_location(tr, file$l, 227, 5, 5972);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -53091,14 +53504,14 @@ var app = (function () {
     		block,
     		id: create_each_block$6.name,
     		type: "each",
-    		source: "(186:4) {#each fertilizers as fertilizer}",
+    		source: "(227:4) {#each fertilizers as fertilizer}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (162:2) <Table bordered>
+    // (203:2) <Table bordered>
     function create_default_slot_4$5(ctx) {
     	let thead;
     	let tr0;
@@ -53232,30 +53645,30 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$k, 164, 5, 4062);
-    			add_location(th1, file$k, 165, 5, 4081);
-    			add_location(th2, file$k, 166, 5, 4099);
-    			add_location(th3, file$k, 167, 5, 4134);
-    			add_location(th4, file$k, 168, 5, 4167);
-    			add_location(th5, file$k, 169, 5, 4202);
-    			add_location(th6, file$k, 170, 5, 4235);
-    			add_location(tr0, file$k, 163, 4, 4052);
-    			add_location(thead, file$k, 162, 3, 4040);
-    			add_location(input0, file$k, 175, 9, 4302);
-    			add_location(td0, file$k, 175, 5, 4298);
-    			add_location(input1, file$k, 176, 9, 4361);
-    			add_location(td1, file$k, 176, 5, 4357);
-    			add_location(input2, file$k, 177, 9, 4417);
-    			add_location(td2, file$k, 177, 5, 4413);
-    			add_location(input3, file$k, 178, 9, 4483);
-    			add_location(td3, file$k, 178, 5, 4479);
-    			add_location(input4, file$k, 179, 9, 4547);
-    			add_location(td4, file$k, 179, 5, 4543);
-    			add_location(input5, file$k, 180, 9, 4613);
-    			add_location(td5, file$k, 180, 5, 4609);
-    			add_location(td6, file$k, 181, 5, 4673);
-    			add_location(tr1, file$k, 174, 4, 4288);
-    			add_location(tbody, file$k, 173, 3, 4276);
+    			add_location(th0, file$l, 205, 5, 5113);
+    			add_location(th1, file$l, 206, 5, 5133);
+    			add_location(th2, file$l, 207, 5, 5152);
+    			add_location(th3, file$l, 208, 5, 5188);
+    			add_location(th4, file$l, 209, 5, 5222);
+    			add_location(th5, file$l, 210, 5, 5258);
+    			add_location(th6, file$l, 211, 5, 5292);
+    			add_location(tr0, file$l, 204, 4, 5102);
+    			add_location(thead, file$l, 203, 3, 5089);
+    			add_location(input0, file$l, 216, 9, 5364);
+    			add_location(td0, file$l, 216, 5, 5360);
+    			add_location(input1, file$l, 217, 9, 5424);
+    			add_location(td1, file$l, 217, 5, 5420);
+    			add_location(input2, file$l, 218, 9, 5481);
+    			add_location(td2, file$l, 218, 5, 5477);
+    			add_location(input3, file$l, 219, 9, 5548);
+    			add_location(td3, file$l, 219, 5, 5544);
+    			add_location(input4, file$l, 220, 9, 5613);
+    			add_location(td4, file$l, 220, 5, 5609);
+    			add_location(input5, file$l, 221, 9, 5680);
+    			add_location(td5, file$l, 221, 5, 5676);
+    			add_location(td6, file$l, 222, 5, 5741);
+    			add_location(tr1, file$l, 215, 4, 5349);
+    			add_location(tbody, file$l, 214, 3, 5336);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, thead, anchor);
@@ -53427,14 +53840,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$5.name,
     		type: "slot",
-    		source: "(162:2) <Table bordered>",
+    		source: "(203:2) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:21)    Cargando fertilizante...  {:then fertilizers}
+    // (200:21)     Cargando fertilizante...   {:then fertilizers}
     function create_pending_block$6(ctx) {
     	let t;
 
@@ -53457,14 +53870,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$6.name,
     		type: "pending",
-    		source: "(159:21)    Cargando fertilizante...  {:then fertilizers}",
+    		source: "(200:21)     Cargando fertilizante...   {:then fertilizers}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (202:1) {#if errorMsg}
+    // (243:1) {#if errorMsg}
     function create_if_block_1$7(ctx) {
     	let p;
     	let t0;
@@ -53476,7 +53889,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[1]);
     			set_style(p, "color", "red");
-    			add_location(p, file$k, 202, 2, 5440);
+    			add_location(p, file$l, 243, 2, 6529);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -53495,14 +53908,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$7.name,
     		type: "if",
-    		source: "(202:1) {#if errorMsg}",
+    		source: "(243:1) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (205:1) {#if successfulMsg}
+    // (246:1) {#if successfulMsg}
     function create_if_block$b(ctx) {
     	let p;
     	let t;
@@ -53512,7 +53925,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*successfulMsg*/ ctx[2]);
     			set_style(p, "color", "green");
-    			add_location(p, file$k, 205, 2, 5514);
+    			add_location(p, file$l, 246, 2, 6606);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -53530,15 +53943,15 @@ var app = (function () {
     		block,
     		id: create_if_block$b.name,
     		type: "if",
-    		source: "(205:1) {#if successfulMsg}",
+    		source: "(246:1) {#if successfulMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (208:1) <Button outline color="success" on:click="{loadInitialDataFertilizers}">
-    function create_default_slot_3$5(ctx) {
+    // (249:1) <Button outline color="success" on:click="{loadInitialDataFertilizers}">
+    function create_default_slot_3$6(ctx) {
     	let t;
 
     	const block = {
@@ -53555,17 +53968,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$5.name,
+    		id: create_default_slot_3$6.name,
     		type: "slot",
-    		source: "(208:1) <Button outline color=\\\"success\\\" on:click=\\\"{loadInitialDataFertilizers}\\\">",
+    		source: "(249:1) <Button outline color=\\\"success\\\" on:click=\\\"{loadInitialDataFertilizers}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (209:1) <Button outline color="danger" on:click="{deleteAllFertilizer}">
-    function create_default_slot_2$7(ctx) {
+    // (250:1) <Button outline color="danger" on:click="{deleteAllFertilizer}">
+    function create_default_slot_2$8(ctx) {
     	let t;
 
     	const block = {
@@ -53582,17 +53995,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$7.name,
+    		id: create_default_slot_2$8.name,
     		type: "slot",
-    		source: "(209:1) <Button outline color=\\\"danger\\\" on:click=\\\"{deleteAllFertilizer}\\\">",
+    		source: "(250:1) <Button outline color=\\\"danger\\\" on:click=\\\"{deleteAllFertilizer}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (210:1) <Button outline color="secondary" on:click="{previousPage}">
-    function create_default_slot_1$8(ctx) {
+    // (251:1) <Button outline color="secondary" on:click="{previousPage}">
+    function create_default_slot_1$9(ctx) {
     	let t;
 
     	const block = {
@@ -53609,17 +54022,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$8.name,
+    		id: create_default_slot_1$9.name,
     		type: "slot",
-    		source: "(210:1) <Button outline color=\\\"secondary\\\" on:click=\\\"{previousPage}\\\">",
+    		source: "(251:1) <Button outline color=\\\"secondary\\\" on:click=\\\"{previousPage}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (211:1) <Button outline color="secondary" on:click="{nextPage}">
-    function create_default_slot$e(ctx) {
+    // (252:1) <Button outline color="secondary" on:click="{nextPage}">
+    function create_default_slot$f(ctx) {
     	let t;
 
     	const block = {
@@ -53636,16 +54049,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$e.name,
+    		id: create_default_slot$f.name,
     		type: "slot",
-    		source: "(211:1) <Button outline color=\\\"secondary\\\" on:click=\\\"{nextPage}\\\">",
+    		source: "(252:1) <Button outline color=\\\"secondary\\\" on:click=\\\"{nextPage}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    function create_fragment$l(ctx) {
+    function create_fragment$m(ctx) {
     	let main;
     	let promise;
     	let t0;
@@ -53675,7 +54088,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "success",
-    				$$slots: { default: [create_default_slot_3$5] },
+    				$$slots: { default: [create_default_slot_3$6] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -53687,7 +54100,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_2$7] },
+    				$$slots: { default: [create_default_slot_2$8] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -53699,7 +54112,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot_1$8] },
+    				$$slots: { default: [create_default_slot_1$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -53711,7 +54124,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot$e] },
+    				$$slots: { default: [create_default_slot$f] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -53735,7 +54148,7 @@ var app = (function () {
     			create_component(button2.$$.fragment);
     			t5 = space();
     			create_component(button3.$$.fragment);
-    			add_location(main, file$k, 156, 0, 3940);
+    			add_location(main, file$l, 197, 0, 4983);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -53861,7 +54274,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$l.name,
+    		id: create_fragment$m.name,
     		type: "component",
     		source: "",
     		ctx
@@ -53870,7 +54283,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$l($$self, $$props, $$invalidate) {
+    function instance$m($$self, $$props, $$invalidate) {
     	let fertilizers = [];
 
     	let newFertilizer = {
@@ -53882,12 +54295,18 @@ var app = (function () {
     		dollarImport: 0
     	};
 
+    	// Variables para mostrar un mensaje al usuario
     	let errorMsg = "";
+
     	let successfulMsg = "";
+
+    	// Variables relacionadas con la paginación
     	let limit = 10;
+
     	let offset = 0;
     	onMount(getFertilizers);
 
+    	// Función para cargar los datos iniciales
     	async function loadInitialDataFertilizers() {
     		console.log("Loading fertilizers...");
 
@@ -53898,6 +54317,7 @@ var app = (function () {
     		$$invalidate(2, successfulMsg = "Los datos iniciales ha sido cargados.");
     	}
 
+    	// Función para obtener los datos. Se incluyen las variables de la paginación
     	async function getFertilizers() {
     		console.log("Fetching fertilizers...");
     		const res = await fetch("/api/v1/fertilizerImportsExports?limit=" + limit + "&offset=" + offset);
@@ -53912,6 +54332,7 @@ var app = (function () {
     		}
     	}
 
+    	// Función para insertar un nuevo dato
     	async function insertFertilizer() {
     		console.log("Inserting fertilizer..." + JSON.stringify(newFertilizer));
 
@@ -53934,6 +54355,7 @@ var app = (function () {
     		});
     	}
 
+    	// Función para borrar el país y el año
     	async function deleteFertilizer(country, year) {
     		const res = await fetch("/api/v1/fertilizerImportsExports/" + country + "/" + year, { method: "DELETE" }).then(function (res) {
     			getFertilizers();
@@ -53942,6 +54364,7 @@ var app = (function () {
     		$$invalidate(2, successfulMsg = "Los datos correspondientes a " + country + " y " + year + " han sido eliminados.");
     	}
 
+    	// Función para borrar todos los datos
     	async function deleteAllFertilizer() {
     		const res = await fetch("/api/v1/fertilizerImportsExports", { method: "DELETE" }).then(function (res) {
     			getFertilizers();
@@ -53950,6 +54373,7 @@ var app = (function () {
     		$$invalidate(2, successfulMsg = "Todos los datos han sido eliminados.");
     	}
 
+    	// Función relacionada con la búsqueda
     	async function searchFertilizer() {
     		let search = "";
 
@@ -54006,6 +54430,7 @@ var app = (function () {
     		}
     	}
 
+    	// Función relacionada con la paginación - Sirve para ir a la página anterior
     	async function previousPage() {
     		if (offset - limit >= 0) {
     			offset = offset - limit;
@@ -54013,6 +54438,7 @@ var app = (function () {
     		}
     	}
 
+    	// Función relacionada con la paginación - Sirve para ir a la página siguiente
     	async function nextPage() {
     		const res = await fetch("/api/v1/fertilizerImportsExports");
     		const json = await res.json();
@@ -54122,13 +54548,13 @@ var app = (function () {
     class FertilizersTable extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$l, create_fragment$l, safe_not_equal, {});
+    		init(this, options, instance$m, create_fragment$m, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "FertilizersTable",
     			options,
-    			id: create_fragment$l.name
+    			id: create_fragment$m.name
     		});
     	}
     }
@@ -54136,9 +54562,9 @@ var app = (function () {
     /* src\front\fertilizerGUI\EditFertilizer.svelte generated by Svelte v3.22.3 */
 
     const { console: console_1$f } = globals;
-    const file$l = "src\\front\\fertilizerGUI\\EditFertilizer.svelte";
+    const file$m = "src\\front\\fertilizerGUI\\EditFertilizer.svelte";
 
-    // (1:0) <script>     import {         onMount     }
+    // (1:0) <script>        // Importaciones de svelte        import {          onMount      }
     function create_catch_block$7(ctx) {
     	const block = {
     		c: noop,
@@ -54153,21 +54579,21 @@ var app = (function () {
     		block,
     		id: create_catch_block$7.name,
     		type: "catch",
-    		source: "(1:0) <script>     import {         onMount     }",
+    		source: "(1:0) <script>        // Importaciones de svelte        import {          onMount      }",
     		ctx
     	});
 
     	return block;
     }
 
-    // (84:4) {:then fertilizer}
+    // (98:4) {:then fertilizer}
     function create_then_block$7(ctx) {
     	let current;
 
     	const table = new Table({
     			props: {
     				bordered: true,
-    				$$slots: { default: [create_default_slot_1$9] },
+    				$$slots: { default: [create_default_slot_1$a] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -54208,15 +54634,15 @@ var app = (function () {
     		block,
     		id: create_then_block$7.name,
     		type: "then",
-    		source: "(84:4) {:then fertilizer}",
+    		source: "(98:4) {:then fertilizer}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:25) <Button outline  color="primary" on:click={updateFertilizer}>
-    function create_default_slot_2$8(ctx) {
+    // (119:25) <Button outline  color="primary" on:click={updateFertilizer}>
+    function create_default_slot_2$9(ctx) {
     	let t;
 
     	const block = {
@@ -54233,17 +54659,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$8.name,
+    		id: create_default_slot_2$9.name,
     		type: "slot",
-    		source: "(105:25) <Button outline  color=\\\"primary\\\" on:click={updateFertilizer}>",
+    		source: "(119:25) <Button outline  color=\\\"primary\\\" on:click={updateFertilizer}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (85:8) <Table bordered>
-    function create_default_slot_1$9(ctx) {
+    // (99:8) <Table bordered>
+    function create_default_slot_1$a(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -54288,7 +54714,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_2$8] },
+    				$$slots: { default: [create_default_slot_2$9] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -54343,28 +54769,28 @@ var app = (function () {
     			t21 = space();
     			td6 = element("td");
     			create_component(button.$$.fragment);
-    			add_location(th0, file$l, 87, 20, 3002);
-    			add_location(th1, file$l, 88, 5, 3021);
-    			add_location(th2, file$l, 89, 5, 3039);
-    			add_location(th3, file$l, 90, 5, 3074);
-    			add_location(th4, file$l, 91, 5, 3107);
-    			add_location(th5, file$l, 92, 20, 3157);
-    			add_location(th6, file$l, 93, 20, 3205);
-    			add_location(tr0, file$l, 86, 16, 2977);
-    			add_location(thead, file$l, 85, 12, 2953);
-    			add_location(td0, file$l, 98, 20, 3325);
-    			add_location(td1, file$l, 99, 20, 3371);
-    			add_location(input0, file$l, 100, 24, 3418);
-    			add_location(td2, file$l, 100, 20, 3414);
-    			add_location(input1, file$l, 101, 24, 3492);
-    			add_location(td3, file$l, 101, 20, 3488);
-    			add_location(input2, file$l, 102, 24, 3564);
-    			add_location(td4, file$l, 102, 20, 3560);
-    			add_location(input3, file$l, 103, 24, 3638);
-    			add_location(td5, file$l, 103, 20, 3634);
-    			add_location(td6, file$l, 104, 20, 3706);
-    			add_location(tr1, file$l, 97, 16, 3300);
-    			add_location(tbody, file$l, 96, 12, 3276);
+    			add_location(th0, file$m, 101, 20, 3365);
+    			add_location(th1, file$m, 102, 5, 3385);
+    			add_location(th2, file$m, 103, 5, 3404);
+    			add_location(th3, file$m, 104, 5, 3440);
+    			add_location(th4, file$m, 105, 5, 3474);
+    			add_location(th5, file$m, 106, 20, 3525);
+    			add_location(th6, file$m, 107, 20, 3574);
+    			add_location(tr0, file$m, 100, 16, 3339);
+    			add_location(thead, file$m, 99, 12, 3314);
+    			add_location(td0, file$m, 112, 20, 3699);
+    			add_location(td1, file$m, 113, 20, 3746);
+    			add_location(input0, file$m, 114, 24, 3794);
+    			add_location(td2, file$m, 114, 20, 3790);
+    			add_location(input1, file$m, 115, 24, 3869);
+    			add_location(td3, file$m, 115, 20, 3865);
+    			add_location(input2, file$m, 116, 24, 3942);
+    			add_location(td4, file$m, 116, 20, 3938);
+    			add_location(input3, file$m, 117, 24, 4017);
+    			add_location(td5, file$m, 117, 20, 4013);
+    			add_location(td6, file$m, 118, 20, 4086);
+    			add_location(tr1, file$m, 111, 16, 3673);
+    			add_location(tbody, file$m, 110, 12, 3648);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, thead, anchor);
@@ -54467,16 +54893,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$9.name,
+    		id: create_default_slot_1$a.name,
     		type: "slot",
-    		source: "(85:8) <Table bordered>",
+    		source: "(99:8) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (82:23)          Cargando fertilizantes...     {:then fertilizer}
+    // (96:23)           Cargando fertilizantes...      {:then fertilizer}
     function create_pending_block$7(ctx) {
     	let t;
 
@@ -54499,14 +54925,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$7.name,
     		type: "pending",
-    		source: "(82:23)          Cargando fertilizantes...     {:then fertilizer}",
+    		source: "(96:23)           Cargando fertilizantes...      {:then fertilizer}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (110:4) {#if errorMsg}
+    // (124:4) {#if errorMsg}
     function create_if_block_1$8(ctx) {
     	let p;
     	let t0;
@@ -54518,7 +54944,7 @@ var app = (function () {
     			t0 = text("ERROR: ");
     			t1 = text(/*errorMsg*/ ctx[7]);
     			set_style(p, "color", "red");
-    			add_location(p, file$l, 110, 8, 3894);
+    			add_location(p, file$m, 124, 8, 4280);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -54537,14 +54963,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$8.name,
     		type: "if",
-    		source: "(110:4) {#if errorMsg}",
+    		source: "(124:4) {#if errorMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (113:4) {#if successfulMsg}
+    // (127:4) {#if successfulMsg}
     function create_if_block$c(ctx) {
     	let p;
     	let t;
@@ -54554,7 +54980,7 @@ var app = (function () {
     			p = element("p");
     			t = text(/*successfulMsg*/ ctx[8]);
     			set_style(p, "color", "green");
-    			add_location(p, file$l, 113, 8, 3980);
+    			add_location(p, file$m, 127, 8, 4369);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -54572,15 +54998,15 @@ var app = (function () {
     		block,
     		id: create_if_block$c.name,
     		type: "if",
-    		source: "(113:4) {#if successfulMsg}",
+    		source: "(127:4) {#if successfulMsg}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (116:4) <Button outline color="secondary" on:click="{pop}">
-    function create_default_slot$f(ctx) {
+    // (130:4) <Button outline color="secondary" on:click="{pop}">
+    function create_default_slot$g(ctx) {
     	let t;
 
     	const block = {
@@ -54597,16 +55023,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$f.name,
+    		id: create_default_slot$g.name,
     		type: "slot",
-    		source: "(116:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
+    		source: "(130:4) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    function create_fragment$m(ctx) {
+    function create_fragment$n(ctx) {
     	let main;
     	let h3;
     	let t0;
@@ -54642,7 +55068,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot$f] },
+    				$$slots: { default: [create_default_slot$g] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -54667,9 +55093,9 @@ var app = (function () {
     			if (if_block1) if_block1.c();
     			t7 = space();
     			create_component(button.$$.fragment);
-    			add_location(strong, file$l, 80, 45, 2781);
-    			add_location(h3, file$l, 80, 4, 2740);
-    			add_location(main, file$l, 79, 0, 2729);
+    			add_location(strong, file$m, 94, 45, 3137);
+    			add_location(h3, file$m, 94, 4, 3096);
+    			add_location(main, file$m, 93, 0, 3084);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -54768,7 +55194,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$m.name,
+    		id: create_fragment$n.name,
     		type: "component",
     		source: "",
     		ctx
@@ -54777,7 +55203,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$m($$self, $$props, $$invalidate) {
+    function instance$n($$self, $$props, $$invalidate) {
     	let { params = {} } = $$props;
     	let fertilizer = {};
     	let updatedCountry = params.country;
@@ -54790,6 +55216,7 @@ var app = (function () {
     	let successfulMsg = "";
     	onMount(getFertilizer);
 
+    	// Función para obtener los datos de un país y año concreto
     	async function getFertilizer() {
     		console.log("Fetching fertilizer...");
     		const res = await fetch("/api/v1/fertilizerImportsExports/" + params.country + params.year);
@@ -54812,6 +55239,7 @@ var app = (function () {
     		}
     	}
 
+    	// Función para actualizar los datos de un país y año concreto
     	async function updateFertilizer() {
     		console.log("Updating fertilizer..." + JSON.stringify(params.country) + JSON.stringify(params.year));
 
@@ -54930,13 +55358,13 @@ var app = (function () {
     class EditFertilizer extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$m, create_fragment$m, safe_not_equal, { params: 0 });
+    		init(this, options, instance$n, create_fragment$n, safe_not_equal, { params: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "EditFertilizer",
     			options,
-    			id: create_fragment$m.name
+    			id: create_fragment$n.name
     		});
     	}
 
@@ -54949,8 +55377,3353 @@ var app = (function () {
     	}
     }
 
+    /* src\front\fertilizerGUI\MyGraph.svelte generated by Svelte v3.22.3 */
+    const file$n = "src\\front\\fertilizerGUI\\MyGraph.svelte";
+
+    function get_each_context$7(ctx, list, i) {
+    	const child_ctx = ctx.slice();
+    	child_ctx[6] = list[i];
+    	return child_ctx;
+    }
+
+    // (120:16) {#each dicountry as chcountry}
+    function create_each_block$7(ctx) {
+    	let option;
+    	let t0_value = /*chcountry*/ ctx[6].value + "";
+    	let t0;
+    	let t1;
+    	let option_value_value;
+
+    	const block = {
+    		c: function create() {
+    			option = element("option");
+    			t0 = text(t0_value);
+    			t1 = space();
+    			option.__value = option_value_value = /*chcountry*/ ctx[6];
+    			option.value = option.__value;
+    			add_location(option, file$n, 120, 20, 4257);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, option, anchor);
+    			append_dev(option, t0);
+    			append_dev(option, t1);
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(option);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_each_block$7.name,
+    		type: "each",
+    		source: "(120:16) {#each dicountry as chcountry}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (127:12) <Button outline color="primary" on:click={loadGraph}>
+    function create_default_slot_1$b(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Consultar");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1$b.name,
+    		type: "slot",
+    		source: "(127:12) <Button outline color=\\\"primary\\\" on:click={loadGraph}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (129:8) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$h(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$h.name,
+    		type: "slot",
+    		source: "(129:8) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$o(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p;
+    	let t2;
+    	let label;
+    	let t4;
+    	let select;
+    	let t5;
+    	let t6;
+    	let current;
+    	let dispose;
+    	let each_value = /*dicountry*/ ctx[2];
+    	validate_each_argument(each_value);
+    	let each_blocks = [];
+
+    	for (let i = 0; i < each_value.length; i += 1) {
+    		each_blocks[i] = create_each_block$7(get_each_context$7(ctx, each_value, i));
+    	}
+
+    	const button0 = new Button({
+    			props: {
+    				outline: true,
+    				color: "primary",
+    				$$slots: { default: [create_default_slot_1$b] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button0.$on("click", /*loadGraph*/ ctx[3]);
+
+    	const button1 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$h] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p = element("p");
+    			t2 = space();
+    			label = element("label");
+    			label.textContent = "Por favor, seleccione el país que desee consultar:";
+    			t4 = space();
+    			select = element("select");
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].c();
+    			}
+
+    			t5 = space();
+    			create_component(button0.$$.fragment);
+    			t6 = space();
+    			create_component(button1.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$n, 101, 8, 3336);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$n, 102, 8, 3411);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$n, 103, 8, 3493);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$n, 104, 8, 3577);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$n, 110, 12, 3778);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$n, 111, 12, 3818);
+    			add_location(label, file$n, 113, 12, 3872);
+    			if (/*choosed*/ ctx[0] === void 0) add_render_callback(() => /*select_change_handler*/ ctx[4].call(select));
+    			add_location(select, file$n, 118, 12, 4121);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$n, 109, 8, 3730);
+    			add_location(main, file$n, 108, 4, 3714);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p);
+    			append_dev(figure, t2);
+    			append_dev(figure, label);
+    			append_dev(figure, t4);
+    			append_dev(figure, select);
+
+    			for (let i = 0; i < each_blocks.length; i += 1) {
+    				each_blocks[i].m(select, null);
+    			}
+
+    			select_option(select, /*choosed*/ ctx[0]);
+    			append_dev(figure, t5);
+    			mount_component(button0, figure, null);
+    			append_dev(main, t6);
+    			mount_component(button1, main, null);
+    			current = true;
+    			if (remount) run_all(dispose);
+
+    			dispose = [
+    				listen_dev(script3, "load", /*loadGraph*/ ctx[3], false, false, false),
+    				listen_dev(select, "change", /*select_change_handler*/ ctx[4]),
+    				listen_dev(select, "change", /*change_handler*/ ctx[5], false, false, false)
+    			];
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*dicountry*/ 4) {
+    				each_value = /*dicountry*/ ctx[2];
+    				validate_each_argument(each_value);
+    				let i;
+
+    				for (i = 0; i < each_value.length; i += 1) {
+    					const child_ctx = get_each_context$7(ctx, each_value, i);
+
+    					if (each_blocks[i]) {
+    						each_blocks[i].p(child_ctx, dirty);
+    					} else {
+    						each_blocks[i] = create_each_block$7(child_ctx);
+    						each_blocks[i].c();
+    						each_blocks[i].m(select, null);
+    					}
+    				}
+
+    				for (; i < each_blocks.length; i += 1) {
+    					each_blocks[i].d(1);
+    				}
+
+    				each_blocks.length = each_value.length;
+    			}
+
+    			if (dirty & /*choosed*/ 1) {
+    				select_option(select, /*choosed*/ ctx[0]);
+    			}
+
+    			const button0_changes = {};
+
+    			if (dirty & /*$$scope*/ 512) {
+    				button0_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button0.$set(button0_changes);
+    			const button1_changes = {};
+
+    			if (dirty & /*$$scope*/ 512) {
+    				button1_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button1.$set(button1_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button0.$$.fragment, local);
+    			transition_in(button1.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button0.$$.fragment, local);
+    			transition_out(button1.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_each(each_blocks, detaching);
+    			destroy_component(button0);
+    			destroy_component(button1);
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$o.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$o($$self, $$props, $$invalidate) {
+    	let dicountry = [
+    		{ key: 1, value: "Canada" },
+    		{ key: 2, value: "Spain" },
+    		{ key: 3, value: "United Kingdom" },
+    		{ key: 4, value: "Mexico" },
+    		{ key: 5, value: "Russian Federation" }
+    	];
+
+    	let choosed;
+    	let ch;
+
+    	// Funcion para cargar nuestro gráfico. En ella buscaremos en nuestra api por país que luego
+    	// podremos seleccionar para consultar los datos.
+    	async function loadGraph() {
+    		let MyData = [];
+    		const resData = await fetch("/api/v1/fertilizerImportsExports" + "?country=" + choosed.value);
+    		MyData = await resData.json();
+    		let data = [];
+
+    		MyData.forEach(element => {
+    			let list = [];
+    			let ey = element.year;
+    			list.push(element.shortTonExport);
+    			list.push(element.dollarExport);
+    			list.push(element.shortTonImport);
+    			list.push(element.dollarImport);
+    			data.push({ name: ey, data: list });
+    		});
+
+    		// Carga de la gráfica highchart
+    		Highcharts.chart("container", {
+    			chart: { type: "area" },
+    			title: { text: "Gráfica Highchart" },
+    			subtitle: {
+    				text: "Esta gráfica representa la cantidad de toneladas de fertilizante y los dólares generados en diferentes países tras su importación y exportación con los Estados Unidos."
+    			},
+    			xAxis: {
+    				allowDecimals: false,
+    				categories: [
+    					"Toneladas Exportadas",
+    					"Dólares Exportados",
+    					"Toneladas Importadas",
+    					"Dólares Importados"
+    				],
+    				title: { text: "Datos" }
+    			},
+    			yAxis: {
+    				title: { text: "Cantidad" },
+    				labels: {
+    					formatter() {
+    						return this.value / 1000 + "k";
+    					}
+    				}
+    			},
+    			tooltip: {
+    				pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    			},
+    			plotOptions: {
+    				area: {
+    					marker: {
+    						enabled: false,
+    						symbol: "circle",
+    						radius: 2,
+    						states: { hover: { enabled: true } }
+    					}
+    				}
+    			},
+    			series: data
+    		});
+    	}
+
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<MyGraph> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("MyGraph", $$slots, []);
+
+    	function select_change_handler() {
+    		choosed = select_value(this);
+    		$$invalidate(0, choosed);
+    		$$invalidate(2, dicountry);
+    	}
+
+    	const change_handler = () => $$invalidate(1, ch = choosed.key);
+
+    	$$self.$capture_state = () => ({
+    		pop,
+    		Button,
+    		dicountry,
+    		choosed,
+    		ch,
+    		loadGraph
+    	});
+
+    	$$self.$inject_state = $$props => {
+    		if ("dicountry" in $$props) $$invalidate(2, dicountry = $$props.dicountry);
+    		if ("choosed" in $$props) $$invalidate(0, choosed = $$props.choosed);
+    		if ("ch" in $$props) $$invalidate(1, ch = $$props.ch);
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [choosed, ch, dicountry, loadGraph, select_change_handler, change_handler];
+    }
+
+    class MyGraph extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$o, create_fragment$o, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "MyGraph",
+    			options,
+    			id: create_fragment$o.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\MyGraph2.svelte generated by Svelte v3.22.3 */
+    const file$o = "src\\front\\fertilizerGUI\\MyGraph2.svelte";
+
+    // (119:6) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$i(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$i.name,
+    		type: "slot",
+    		source: "(119:6) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$p(ctx) {
+    	let div0;
+    	let t0;
+    	let script;
+    	let script_src_value;
+    	let t1;
+    	let main;
+    	let div1;
+    	let h6;
+    	let t3;
+    	let p;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$i] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t0 = space();
+    			script = element("script");
+    			t1 = space();
+    			main = element("main");
+    			div1 = element("div");
+    			h6 = element("h6");
+    			h6.textContent = "Gráfica realizada con la librería Plotly";
+    			t3 = space();
+    			p = element("p");
+    			create_component(button.$$.fragment);
+    			attr_dev(div0, "id", "myGraph2");
+    			add_location(div0, file$o, 2, 0, 100);
+    			if (script.src !== (script_src_value = "https://cdn.plot.ly/plotly-latest.min.js")) attr_dev(script, "src", script_src_value);
+    			add_location(script, file$o, 111, 2, 2602);
+    			add_location(h6, file$o, 116, 39, 2760);
+    			set_style(div1, "margin-bottom", "25px");
+    			add_location(div1, file$o, 116, 6, 2727);
+    			add_location(p, file$o, 117, 4, 2821);
+    			add_location(main, file$o, 115, 2, 2713);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t0, anchor);
+    			append_dev(document.head, script);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, div1);
+    			append_dev(div1, h6);
+    			append_dev(main, t3);
+    			append_dev(main, p);
+    			mount_component(button, p, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script, "load", loadGraph2, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t0);
+    			detach_dev(script);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$p.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2() {
+    	let MyData = [];
+    	let shortTonExport = [];
+    	let dollarExport = [];
+    	let shortTonImport = [];
+    	let dollarImport = [];
+
+    	let listyear = [
+    		"2000",
+    		"2001",
+    		"2002",
+    		"2003",
+    		"2004",
+    		"2005",
+    		"2006",
+    		"2007",
+    		"2008",
+    		"2009",
+    		"2010",
+    		"2011",
+    		"2012"
+    	];
+
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+    	MyData = await resData.json();
+
+    	MyData.forEach(element => {
+    		shortTonExport.push(element.shortTonExport);
+    		dollarExport.push(element.dollarExport);
+    		shortTonImport.push(element.shortTonImport);
+    		dollarImport.push(element.dollarImport);
+    	});
+
+    	// Forma de crear el gráfico con la libreria plotly.
+    	// En este caso le pasamos su identificador y una función
+    	Plotly.plot("myGraph2", ["shortTonExport", "dollarExport", "shortTonImport", "dollarImport"].map(dataGraph2), {});
+
+    	// Esta funcion tiene como objetivo añadir los datos correspondientes a la gráfica
+    	// Para ello lo haré con ifs, aunque se podría hacer con cases
+    	// Dentro de cada caso, se añadirán un dato distinto junto a su año
+    	function dataGraph2(graphCase) {
+    		if (graphCase == "shortTonExport") {
+    			return {
+    				x: listyear,
+    				y: shortTonExport,
+    				text: " toneladas exportadas",
+    				name: " toneladas exportadas",
+    				line: { color: "orange" }
+    			};
+    		} else if (graphCase == "dollarExport") {
+    			return {
+    				x: listyear,
+    				y: dollarExport,
+    				text: " dolares exportados",
+    				name: " dolares exportados",
+    				line: { color: "purple" }
+    			};
+    		} else if (graphCase == "shortTonImport") {
+    			return {
+    				x: listyear,
+    				y: shortTonImport,
+    				text: " toneladas importadas",
+    				name: " toneladas importadas",
+    				line: { color: "red" }
+    			};
+    		} else if (graphCase == "dollarImport") {
+    			return {
+    				x: listyear,
+    				y: dollarImport,
+    				text: " dolares importados",
+    				name: " dolares importados",
+    				line: { color: "green" }
+    			};
+    		}
+    	}
+    }
+
+    function instance$p($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<MyGraph2> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("MyGraph2", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2 });
+    	return [];
+    }
+
+    class MyGraph2 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$p, create_fragment$p, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "MyGraph2",
+    			options,
+    			id: create_fragment$p.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations.svelte generated by Svelte v3.22.3 */
+    const file$p = "src\\front\\fertilizerGUI\\Integrations.svelte";
+
+    // (121:6) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$j(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$j.name,
+    		type: "slot",
+    		source: "(121:6) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$q(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$j] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con la api del grupo 2";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$p, 106, 4, 3131);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$p, 107, 4, 3202);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$p, 108, 4, 3280);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$p, 109, 4, 3360);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$p, 116, 8, 3542);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$p, 117, 8, 3578);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$p, 115, 4, 3498);
+    			add_location(p1, file$p, 119, 4, 3677);
+    			add_location(main, file$p, 114, 2, 3486);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$1, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$q.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$1() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("/api/v2/traffic-accidents");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null,
+    				null,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: [elementG2.province, elementG2.year],
+    			data: [
+    				null,
+    				null,
+    				null,
+    				null,
+    				elementG2.trafficaccidentvictim,
+    				elementG2.dead,
+    				elementG2.injured
+    			]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Victimas",
+    				"Muertos",
+    				"Heridos"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$q($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$1 });
+    	return [];
+    }
+
+    class Integrations$2 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$q, create_fragment$q, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations",
+    			options,
+    			id: create_fragment$q.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations2.svelte generated by Svelte v3.22.3 */
+    const file$q = "src\\front\\fertilizerGUI\\Integrations2.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$k(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$k.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$r(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$k] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 1";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$q, 107, 8, 3583);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$q, 108, 8, 3658);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$q, 109, 8, 3740);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$q, 110, 8, 3824);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$q, 117, 12, 4034);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$q, 118, 12, 4074);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$q, 116, 8, 3986);
+    			add_location(p1, file$q, 120, 8, 4176);
+    			add_location(main, file$q, 115, 6, 3970);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$2, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$r.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$2() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p01/serie/l0//01004.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[0].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Volumen total de agua registrada y distribuida por tipo de usuario"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$r($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations2> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations2", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$2 });
+    	return [];
+    }
+
+    class Integrations2 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$r, create_fragment$r, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations2",
+    			options,
+    			id: create_fragment$r.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations3.svelte generated by Svelte v3.22.3 */
+    const file$r = "src\\front\\fertilizerGUI\\Integrations3.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$l(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$l.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$s(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$l] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 2";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$r, 107, 8, 3558);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$r, 108, 8, 3633);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$r, 109, 8, 3715);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$r, 110, 8, 3799);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$r, 117, 12, 4009);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$r, 118, 12, 4049);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$r, 116, 8, 3961);
+    			add_location(p1, file$r, 120, 8, 4151);
+    			add_location(main, file$r, 115, 6, 3945);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$3, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$s.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$3() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p01/serie/l0/01002.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[0].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Volumen de agua disponible no potabilizada"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$s($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations3> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations3", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$3 });
+    	return [];
+    }
+
+    class Integrations3 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$s, create_fragment$s, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations3",
+    			options,
+    			id: create_fragment$s.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations4.svelte generated by Svelte v3.22.3 */
+    const file$s = "src\\front\\fertilizerGUI\\Integrations4.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$m(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$m.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$t(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$m] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 3";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$s, 107, 8, 3579);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$s, 108, 8, 3654);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$s, 109, 8, 3736);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$s, 110, 8, 3820);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$s, 117, 12, 4030);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$s, 118, 12, 4070);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$s, 116, 8, 3982);
+    			add_location(p1, file$s, 120, 8, 4172);
+    			add_location(main, file$s, 115, 6, 3966);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$4, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$t.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$4() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p01/serie/l0/01003.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[0].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Volumen de agua suministrada a la red de abastecimiento público"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$t($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations4> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations4", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$4 });
+    	return [];
+    }
+
+    class Integrations4 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$t, create_fragment$t, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations4",
+    			options,
+    			id: create_fragment$t.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations5.svelte generated by Svelte v3.22.3 */
+    const file$t = "src\\front\\fertilizerGUI\\Integrations5.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$n(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$n.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$u(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$n] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 4";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$t, 107, 8, 3532);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$t, 108, 8, 3607);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$t, 109, 8, 3689);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$t, 110, 8, 3773);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$t, 117, 12, 3983);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$t, 118, 12, 4023);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$t, 116, 8, 3935);
+    			add_location(p1, file$t, 120, 8, 4125);
+    			add_location(main, file$t, 115, 6, 3919);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$5, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$u.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$5() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p01/serie/l0/01004a.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[0].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Agua registrada"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$u($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations5> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations5", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$5 });
+    	return [];
+    }
+
+    class Integrations5 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$u, create_fragment$u, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations5",
+    			options,
+    			id: create_fragment$u.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations6.svelte generated by Svelte v3.22.3 */
+    const file$u = "src\\front\\fertilizerGUI\\Integrations6.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$o(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$o.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$v(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$o] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 5";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$u, 107, 8, 3549);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$u, 108, 8, 3624);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$u, 109, 8, 3706);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$u, 110, 8, 3790);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$u, 117, 12, 4000);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$u, 118, 12, 4040);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$u, 116, 8, 3952);
+    			add_location(p1, file$u, 120, 8, 4142);
+    			add_location(main, file$u, 115, 6, 3936);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$6, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$v.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$6() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p01/serie/l0/01005.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[1].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Volumen total de agua reutilizada"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$v($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations6> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations6", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$6 });
+    	return [];
+    }
+
+    class Integrations6 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$v, create_fragment$v, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations6",
+    			options,
+    			id: create_fragment$v.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations7.svelte generated by Svelte v3.22.3 */
+    const file$v = "src\\front\\fertilizerGUI\\Integrations7.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$p(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$p.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$w(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$p] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 6";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$v, 107, 8, 3525);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$v, 108, 8, 3600);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$v, 109, 8, 3682);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$v, 110, 8, 3766);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$v, 117, 12, 3976);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$v, 118, 12, 4016);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$v, 116, 8, 3928);
+    			add_location(p1, file$v, 120, 8, 4118);
+    			add_location(main, file$v, 115, 6, 3912);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$7, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$w.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$7() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p03/serie/l0/02003.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[1].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Herbáceos"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$w($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations7> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations7", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$7 });
+    	return [];
+    }
+
+    class Integrations7 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$w, create_fragment$w, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations7",
+    			options,
+    			id: create_fragment$w.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations8.svelte generated by Svelte v3.22.3 */
+    const file$w = "src\\front\\fertilizerGUI\\Integrations8.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$q(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$q.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$x(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$q] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 7";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$w, 107, 8, 3530);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$w, 108, 8, 3605);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$w, 109, 8, 3687);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$w, 110, 8, 3771);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$w, 117, 12, 3981);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$w, 118, 12, 4021);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$w, 116, 8, 3933);
+    			add_location(p1, file$w, 120, 8, 4123);
+    			add_location(main, file$w, 115, 6, 3917);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$8, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$x.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$8() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/p067/p03/serie/l0/02002.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[0].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Agua en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Agua adquirida"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$x($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations8> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations8", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$8 });
+    	return [];
+    }
+
+    class Integrations8 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$x, create_fragment$x, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations8",
+    			options,
+    			id: create_fragment$x.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations9.svelte generated by Svelte v3.22.3 */
+    const file$x = "src\\front\\fertilizerGUI\\Integrations9.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$r(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$r.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$y(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$r] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 8";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$x, 107, 8, 3551);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$x, 108, 8, 3626);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$x, 109, 8, 3708);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$x, 110, 8, 3792);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$x, 117, 12, 4002);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$x, 118, 12, 4042);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$x, 116, 8, 3954);
+    			add_location(p1, file$x, 120, 8, 4144);
+    			add_location(main, file$x, 115, 6, 3938);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$9, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$y.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$9() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/e068/p01/serie/l0/02003.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[1].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Residuos en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Residuos domésticos y similares"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$y($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations9> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations9", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$9 });
+    	return [];
+    }
+
+    class Integrations9 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$y, create_fragment$y, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations9",
+    			options,
+    			id: create_fragment$y.name
+    		});
+    	}
+    }
+
+    /* src\front\fertilizerGUI\Integrations10.svelte generated by Svelte v3.22.3 */
+    const file$y = "src\\front\\fertilizerGUI\\Integrations10.svelte";
+
+    // (122:10) <Button outline size="lg" color="danger" onclick="location.href='/#/Integrations';">
+    function create_default_slot$s(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Volver");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$s.name,
+    		type: "slot",
+    		source: "(122:10) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$z(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let t0;
+    	let main;
+    	let figure;
+    	let div;
+    	let t1;
+    	let p0;
+    	let t3;
+    	let p1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/Integrations';",
+    				$$slots: { default: [create_default_slot$s] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			figure = element("figure");
+    			div = element("div");
+    			t1 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfica integrada con api externa 9";
+    			t3 = space();
+    			p1 = element("p");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$y, 107, 8, 3541);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$y, 108, 8, 3616);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$y, 109, 8, 3698);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$y, 110, 8, 3782);
+    			attr_dev(div, "id", "container");
+    			add_location(div, file$y, 117, 12, 3992);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$y, 118, 12, 4032);
+    			attr_dev(figure, "class", "highcharts-figure");
+    			add_location(figure, file$y, 116, 8, 3944);
+    			add_location(p1, file$y, 120, 8, 4134);
+    			add_location(main, file$y, 115, 6, 3928);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, figure);
+    			append_dev(figure, div);
+    			append_dev(figure, t1);
+    			append_dev(figure, p0);
+    			append_dev(main, t3);
+    			append_dev(main, p1);
+    			mount_component(button, p1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph2$a, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$z.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph2$a() {
+    	// Creamos las variables necesarias
+    	let MyData = [];
+
+    	let dataG2 = [];
+    	let ourData = [];
+
+    	// Realizamos la busqueda a las dos apis
+    	const resData = await fetch("/api/v1/fertilizerImportsExports");
+
+    	MyData = await resData.json();
+    	const resDataG2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA//t26/e068/p04/serie/l0/01002.px?tip=AM");
+
+    	if (resDataG2.ok) {
+    		const json = await resDataG2.json();
+    		dataG2 = json;
+    	}
+
+    	// Obtenemos los datos de cada api y las unimos en una lista común
+    	MyData.forEach(element => {
+    		ourData.push({
+    			name: [element.country, element.year],
+    			data: [
+    				element.shortTonExport,
+    				element.dollarExport,
+    				element.shortTonImport,
+    				element.dollarImport,
+    				null
+    			]
+    		});
+    	});
+
+    	dataG2 = dataG2[1].Data;
+
+    	dataG2.forEach(elementG2 => {
+    		ourData.push({
+    			name: ["Residuos en " + elementG2.NombrePeriodo],
+    			data: [null, null, null, null, elementG2.Valor]
+    		});
+    	});
+
+    	// Creación de la gráfica highcharts
+    	Highcharts.chart("container", {
+    		chart: { type: "area" },
+    		title: { text: "" },
+    		xAxis: {
+    			allowDecimals: false,
+    			categories: [
+    				"Toneladas Exportadas",
+    				"Dólares Exportados",
+    				"Toneladas Importadas",
+    				"Dólares Importados",
+    				"Recuperación residuos"
+    			],
+    			title: { text: "Datos" }
+    		},
+    		yAxis: {
+    			title: { text: "Cantidad" },
+    			labels: {
+    				formatter() {
+    					return this.value / 1000 + "k";
+    				}
+    			}
+    		},
+    		tooltip: {
+    			pointFormat: "{series.name}: <b>{point.y:,.0f}</b><br/>"
+    		},
+    		plotOptions: {
+    			area: {
+    				marker: {
+    					enabled: false,
+    					symbol: "circle",
+    					radius: 2,
+    					states: { hover: { enabled: true } }
+    				}
+    			}
+    		},
+    		series: ourData
+    	});
+    }
+
+    function instance$z($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations10> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations10", $$slots, []);
+    	$$self.$capture_state = () => ({ pop, Button, loadGraph2: loadGraph2$a });
+    	return [];
+    }
+
+    class Integrations10 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$z, create_fragment$z, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations10",
+    			options,
+    			id: create_fragment$z.name
+    		});
+    	}
+    }
+
     /* src\front\Home.svelte generated by Svelte v3.22.3 */
-    const file$m = "src\\front\\Home.svelte";
+    const file$z = "src\\front\\Home.svelte";
 
     // (7:0) <Button outline size="lg" color="primary" onclick="location.href='/#/imports';">
     function create_default_slot_6$3(ctx) {
@@ -55034,7 +58807,7 @@ var app = (function () {
     }
 
     // (19:0) <Button outline size="lg" color="success" onclick="location.href='/#/analitics';">
-    function create_default_slot_3$6(ctx) {
+    function create_default_slot_3$7(ctx) {
     	let t;
 
     	const block = {
@@ -55051,7 +58824,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$6.name,
+    		id: create_default_slot_3$7.name,
     		type: "slot",
     		source: "(19:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='/#/analitics';\\\">",
     		ctx
@@ -55060,13 +58833,13 @@ var app = (function () {
     	return block;
     }
 
-    // (23:0) <Button outline size="lg" color="success">
-    function create_default_slot_2$9(ctx) {
+    // (23:0) <Button outline size="lg" color="success" onclick="location.href='/#/about';">
+    function create_default_slot_2$a(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("Analítica");
+    			t = text("Sobre nosotros(Vídeos)");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -55078,9 +58851,9 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$9.name,
+    		id: create_default_slot_2$a.name,
     		type: "slot",
-    		source: "(23:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\">",
+    		source: "(23:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='/#/about';\\\">",
     		ctx
     	});
 
@@ -55088,7 +58861,7 @@ var app = (function () {
     }
 
     // (27:0) <Button outline size="lg" color="success" onclick="location.href='http://34.106.120.78/';">
-    function create_default_slot_1$a(ctx) {
+    function create_default_slot_1$c(ctx) {
     	let t;
 
     	const block = {
@@ -55105,7 +58878,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$a.name,
+    		id: create_default_slot_1$c.name,
     		type: "slot",
     		source: "(27:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='http://34.106.120.78/';\\\">",
     		ctx
@@ -55115,7 +58888,7 @@ var app = (function () {
     }
 
     // (31:0) <Button outline size="lg" color="success" onclick="location.href='/#/Integrations';">
-    function create_default_slot$g(ctx) {
+    function create_default_slot$t(ctx) {
     	let t;
 
     	const block = {
@@ -55132,7 +58905,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$g.name,
+    		id: create_default_slot$t.name,
     		type: "slot",
     		source: "(31:0) <Button outline size=\\\"lg\\\" color=\\\"success\\\" onclick=\\\"location.href='/#/Integrations';\\\">",
     		ctx
@@ -55141,7 +58914,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$n(ctx) {
+    function create_fragment$A(ctx) {
     	let div0;
     	let h20;
     	let t0;
@@ -55213,7 +58986,7 @@ var app = (function () {
     				size: "lg",
     				color: "success",
     				onclick: "location.href='/#/analitics';",
-    				$$slots: { default: [create_default_slot_3$6] },
+    				$$slots: { default: [create_default_slot_3$7] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55224,7 +58997,8 @@ var app = (function () {
     				outline: true,
     				size: "lg",
     				color: "success",
-    				$$slots: { default: [create_default_slot_2$9] },
+    				onclick: "location.href='/#/about';",
+    				$$slots: { default: [create_default_slot_2$a] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55236,7 +59010,7 @@ var app = (function () {
     				size: "lg",
     				color: "success",
     				onclick: "location.href='http://34.106.120.78/';",
-    				$$slots: { default: [create_default_slot_1$a] },
+    				$$slots: { default: [create_default_slot_1$c] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55248,7 +59022,7 @@ var app = (function () {
     				size: "lg",
     				color: "success",
     				onclick: "location.href='/#/Integrations';",
-    				$$slots: { default: [create_default_slot$g] },
+    				$$slots: { default: [create_default_slot$t] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55290,20 +59064,20 @@ var app = (function () {
     			h26 = element("h2");
     			t12 = space();
     			create_component(button6.$$.fragment);
-    			add_location(h20, file$m, 5, 0, 87);
-    			add_location(div0, file$m, 4, 0, 80);
-    			add_location(h21, file$m, 9, 0, 226);
-    			add_location(div1, file$m, 8, 0, 219);
-    			add_location(h22, file$m, 13, 0, 377);
-    			add_location(div2, file$m, 12, 0, 370);
-    			add_location(h23, file$m, 17, 0, 533);
-    			add_location(div3, file$m, 16, 0, 526);
-    			add_location(h24, file$m, 21, 0, 667);
-    			add_location(div4, file$m, 20, 0, 660);
-    			add_location(h25, file$m, 25, 0, 757);
-    			add_location(div5, file$m, 24, 0, 750);
-    			add_location(h26, file$m, 29, 0, 898);
-    			add_location(div6, file$m, 28, 0, 891);
+    			add_location(h20, file$z, 5, 0, 87);
+    			add_location(div0, file$z, 4, 0, 80);
+    			add_location(h21, file$z, 9, 0, 226);
+    			add_location(div1, file$z, 8, 0, 219);
+    			add_location(h22, file$z, 13, 0, 377);
+    			add_location(div2, file$z, 12, 0, 370);
+    			add_location(h23, file$z, 17, 0, 533);
+    			add_location(div3, file$z, 16, 0, 526);
+    			add_location(h24, file$z, 21, 0, 667);
+    			add_location(div4, file$z, 20, 0, 660);
+    			add_location(h25, file$z, 25, 0, 806);
+    			add_location(div5, file$z, 24, 0, 799);
+    			add_location(h26, file$z, 29, 0, 947);
+    			add_location(div6, file$z, 28, 0, 940);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -55443,7 +59217,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$n.name,
+    		id: create_fragment$A.name,
     		type: "component",
     		source: "",
     		ctx
@@ -55452,7 +59226,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$n($$self, $$props, $$invalidate) {
+    function instance$A($$self, $$props, $$invalidate) {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -55468,13 +59242,13 @@ var app = (function () {
     class Home$1 extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$n, create_fragment$n, safe_not_equal, {});
+    		init(this, options, instance$A, create_fragment$A, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Home",
     			options,
-    			id: create_fragment$n.name
+    			id: create_fragment$A.name
     		});
     	}
     }
@@ -55482,10 +59256,10 @@ var app = (function () {
     /* src\front\analitics.svelte generated by Svelte v3.22.3 */
 
     const { console: console_1$g } = globals;
-    const file$n = "src\\front\\analitics.svelte";
+    const file$A = "src\\front\\analitics.svelte";
 
     // (108:0) <Button outline size="lg" color="primary" onclick="location.href='/#/';">
-    function create_default_slot$h(ctx) {
+    function create_default_slot$u(ctx) {
     	let t;
 
     	const block = {
@@ -55502,7 +59276,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$h.name,
+    		id: create_default_slot$u.name,
     		type: "slot",
     		source: "(108:0) <Button outline size=\\\"lg\\\" color=\\\"primary\\\" onclick=\\\"location.href='/#/';\\\">",
     		ctx
@@ -55511,7 +59285,7 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$o(ctx) {
+    function create_fragment$B(ctx) {
     	let script0;
     	let script0_src_value;
     	let script1;
@@ -55535,7 +59309,7 @@ var app = (function () {
     				size: "lg",
     				color: "primary",
     				onclick: "location.href='/#/';",
-    				$$slots: { default: [create_default_slot$h] },
+    				$$slots: { default: [create_default_slot$u] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55557,20 +59331,20 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Gráfica Grupal de comparación entre Importaciones de Alcohol, Dulces y Dolares a EEUU.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$n, 100, 1, 3633);
+    			add_location(script0, file$A, 100, 1, 3633);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts-more.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$n, 101, 1, 3702);
+    			add_location(script1, file$A, 101, 1, 3702);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$n, 102, 1, 3776);
+    			add_location(script2, file$A, 102, 1, 3776);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$n, 103, 1, 3852);
+    			add_location(script3, file$A, 103, 1, 3852);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$n, 110, 2, 4088);
+    			add_location(div, file$A, 110, 2, 4088);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$n, 111, 2, 4118);
+    			add_location(p, file$A, 111, 2, 4118);
     			attr_dev(figure, "class", "highcharts-figure svelte-1ll1sz5");
-    			add_location(figure, file$n, 109, 1, 4050);
-    			add_location(main, file$n, 106, 0, 3949);
+    			add_location(figure, file$A, 109, 1, 4050);
+    			add_location(main, file$A, 106, 0, 3949);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -55621,7 +59395,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$o.name,
+    		id: create_fragment$B.name,
     		type: "component",
     		source: "",
     		ctx
@@ -55721,7 +59495,7 @@ var app = (function () {
     	});
     }
 
-    function instance$o($$self, $$props, $$invalidate) {
+    function instance$B($$self, $$props, $$invalidate) {
     	onMount(cargagrafica$2);
     	const writable_props = [];
 
@@ -55738,22 +59512,22 @@ var app = (function () {
     class Analitics extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$o, create_fragment$o, safe_not_equal, {});
+    		init(this, options, instance$B, create_fragment$B, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Analitics",
     			options,
-    			id: create_fragment$o.name
+    			id: create_fragment$B.name
     		});
     	}
     }
 
     /* src\front\Integrations.svelte generated by Svelte v3.22.3 */
-    const file$o = "src\\front\\Integrations.svelte";
+    const file$B = "src\\front\\Integrations.svelte";
 
     // (6:0) <Button outline size="lg" color="primary" onclick="location.href='/#/foodsImports/Integrations/';">
-    function create_default_slot_4$7(ctx) {
+    function create_default_slot_16(ctx) {
     	let t;
 
     	const block = {
@@ -55770,7 +59544,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$7.name,
+    		id: create_default_slot_16.name,
     		type: "slot",
     		source: "(6:0) <Button outline size=\\\"lg\\\" color=\\\"primary\\\" onclick=\\\"location.href='/#/foodsImports/Integrations/';\\\">",
     		ctx
@@ -55780,7 +59554,7 @@ var app = (function () {
     }
 
     // (10:4) <Button outline size="lg" color="secondary" onclick="location.href='/#/imports-graph';" >
-    function create_default_slot_3$7(ctx) {
+    function create_default_slot_15(ctx) {
     	let t;
 
     	const block = {
@@ -55797,7 +59571,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$7.name,
+    		id: create_default_slot_15.name,
     		type: "slot",
     		source: "(10:4) <Button outline size=\\\"lg\\\" color=\\\"secondary\\\" onclick=\\\"location.href='/#/imports-graph';\\\" >",
     		ctx
@@ -55807,7 +59581,7 @@ var app = (function () {
     }
 
     // (11:4) <Button outline size="lg" color="secondary" onclick="location.href='/#/imports-graph2';" >
-    function create_default_slot_2$a(ctx) {
+    function create_default_slot_14(ctx) {
     	let t;
 
     	const block = {
@@ -55824,7 +59598,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$a.name,
+    		id: create_default_slot_14.name,
     		type: "slot",
     		source: "(11:4) <Button outline size=\\\"lg\\\" color=\\\"secondary\\\" onclick=\\\"location.href='/#/imports-graph2';\\\" >",
     		ctx
@@ -55834,7 +59608,7 @@ var app = (function () {
     }
 
     // (12:4) <Button outline size="lg" color="secondary" onclick="location.href='/#/imports-integrations';" >
-    function create_default_slot_1$b(ctx) {
+    function create_default_slot_13$1(ctx) {
     	let t;
 
     	const block = {
@@ -55851,7 +59625,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$b.name,
+    		id: create_default_slot_13$1.name,
     		type: "slot",
     		source: "(12:4) <Button outline size=\\\"lg\\\" color=\\\"secondary\\\" onclick=\\\"location.href='/#/imports-integrations';\\\" >",
     		ctx
@@ -55861,7 +59635,7 @@ var app = (function () {
     }
 
     // (13:4) <Button outline size="lg" color="secondary" onclick="location.href='/#/import-table';" >
-    function create_default_slot$i(ctx) {
+    function create_default_slot_12$1(ctx) {
     	let t;
 
     	const block = {
@@ -55878,7 +59652,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$i.name,
+    		id: create_default_slot_12$1.name,
     		type: "slot",
     		source: "(13:4) <Button outline size=\\\"lg\\\" color=\\\"secondary\\\" onclick=\\\"location.href='/#/import-table';\\\" >",
     		ctx
@@ -55887,7 +59661,331 @@ var app = (function () {
     	return block;
     }
 
-    function create_fragment$p(ctx) {
+    // (17:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/MyGraph';" >
+    function create_default_slot_11$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Gráfica Highchart");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_11$1.name,
+    		type: "slot",
+    		source: "(17:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/MyGraph';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (18:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/MyGraph2';" >
+    function create_default_slot_10$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Gráfica 2");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_10$1.name,
+    		type: "slot",
+    		source: "(18:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/MyGraph2';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (19:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations';" >
+    function create_default_slot_9$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integracion API 02");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_9$1.name,
+    		type: "slot",
+    		source: "(19:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (20:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations2';" >
+    function create_default_slot_8$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext1");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_8$1.name,
+    		type: "slot",
+    		source: "(20:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations2';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (21:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations3';" >
+    function create_default_slot_7$3(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext2");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_7$3.name,
+    		type: "slot",
+    		source: "(21:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations3';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (22:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations4';" >
+    function create_default_slot_6$4(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext3");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_6$4.name,
+    		type: "slot",
+    		source: "(22:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations4';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (23:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations5';" >
+    function create_default_slot_5$5(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext4");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_5$5.name,
+    		type: "slot",
+    		source: "(23:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations5';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (24:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations6';" >
+    function create_default_slot_4$7(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext5");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_4$7.name,
+    		type: "slot",
+    		source: "(24:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations6';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (25:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations7';" >
+    function create_default_slot_3$8(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext6");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_3$8.name,
+    		type: "slot",
+    		source: "(25:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations7';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (26:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations8';" >
+    function create_default_slot_2$b(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext7");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_2$b.name,
+    		type: "slot",
+    		source: "(26:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations8';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (27:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations9';" >
+    function create_default_slot_1$d(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext8");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1$d.name,
+    		type: "slot",
+    		source: "(27:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations9';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (28:4) <Button outline size="lg" color="danger" onclick="location.href='/#/fertilizerImportsExports/Integrations10';" >
+    function create_default_slot$v(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones Ext9");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$v.name,
+    		type: "slot",
+    		source: "(28:4) <Button outline size=\\\"lg\\\" color=\\\"danger\\\" onclick=\\\"location.href='/#/fertilizerImportsExports/Integrations10';\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$C(ctx) {
     	let div0;
     	let h20;
     	let t0;
@@ -55898,6 +59996,21 @@ var app = (function () {
     	let t4;
     	let t5;
     	let t6;
+    	let t7;
+    	let div2;
+    	let h22;
+    	let t9;
+    	let t10;
+    	let t11;
+    	let t12;
+    	let t13;
+    	let t14;
+    	let t15;
+    	let t16;
+    	let t17;
+    	let t18;
+    	let t19;
+    	let t20;
     	let current;
 
     	const button0 = new Button({
@@ -55906,7 +60019,7 @@ var app = (function () {
     				size: "lg",
     				color: "primary",
     				onclick: "location.href='/#/foodsImports/Integrations/';",
-    				$$slots: { default: [create_default_slot_4$7] },
+    				$$slots: { default: [create_default_slot_16] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55918,7 +60031,7 @@ var app = (function () {
     				size: "lg",
     				color: "secondary",
     				onclick: "location.href='/#/imports-graph';",
-    				$$slots: { default: [create_default_slot_3$7] },
+    				$$slots: { default: [create_default_slot_15] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55930,7 +60043,7 @@ var app = (function () {
     				size: "lg",
     				color: "secondary",
     				onclick: "location.href='/#/imports-graph2';",
-    				$$slots: { default: [create_default_slot_2$a] },
+    				$$slots: { default: [create_default_slot_14] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55942,7 +60055,7 @@ var app = (function () {
     				size: "lg",
     				color: "secondary",
     				onclick: "location.href='/#/imports-integrations';",
-    				$$slots: { default: [create_default_slot_1$b] },
+    				$$slots: { default: [create_default_slot_13$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55954,7 +60067,151 @@ var app = (function () {
     				size: "lg",
     				color: "secondary",
     				onclick: "location.href='/#/import-table';",
-    				$$slots: { default: [create_default_slot$i] },
+    				$$slots: { default: [create_default_slot_12$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button5 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/MyGraph';",
+    				$$slots: { default: [create_default_slot_11$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button6 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/MyGraph2';",
+    				$$slots: { default: [create_default_slot_10$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button7 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations';",
+    				$$slots: { default: [create_default_slot_9$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button8 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations2';",
+    				$$slots: { default: [create_default_slot_8$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button9 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations3';",
+    				$$slots: { default: [create_default_slot_7$3] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button10 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations4';",
+    				$$slots: { default: [create_default_slot_6$4] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button11 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations5';",
+    				$$slots: { default: [create_default_slot_5$5] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button12 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations6';",
+    				$$slots: { default: [create_default_slot_4$7] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button13 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations7';",
+    				$$slots: { default: [create_default_slot_3$8] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button14 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations8';",
+    				$$slots: { default: [create_default_slot_2$b] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button15 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations9';",
+    				$$slots: { default: [create_default_slot_1$d] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button16 = new Button({
+    			props: {
+    				outline: true,
+    				size: "lg",
+    				color: "danger",
+    				onclick: "location.href='/#/fertilizerImportsExports/Integrations10';",
+    				$$slots: { default: [create_default_slot$v] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -55978,11 +60235,42 @@ var app = (function () {
     			create_component(button3.$$.fragment);
     			t6 = space();
     			create_component(button4.$$.fragment);
-    			add_location(h20, file$o, 4, 0, 85);
-    			add_location(div0, file$o, 3, 0, 78);
-    			add_location(h21, file$o, 8, 4, 280);
+    			t7 = space();
+    			div2 = element("div");
+    			h22 = element("h2");
+    			h22.textContent = "Integraciones de Pablo";
+    			t9 = space();
+    			create_component(button5.$$.fragment);
+    			t10 = space();
+    			create_component(button6.$$.fragment);
+    			t11 = space();
+    			create_component(button7.$$.fragment);
+    			t12 = space();
+    			create_component(button8.$$.fragment);
+    			t13 = space();
+    			create_component(button9.$$.fragment);
+    			t14 = space();
+    			create_component(button10.$$.fragment);
+    			t15 = space();
+    			create_component(button11.$$.fragment);
+    			t16 = space();
+    			create_component(button12.$$.fragment);
+    			t17 = space();
+    			create_component(button13.$$.fragment);
+    			t18 = space();
+    			create_component(button14.$$.fragment);
+    			t19 = space();
+    			create_component(button15.$$.fragment);
+    			t20 = space();
+    			create_component(button16.$$.fragment);
+    			add_location(h20, file$B, 4, 0, 85);
+    			add_location(div0, file$B, 3, 0, 78);
+    			add_location(h21, file$B, 8, 4, 280);
     			set_style(div1, "margin-top", "50px");
-    			add_location(div1, file$o, 7, 0, 244);
+    			add_location(div1, file$B, 7, 0, 244);
+    			add_location(h22, file$B, 15, 4, 825);
+    			set_style(div2, "margin-top", "50px");
+    			add_location(div2, file$B, 14, 0, 789);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -56003,6 +60291,33 @@ var app = (function () {
     			mount_component(button3, div1, null);
     			append_dev(div1, t6);
     			mount_component(button4, div1, null);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, h22);
+    			append_dev(div2, t9);
+    			mount_component(button5, div2, null);
+    			append_dev(div2, t10);
+    			mount_component(button6, div2, null);
+    			append_dev(div2, t11);
+    			mount_component(button7, div2, null);
+    			append_dev(div2, t12);
+    			mount_component(button8, div2, null);
+    			append_dev(div2, t13);
+    			mount_component(button9, div2, null);
+    			append_dev(div2, t14);
+    			mount_component(button10, div2, null);
+    			append_dev(div2, t15);
+    			mount_component(button11, div2, null);
+    			append_dev(div2, t16);
+    			mount_component(button12, div2, null);
+    			append_dev(div2, t17);
+    			mount_component(button13, div2, null);
+    			append_dev(div2, t18);
+    			mount_component(button14, div2, null);
+    			append_dev(div2, t19);
+    			mount_component(button15, div2, null);
+    			append_dev(div2, t20);
+    			mount_component(button16, div2, null);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -56041,6 +60356,90 @@ var app = (function () {
     			}
 
     			button4.$set(button4_changes);
+    			const button5_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button5_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button5.$set(button5_changes);
+    			const button6_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button6_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button6.$set(button6_changes);
+    			const button7_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button7_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button7.$set(button7_changes);
+    			const button8_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button8_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button8.$set(button8_changes);
+    			const button9_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button9_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button9.$set(button9_changes);
+    			const button10_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button10_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button10.$set(button10_changes);
+    			const button11_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button11_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button11.$set(button11_changes);
+    			const button12_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button12_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button12.$set(button12_changes);
+    			const button13_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button13_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button13.$set(button13_changes);
+    			const button14_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button14_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button14.$set(button14_changes);
+    			const button15_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button15_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button15.$set(button15_changes);
+    			const button16_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button16_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button16.$set(button16_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -56049,6 +60448,18 @@ var app = (function () {
     			transition_in(button2.$$.fragment, local);
     			transition_in(button3.$$.fragment, local);
     			transition_in(button4.$$.fragment, local);
+    			transition_in(button5.$$.fragment, local);
+    			transition_in(button6.$$.fragment, local);
+    			transition_in(button7.$$.fragment, local);
+    			transition_in(button8.$$.fragment, local);
+    			transition_in(button9.$$.fragment, local);
+    			transition_in(button10.$$.fragment, local);
+    			transition_in(button11.$$.fragment, local);
+    			transition_in(button12.$$.fragment, local);
+    			transition_in(button13.$$.fragment, local);
+    			transition_in(button14.$$.fragment, local);
+    			transition_in(button15.$$.fragment, local);
+    			transition_in(button16.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -56057,6 +60468,18 @@ var app = (function () {
     			transition_out(button2.$$.fragment, local);
     			transition_out(button3.$$.fragment, local);
     			transition_out(button4.$$.fragment, local);
+    			transition_out(button5.$$.fragment, local);
+    			transition_out(button6.$$.fragment, local);
+    			transition_out(button7.$$.fragment, local);
+    			transition_out(button8.$$.fragment, local);
+    			transition_out(button9.$$.fragment, local);
+    			transition_out(button10.$$.fragment, local);
+    			transition_out(button11.$$.fragment, local);
+    			transition_out(button12.$$.fragment, local);
+    			transition_out(button13.$$.fragment, local);
+    			transition_out(button14.$$.fragment, local);
+    			transition_out(button15.$$.fragment, local);
+    			transition_out(button16.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -56068,12 +60491,26 @@ var app = (function () {
     			destroy_component(button2);
     			destroy_component(button3);
     			destroy_component(button4);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(div2);
+    			destroy_component(button5);
+    			destroy_component(button6);
+    			destroy_component(button7);
+    			destroy_component(button8);
+    			destroy_component(button9);
+    			destroy_component(button10);
+    			destroy_component(button11);
+    			destroy_component(button12);
+    			destroy_component(button13);
+    			destroy_component(button14);
+    			destroy_component(button15);
+    			destroy_component(button16);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$p.name,
+    		id: create_fragment$C.name,
     		type: "component",
     		source: "",
     		ctx
@@ -56082,7 +60519,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$p($$self, $$props, $$invalidate) {
+    function instance$C($$self, $$props, $$invalidate) {
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -56095,24 +60532,24 @@ var app = (function () {
     	return [];
     }
 
-    class Integrations$2 extends SvelteComponentDev {
+    class Integrations$3 extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$p, create_fragment$p, safe_not_equal, {});
+    		init(this, options, instance$C, create_fragment$C, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Integrations",
     			options,
-    			id: create_fragment$p.name
+    			id: create_fragment$C.name
     		});
     	}
     }
 
     /* src\front\App.svelte generated by Svelte v3.22.3 */
-    const file$p = "src\\front\\App.svelte";
+    const file$C = "src\\front\\App.svelte";
 
-    function create_fragment$q(ctx) {
+    function create_fragment$D(ctx) {
     	let main;
     	let h1;
     	let t1;
@@ -56130,9 +60567,9 @@ var app = (function () {
     			h1.textContent = "Apis del Grupo 7 SOS";
     			t1 = space();
     			create_component(router.$$.fragment);
-    			add_location(h1, file$p, 56, 1, 2256);
+    			add_location(h1, file$C, 84, 1, 4012);
     			attr_dev(main, "class", "svelte-1k9u9rj");
-    			add_location(main, file$p, 55, 0, 2247);
+    			add_location(main, file$C, 83, 0, 4003);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -56162,7 +60599,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$q.name,
+    		id: create_fragment$D.name,
     		type: "component",
     		source: "",
     		ctx
@@ -56171,7 +60608,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$q($$self, $$props, $$invalidate) {
+    function instance$D($$self, $$props, $$invalidate) {
     	const routes = {
     		"/": Home$1,
     		"/import/:country/:year": EditImport,
@@ -56189,10 +60626,23 @@ var app = (function () {
     		"/foodsImports/externalapi/": Externalapi,
     		"/foodsImports/externalapi1/": Externalapi1,
     		"/analitics": Analitics,
-    		"/Integrations": Integrations$2,
+    		"/Integrations": Integrations$3,
+    		"/about": About,
     		"/importsgui": Home,
     		"/fertilizerImportsExports": FertilizersTable,
     		"/fertilizerImportsExports/:country/:year": EditFertilizer,
+    		"/fertilizerImportsExports/MyGraph": MyGraph,
+    		"/fertilizerImportsExports/MyGraph2": MyGraph2,
+    		"/fertilizerImportsExports/Integrations": Integrations$2,
+    		"/fertilizerImportsExports/Integrations2": Integrations2,
+    		"/fertilizerImportsExports/Integrations3": Integrations3,
+    		"/fertilizerImportsExports/Integrations4": Integrations4,
+    		"/fertilizerImportsExports/Integrations5": Integrations5,
+    		"/fertilizerImportsExports/Integrations6": Integrations6,
+    		"/fertilizerImportsExports/Integrations7": Integrations7,
+    		"/fertilizerImportsExports/Integrations8": Integrations8,
+    		"/fertilizerImportsExports/Integrations9": Integrations9,
+    		"/fertilizerImportsExports/Integrations10": Integrations10,
     		"*": NotFound
     	};
 
@@ -56222,12 +60672,25 @@ var app = (function () {
     		foodIntegrations: Integrations$1,
     		externalApis: Externalapi,
     		externalApis1: Externalapi1,
+    		about: About,
     		FertilizersTable,
     		EditFertilizer,
+    		MyGraph,
+    		MyGraph2,
+    		FertilizerIntegrations: Integrations$2,
+    		FertilizerIntegrations2: Integrations2,
+    		FertilizerIntegrations3: Integrations3,
+    		FertilizerIntegrations4: Integrations4,
+    		FertilizerIntegrations5: Integrations5,
+    		FertilizerIntegrations6: Integrations6,
+    		FertilizerIntegrations7: Integrations7,
+    		FertilizerIntegrations8: Integrations8,
+    		FertilizerIntegrations9: Integrations9,
+    		FertilizerIntegrations10: Integrations10,
     		Home: Home$1,
     		GUIIMPORTS: Home,
     		graficagrupal: Analitics,
-    		Integrations: Integrations$2,
+    		Integrations: Integrations$3,
     		routes
     	});
 
@@ -56237,13 +60700,13 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$q, create_fragment$q, safe_not_equal, {});
+    		init(this, options, instance$D, create_fragment$D, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "App",
     			options,
-    			id: create_fragment$q.name
+    			id: create_fragment$D.name
     		});
     	}
     }
