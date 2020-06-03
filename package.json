@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "newman run tests/importsTest.json && newman run tests/foodsImports.json",
+    "test": "newman run tests/importsTest.json && newman run tests/foodsImports.json && newman run tests/fertilizer.json",
     "start": "node index"
   },
   "devDependencies": {
