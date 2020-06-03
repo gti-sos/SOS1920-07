@@ -321,7 +321,8 @@
         const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/27152?tip=AM");
         MyDataExte = await resData2.json();
         MyDataExte = MyDataExte[0].Data.slice(2,20);  
-        sortJSON(MyDataExte, 'Anyo','asc');   
+        sortJSON(MyDataExte, 'Anyo','asc'); 
+        console.log(MyDataExte) ;
         let population = []
         MyDataExte.forEach(e => {
             population.push(e.Valor*50000);
@@ -883,7 +884,7 @@
                     borderWidth: 1
                 },
                 {
-                    label: 'Falta Nombre',
+                    label: 'Indice de pobreza en armenia *30000000',
                     data: dataExtern,
                     backgroundColor: "rgba(8, 255, 0, 0.1)",
                     borderColor: "rgba(8, 255, 0, 0.1)",
