@@ -9,7 +9,7 @@
 <h1></h1>
 <div>
 <h2> </h2>
-<Button outline size="lg" color="success"> Vídeo de Pablo</Button>
+<Button outline size="lg" color="success" onclick="location.href='https://youtu.be/zAEFPiRk75k';"> Vídeo de Pablo</Button>
 </div>
 <div>
 <h2> </h2>
