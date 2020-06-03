@@ -20,7 +20,7 @@
 </div>
 <div>
 <h2> </h2>
-<Button outline size="lg" color="success"> Analítica</Button>
+<Button outline size="lg" color="success" onclick="location.href='/#/about';"> Sobre nosotros(Vídeos)</Button>
 </div>
 <div>
 <h2> </h2>

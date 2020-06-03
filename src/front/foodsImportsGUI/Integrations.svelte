@@ -91,7 +91,7 @@ async function CargaDatos28(){
     const datos2 =  await resData2.json();
     var data=[];
     var lista_2=[0,0,0];
-    var name2="% de Gasto en Salud Plública";
+    var name2="% de Producción de Coches Eléctricos";
     var total=0;
     textt1="% del total en esos años";
     textt2="%";
@@ -681,10 +681,9 @@ function CargaGrafica(){
             <option value={sett}>{sett}</option>
             {/each}
         </CustomInput>
-        <Button  on:click={() =>CargaGrafica_aux(pais_aux)}>Buscar por país</Button>
+        <Button  on:click={() =>CargaGrafica_aux(pais_aux)}>Buscar por Integracion</Button>
     </FormGroup>
 
-    {pais_aux}
 
 </main>
 

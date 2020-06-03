@@ -18,6 +18,8 @@
 	import foodIntegrations from "./foodsImportsGUI/Integrations.svelte";
 	import externalApis from "./foodsImportsGUI/externalapi.svelte";
 	import externalApis1 from "./foodsImportsGUI/externalapi1.svelte";
+	import about from "./about.svelte";
+	
 
 	import FertilizersTable from './fertilizerGUI/FertilizersTable.svelte';
 	import EditFertilizer from './fertilizerGUI/EditFertilizer.svelte';
@@ -57,6 +59,8 @@
 		"/foodsImports/externalapi1/":externalApis1,
 		"/analitics":graficagrupal,
 		"/Integrations":Integrations,
+		"/about":about,
+		
 		
 		"/importsgui": GUIIMPORTS,
 		"/fertilizerImportsExports": FertilizersTable,
