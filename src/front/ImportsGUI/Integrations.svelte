@@ -69,6 +69,7 @@
         loadapiextern1();
         loadapiextern2();
         loadapiextern3();
+        loadapiextern4();
         loadapiInter1();
         loadapiInter2();
         loadapiInter3();
@@ -92,7 +93,7 @@
 
         let MyDataExte = [];
 
-        const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2886?tip=AM");
+        const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2886?tip=AM");
         MyDataExte = await resData2.json();
         MyDataExte = MyDataExte[0].Data.slice(2,20);  
         sortJSON(MyDataExte, 'Anyo','asc');   
@@ -167,7 +168,7 @@
 
         let MyDataExte = [];
 
-        const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2855?tip=AM");
+        const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/2855?tip=AM");
         MyDataExte = await resData2.json();
         MyDataExte = MyDataExte[0].Data.slice(2,20);  
         sortJSON(MyDataExte, 'Anyo','asc');   
@@ -242,7 +243,7 @@
 
         let MyDataExte = [];
 
-        const resData2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/20171?tip=AM");
+        const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/20171?tip=AM");
         MyDataExte = await resData2.json();
         MyDataExte = MyDataExte[0].Data.slice(2,20);  
         sortJSON(MyDataExte, 'Anyo','asc');   
@@ -292,6 +293,81 @@
                 },
                 {
                     label: 'Separación Divorcios España *10',
+                    data: population,
+                    backgroundColor: "rgba(8, 255, 0, 0.1)",
+                    borderColor: "rgba(8, 255, 0, 0.1)",
+                    borderWidth: 1
+                }]
+            },   
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    };
+
+// Externa 4
+    async function loadapiextern4(){
+        var color = Chart.helpers.color;
+        var ctx = document.getElementById('myChartExterfoor');
+
+        let MyDataExte = [];
+
+        const resData2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/27152?tip=AM");
+        MyDataExte = await resData2.json();
+        MyDataExte = MyDataExte[0].Data.slice(2,20);  
+        sortJSON(MyDataExte, 'Anyo','asc');   
+        let population = []
+        MyDataExte.forEach(e => {
+            population.push(e.Valor*50000);
+        });
+
+        var myChartExterOne = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: country,
+                datasets: [{
+                    label: 'Importacion Malta Total',
+                    data: gdamalt,
+                    backgroundColor: 	["rgba(0,191,255,0.2)"],
+                    borderColor: 	["rgba(0,191,255,0.2)"],
+                    borderWidth: 1
+                },
+                {
+                    label: 'Importacion Cebada Total',
+                    data: gdabarley,
+                    backgroundColor: "rgba(255, 0, 0, 0.1)",
+                    borderColor: "rgba(255, 0, 0, 0.1)",
+                    borderWidth: 1
+                },
+                {
+                    label: 'Importacion Avena Total/10',
+                    data: gdaoat,
+                    backgroundColor: "rgba(42, 187, 155, 0.1)",
+                    borderColor: "rgba(42, 187, 155, 0.1)",
+                    borderWidth: 1
+                },
+                {
+                    label: 'Exportación Residuos Total/10',
+                    data: gdawaste,
+                    backgroundColor: "rgba(253, 227, 167, 0.1)",
+                    borderColor: "rgba(253, 227, 167, 0.1)",
+                    borderWidth: 1
+                },
+                {
+                    label: 'Exportació Alcohol Total/10',
+                    data: gdaethylalcohol,
+                    backgroundColor: "rgba(255, 0, 0, 0.1)",
+                    borderColor: "rgba(255, 0, 0, 0.1)",
+                    borderWidth: 1
+                },
+                {
+                    label: 'Tasa de mortalidad Albacete 0 años *50000',
                     data: population,
                     backgroundColor: "rgba(8, 255, 0, 0.1)",
                     borderColor: "rgba(8, 255, 0, 0.1)",
@@ -1053,7 +1129,7 @@
                 <canvas id="myChartExterThree" width="800" height="400"></canvas>
             </div>
             <div class="panel" id="api-4" >
-                <canvas id="myChartExterThree" width="800" height="400"></canvas>
+                <canvas id="myChartExterfoor" width="800" height="400"></canvas>
             </div>
             <div class="panel" id="api-5" >
                 <canvas id="myChartInterOne" width="800" height="400"></canvas>
