@@ -23,7 +23,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "billboard.js": "^1.12.10",
+    "billboard.js": "^3.6.0",
     "body-parser": "^1.19.0",
     "chart.js": "^2.9.3",
     "cors": "^2.8.5",
